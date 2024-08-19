@@ -1,0 +1,633 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc"
+  xmlns:voc="http://www.lantanagroup.com/voc"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:hl7-org:v3 ../../schema/infrastructure/cda/CDA_SDTC.xsd">
+  <realmCode code="US" />
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+  <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.1.2" />
+  <id root="702baa80-6d51-4f05-acff-5890ccba88a3" />
+  <code code="88085-6" codeSystem="2.16.840.1.113883.6.1"
+    displayName="Reportability response report Document Public health" />
+  <title>Reportability Response</title>
+  <effectiveTime value="20191210133323+0000" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="Normal" />
+  <languageCode code="en-US" />
+  <recordTarget>
+    <patientRole>
+      <id extension="PT-471325" root="2.16.840.1.113883.19.5" />
+      <addr use="H">
+        <streetAddressLine>1234 Patient Street</streetAddressLine>
+        <city>TBDPatienCity</city>
+        <state>TBDPatientState</state>
+        <postalCode>TBDPatientZip</postalCode>
+        <county />
+        <country>US</country>
+      </addr>
+      <telecom use="HP" value="tel:555-555-2003" />
+      <telecom use="HP" value="" />
+      <patient>
+        <name use="L">
+          <given>Baby</given>
+          <family>Willy</family>
+        </name>
+        <administrativeGenderCode code="MI" codeSystem="2.16.840.1.113883.5.1" displayName="Female" />
+        <birthTime value="20180105" />
+        <sdtc:deceasedInd value="false" />
+        <raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238"
+          codeSystemName="Race &amp; Ethnicity - CDC" displayName="WHITE" />
+        <ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238"
+          codeSystemName="Race &amp; Ethnicity - CDC" displayName="Not Hispanic or Latino" />
+        <languageCommunication>
+          <languageCode code="en" />
+          <preferenceInd value="true" />
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20161212100000-0700" />
+    <assignedAuthor>
+      <id root="2.16.840.1.114222.4.1.217446" />
+      <addr>
+        <streetAddressLine>8515 Georgia Avenue, Suite 700</streetAddressLine>
+        <city>Silver Spring</city>
+        <state>MD</state>
+        <postalCode>20910</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="WP" value="tel:+1(844)836-8377" />
+      <assignedAuthoringDevice>
+        <manufacturerModelName displayName="APHL" />
+        <softwareName displayName="AIMS" />
+      </assignedAuthoringDevice>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.1.217446" />
+        <name>APHL | Association of Public Health Laboratories.</name>
+        <telecom use="WP" value="tel:+1(844)836-8377" />
+        <addr>
+          <streetAddressLine>8515 Georgia Avenue, Suite 700</streetAddressLine>
+          <city>Silver Spring</city>
+          <state>MD</state>
+          <postalCode>20910</postalCode>
+          <country>US</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <informationRecipient typeCode="PRCP">
+    <intendedRecipient>
+      <id extension="66666666666" root="2.16.840.1.113883.4.6" />
+      <addr use="H">
+        <streetAddressLine>1002 Healthcare Drive</streetAddressLine>
+        <city>TBDProvCity</city>
+        <state>TBDProvState</state>
+        <postalCode>TBDProvZip</postalCode>
+        <county />
+        <country>US</country>
+      </addr>
+      <telecom use="WP" value="tel:555-555-1002 ext 9998" />
+      <telecom use="WP" value="fax:555-555-1003 " />
+      <telecom use="WP" value="mailto:henrysevenmd@email.net" />
+      <informationRecipient>
+        <name>
+          <given>Assigned</given>
+          <family>Amanda</family>
+          <suffix />
+        </name>
+      </informationRecipient>
+      <receivedOrganization>
+        <name>TBDFacilityName</name>
+        <addr use="WP">
+          <streetAddressLine>1234 Facility Drive</streetAddressLine>
+          <city>TBDFacilityCity</city>
+          <state>TBDFacilityState</state>
+          <postalCode>TBDFacilityZip</postalCode>
+          <county />
+          <country />
+        </addr>
+      </receivedOrganization>
+    </intendedRecipient>
+  </informationRecipient>
+  <componentOf>
+    <encompassingEncounter>
+      <id extension="9937012" root="2.16.840.1.113883.19" />
+      <code code="99213" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
+        displayName="Office outpatient visit 15 minutes">
+        <translation code="AMB" codeSystem="2.16.840.1.113883.5.4"
+          codeSystemName="HL7 ActEncounterCode" displayName="Ambulatory" />
+      </code>
+      <effectiveTime>
+        <low value="20190210" />
+        <high value="20190210" />
+      </effectiveTime>
+      <responsibleParty>
+        <assignedEntity>
+          <id extension="66666666666" root="2.16.840.1.113883.4.6" />
+          <addr use="H">
+            <streetAddressLine>1002 Healthcare Drive</streetAddressLine>
+            <city>TBDProvCity</city>
+            <state>TBDProvState</state>
+            <postalCode>TBDProvZip</postalCode>
+            <county />
+            <country>US</country>
+          </addr>
+          <telecom use="WP" value="tel:555-555-1002 ext 9998" />
+          <telecom use="WP" value="fax:555-555-1003 " />
+          <assignedPerson>
+            <name>
+              <given>Assigned</given>
+              <family>Amanda</family>
+              <suffix />
+            </name>
+          </assignedPerson>
+          <representedOrganization>
+            <id extension="TBDFacility#" root="2.16.840.1.113883.4.6" />
+            <name>TBDFacilityName</name>
+            <addr use="WP">
+              <streetAddressLine>1234 Facility Drive</streetAddressLine>
+              <city>TBDFacilityCity</city>
+              <state>TBDFacilityState</state>
+              <postalCode>TBDFacilityZip</postalCode>
+              <county />
+              <country />
+            </addr>
+          </representedOrganization>
+        </assignedEntity>
+      </responsibleParty>
+      <location>
+        <healthCareFacility>
+          <id extension="9701" root="2.16.840.1.113883.4.6" />
+          <code code="OF" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7RoleCode"
+            displayName="Outpatient Facility" />
+          <location>
+            <addr use="WP">
+              <streetAddressLine>1234 Facility Drive</streetAddressLine>
+              <city>TBDFacilityCity</city>
+              <state>TBDFacilityState</state>
+              <postalCode>TBDFacilityZip</postalCode>
+              <county />
+              <country />
+            </addr>
+          </location>
+          <serviceProviderOrganization>
+            <name>TBDFacilityName</name>
+            <telecom use="WP" value="tel:TBDFacilityPhone" />
+            <telecom use="WP" value="fax:TBDFacilityFax" />
+            <addr use="WP">
+              <streetAddressLine>1234 Facility Drive</streetAddressLine>
+              <city>TBDFacilityCity</city>
+              <state>TBDFacilityState</state>
+              <postalCode>TBDFacilityZip</postalCode>
+              <county />
+              <country />
+            </addr>
+          </serviceProviderOrganization>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.2.1" />
+          <code code="88084-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <text>
+            <br />
+            <paragraph>
+              <content styleCode="Bold">Subject:</content>
+            </paragraph>
+            <paragraph>Public Health Reporting Communication: one or more conditions are reportable,
+              or may be reportable, to public health.</paragraph>
+            <paragraph />
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.20" />
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.7" />
+              <id root="980d0d1a-0f7d-4f85-9edf-91ed41704a9b" />
+              <code code="131195008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                displayName="Subject of information" />
+              <text>Public Health Reporting Communication: one or more conditions are reportable, or
+                may be reportable, to public health.</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.2.3" />
+          <code code="88082-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="Initial case report processing information Document" />
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.9" />
+              <id root="6bff7990-f218-4f9d-a5aa-eb7afa6e9a3c" />
+              <code code="RR5" codeSystem="2.16.840.1.114222.4.5.232"
+                codeSystemName="PHIN VS (CDC Local Coding System)"
+                displayName="Received eICR Information" />
+              <statusCode code="completed" />
+              <effectiveTime value="20191210083106-0400" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOCCLIN" moodCode="EVN">
+                  <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.115" />
+                  <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.10" />
+                  <id root="c34356e3-e6e7-4905-b239-c26c6e493921" />
+                  <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                    displayName="Public Health Case Report (eICR)" />
+                  <!-- SG: added setId and versionNumber -->
+                  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="55" />
+                  <!-- the first in the series -->
+                  <versionNumber value="1" />
+                </externalDocument>
+              </reference>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.29" />
+              <id root="39d966b9-8a3a-4024-93d8-138e97d5898a" />
+              <code code="RRVS19" codeSystem="2.16.840.1.114222.4.5.274"
+                codeSystemName="PHIN VS (CDC Local Coding System)" displayName="eICR processed" />
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.2.2" />
+          <code code="55112-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <text>
+            <paragraph>
+              <content styleCode="Bold">Summary:</content>
+            </paragraph>
+            <paragraph>Your organization electronically submitted an initial case report to
+              determine if reporting to public health is needed for a patient</paragraph>
+            <paragraph>"Pertussis (disorder)" is reportable to "Houston Health Department". The
+              initial case report was sent to "Houston Health Department". Additional information
+              may be required for this report.<br /></paragraph>
+            <paragraph>
+              <content styleCode="Bold">"Pertussis (disorder)" for "Houston Health Department" </content>
+            </paragraph>
+            <paragraph>Reporting is required within "1 Day(s)". Reporting to this Public Health
+              Agency is based on "Both patient home address and provider facility address"<br /></paragraph>
+            <paragraph>
+              <content>&gt; Additional information for the required reporting of pertussis must be
+                submitted to the Houston Health Department within 1 day. This additional information
+                can be found here. (<linkHtml
+                  href="http://www.houstontx.gov/health/Epidemiology/Morbidityform1.pdf">Immediate
+                action requested</linkHtml>)<br /><br /></content>
+              <content>&gt; More information on specimen collection (<linkHtml
+                  href="https://www.cdc.gov/pertussis/clinical/diagnostic-testing/specimen-collection.html"
+                >Information
+                only</linkHtml>)<br /><br /></content>
+              <content>&gt; Best practices for healthcare professionals on the use of Polymerase
+                Chain Reaction (PCR) for diagnosing pertussis (<linkHtml
+                  href="https://www.cdc.gov/pertussis/clinical/diagnostic-testing/diagnosis-pcr-bestpractices.html">Information
+                only</linkHtml>)<br /><br /></content>
+              <content>&gt; Recommended antimicrobial therapy and chemoprophylaxis (<linkHtml
+                  href="https://www.cdc.gov/pertussis/clinical/treatment.html"
+                >Information only</linkHtml>
+                )<br /><br /></content>
+              <content>&gt; If you have additional questions regarding Pertussis or reporting, the
+                Houston Health Department can be reached for 24-Hour Urgent Event &amp; Disease
+                Reporting at 832-393-5080<br /><br /></content>
+            </paragraph>
+            <paragraph>Additional Resources:<br /></paragraph>
+            <paragraph>
+              <content>&gt; CDC Reference Guide for Pertussis (<linkHtml
+                  href="http://www.cdc.gov/pertussis/">Information only</linkHtml>)<br /><br /></content>
+              <content>&gt; Pertussis Investigation Guidance (<linkHtml
+                  href="https://www.dshs.texas.gov/IDCU/investigation/electronic/Pertussis.pdf"
+                >Information
+                only</linkHtml>)<br /><br /></content>
+            </paragraph>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.20" />
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.8" />
+              <id root="c6f897c0-c44a-4b2d-9503-b2fb7c529a08" />
+              <code code="304561000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                displayName="Informing health care professional (procedure)" />
+              <text>Your organization electronically submitted an initial case report to determine
+                if reporting to public health is needed for a patient.
+              </text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.30" />
+              <code code="RR9" codeSystem="2.16.840.1.114222.4.5.232"
+                codeSystemName="PHIN Questions" displayName="Reportability response priority" />
+              <value code="RRVS18" codeSystem="2.16.840.1.114222.4.5.274"
+                codeSystemName="PHIN VS (CDC Local Coding System)"
+                displayName="Immediate action requested"
+                xsi:type="CD" />
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.34" />
+              <code code="RR11" codeSystem="2.16.840.1.114222.4.5.232"
+                codeSystemName="PHIN Questions"
+                displayName="Reportability Response Coded Information" />
+              <statusCode code="completed" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.12" />
+                  <id root="30d6b2d4-4660-437e-ac2d-1cae101c62f7" />
+                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"
+                    displayName="Condition">
+                    <translation code="75323-6" codeSystem="2.16.840.1.113883.6.1"
+                      codeSystemName="LOINC" displayName="Condition" />
+                  </code>
+                  <value code="27836007" codeSystem="2.16.840.1.113883.6.96"
+                    codeSystemName="SNOMED CT" displayName="Pertussis (disorder)" xsi:type="CD" />
+                  <entryRelationship typeCode="COMP">
+                    <organizer classCode="CLUSTER" moodCode="EVN">
+                      <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.13" />
+                      <id root="d72e773a-2077-4ae3-8617-5d67298ffe57" />
+                      <code code="RRVS7" codeSystem="2.16.840.1.114222.4.5.274"
+                        codeSystemName="Location Relevance"
+                        displayName="Both patient home address and provider facility address" />
+                      <statusCode code="completed" />
+                      <participant typeCode="LOC">
+                        <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.4.3" />
+                        <participantRole>
+                          <id extension="ht" root="2.16.840.1.113883.4.6" />
+                          <code code="RR12" codeSystem="2.16.840.1.114222.4.5.232"
+                            codeSystemName="PHIN Questions" displayName="Rules Authoring Agency" />
+                          <addr nullFlavor="NI" />
+                          <telecom nullFlavor="NI" />
+                          <playingEntity>
+                            <name>Houston Health Department</name>
+                          </playingEntity>
+                        </participantRole>
+                      </participant>
+                      <participant typeCode="LOC">
+                        <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.4.1" />
+                        <participantRole>
+                          <id extension="ht" root="2.16.840.1.113883.4.6" />
+                          <code code="RR7" codeSystem="2.16.840.1.114222.4.5.232"
+                            codeSystemName="PHIN Questions" displayName="Routing Entity" />
+                          <addr nullFlavor="NI" />
+                          <telecom nullFlavor="NI" />
+                          <playingEntity>
+                            <name>Houston Health Department</name>
+                          </playingEntity>
+                        </participantRole>
+                      </participant>
+                      <component typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.19" />
+                          <id root="3acba91c-3f53-49df-b3e4-c254a07187da" />
+                          <code code="RR1" codeSystem="2.16.840.1.114222.4.5.232"
+                            codeSystemName="PHIN Questions"
+                            displayName="Determination of reportability" />
+                          <value code="RRVS1" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Reportable"
+                            xsi:type="CD" />
+                          <entryRelationship typeCode="RSON">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.27" />
+                              <id root="2b529e62-ecae-4b9b-8163-651d1ab09287" />
+                              <code code="RR3" codeSystem="2.16.840.1.114222.4.5.232"
+                                codeSystemName="PHIN Questions"
+                                displayName="Determination of reportability rule" />
+                              <value xsi:type="ST">Age &lt;= 2 years</value>
+                            </observation>
+                          </entryRelationship>
+                          <entryRelationship typeCode="RSON">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.27" />
+                              <id root="995860f6-a56e-4aea-bc9c-4bb1b8b7833a" />
+                              <code code="RR3" codeSystem="2.16.840.1.114222.4.5.232"
+                                codeSystemName="PHIN Questions"
+                                displayName="Determination of reportability rule" />
+                              <value xsi:type="ST"
+                              >Lab test ordered for (1) identification of
+                                Bordetella pertussis in a clinical specimen by organism-specific
+                                culture method, including identification tests performed on an
+                                isolate; or (2) detection of Bordetella pertussis nucleic acid in a
+                                clinical specimen by any method, excluding 'respiratory pathogen
+                                panels' (i.e., panels that include common respiratory pathogens
+                                other than Bordetella pertussis and Bordetella parapertussis)</value>
+                            </observation>
+                          </entryRelationship>
+                        </observation>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="5fd18747-b9fd-489d-baf6-1cf057756954" />
+                          <code code="RRVS8" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Additional reporting needs" />
+                          <priorityCode code="RRVS18" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Immediate action requested" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>Additional information for the required reporting of
+                                  pertussis must be submitted to the Houston Health Department
+                                  within 1 day. This additional information can be found here.</originalText>
+                              </code>
+                              <text mediaType="text/html">
+                                <reference
+                                  value="http://www.houstontx.gov/health/Epidemiology/Morbidityform1.pdf" />
+                              </text>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="e73bda64-0a3f-48cb-9a73-73b8c1dc2ab0" />
+                          <code code="RRVS9" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Additional detection and/or laboratory testing needs" />
+                          <priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Information only" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>More information on specimen collection</originalText>
+                              </code>
+                              <text mediaType="text/html">
+                                <reference
+                                  value="https://www.cdc.gov/pertussis/clinical/diagnostic-testing/specimen-collection.html" />
+                              </text>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="0fc5964e-dd2f-4226-9132-a731cdd3bd0f" />
+                          <code code="RRVS9" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Additional detection and/or laboratory testing needs" />
+                          <priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Information only" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>Best practices for healthcare professionals on the use
+                                  of Polymerase Chain Reaction (PCR) for diagnosing pertussis</originalText>
+                              </code>
+                              <text mediaType="text/html">
+                                <reference
+                                  value="https://www.cdc.gov/pertussis/clinical/diagnostic-testing/diagnosis-pcr-bestpractices.html" />
+                              </text>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="e950cfb4-34d5-4c14-af51-1b3150c261c6" />
+                          <code code="RRVS10" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Treatment and/or prevention" />
+                          <priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Information only" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>Recommended antimicrobial therapy and chemoprophylaxis</originalText>
+                              </code>
+                              <text mediaType="text/html">
+                                <reference
+                                  value="https://www.cdc.gov/pertussis/clinical/treatment.html" />
+                              </text>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="1dec2d66-d71f-489e-ac8f-a7ca0b2f7848" />
+                          <code code="RRVS12" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="PHA Contact Information" />
+                          <priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Information only" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>If you have additional questions regarding Pertussis
+                                  or reporting, the Houston Health Department can be reached for
+                                  24-Hour Urgent Event &amp; Disease Reporting at 832-393-5080</originalText>
+                              </code>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="216fa97d-e7ab-45d9-81a1-60afb1c5b757" />
+                          <code code="RRVS11" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Additional Resources" />
+                          <priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Information only" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>CDC Reference Guide for Pertussis</originalText>
+                              </code>
+                              <text mediaType="text/html">
+                                <reference value="http://www.cdc.gov/pertussis/" />
+                              </text>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="db2d2f5b-7bde-4932-afe8-b78a06c3063e" />
+                          <code code="RRVS11" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Additional Resources" />
+                          <priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Information only" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>Pertussis Investigation Guidance</originalText>
+                              </code>
+                              <text mediaType="text/html">
+                                <reference
+                                  value="https://www.dshs.texas.gov/IDCU/investigation/electronic/Pertussis.pdf" />
+                              </text>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.14" />
+                          <id root="ed1f341c-b1c3-446b-8fd0-55937e251b33" />
+                          <code code="RR4" codeSystem="2.16.840.1.114222.4.5.232"
+                            codeSystemName="PHIN Questions"
+                            displayName="Timeframe to report (urgency)" />
+                          <value unit="d" value="1" xsi:type="PQ"> </value>
+                        </observation>
+                      </component>
+                    </organizer>
+                  </entryRelationship>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

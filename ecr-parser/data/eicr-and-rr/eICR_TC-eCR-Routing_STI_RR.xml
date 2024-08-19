@@ -1,0 +1,511 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc"
+  xmlns:voc="http://www.lantanagroup.com/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:hl7-org:v3 ../../schema/infrastructure/cda/CDA_SDTC.xsd">
+  <realmCode code="US" />
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+  <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.1.2" />
+  <id root="fdb24c25-5bcb-49a0-b148-db9968fde558" />
+  <code code="88085-6" codeSystem="2.16.840.1.113883.6.1"
+    displayName="Reportability response report Document Public health" />
+  <title>Reportability Response</title>
+  <effectiveTime value="20191213144901+0000" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="Normal" />
+  <languageCode code="en-US" />
+  <recordTarget>
+    <patientRole>
+      <id extension="PT-471325" root="2.16.840.1.113883.19.5" />
+      <addr use="H">
+        <streetAddressLine>1234 Patient Street</streetAddressLine>
+        <city>TBDPatientCity</city>
+        <state>TBDPatientState</state>
+        <postalCode>TBDPatientZip</postalCode>
+        <county />
+        <country>US</country>
+      </addr>
+      <telecom use="HP" value="tel:555-555-2003" />
+      <telecom use="HP" value="mailto:eeeverywoman@email.com" />
+      <patient>
+        <name use="L">
+          <given>Eve</given>
+          <family>Everywoman</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female" />
+        <birthTime value="19861227" />
+        <sdtc:deceasedInd value="false" />
+        <raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238"
+          codeSystemName="Race &amp; Ethnicity - CDC" displayName="WHITE" />
+        <ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238"
+          codeSystemName="Race &amp; Ethnicity - CDC" displayName="Not Hispanic or Latino" />
+        <languageCommunication>
+          <languageCode code="en" />
+          <preferenceInd value="true" />
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20161212100000-0700" />
+    <assignedAuthor>
+      <id root="2.16.840.1.114222.4.1.217446" />
+      <addr>
+        <streetAddressLine>8515 Georgia Avenue, Suite 700</streetAddressLine>
+        <city>Silver Spring</city>
+        <state>MD</state>
+        <postalCode>20910</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="WP" value="tel:+1(844)836-8377" />
+      <assignedAuthoringDevice>
+        <manufacturerModelName displayName="APHL" />
+        <softwareName displayName="AIMS" />
+      </assignedAuthoringDevice>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.1.217446" />
+        <name>APHL | Association of Public Health Laboratories.</name>
+        <telecom use="WP" value="tel:+1(844)836-8377" />
+        <addr>
+          <streetAddressLine>8515 Georgia Avenue, Suite 700</streetAddressLine>
+          <city>Silver Spring</city>
+          <state>MD</state>
+          <postalCode>20910</postalCode>
+          <country>US</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <informationRecipient typeCode="PRCP">
+    <intendedRecipient>
+      <id extension="66666666666" root="2.16.840.1.113883.4.6" />
+      <addr use="H">
+        <streetAddressLine>1002 Healthcare Drive</streetAddressLine>
+        <city>TBDProvCity</city>
+        <state>TBDProvState</state>
+        <postalCode>TBDProvZip</postalCode>
+        <county />
+        <country>US</country>
+      </addr>
+      <telecom use="WP" value="tel:555-555-1002 ext 9998" />
+      <telecom use="WP" value="fax:555-555-1003 " />
+      <telecom use="WP" value="mailto:henrysevenmd@email.net" />
+      <informationRecipient>
+        <name>
+          <given>Assigned</given>
+          <family>Amanda</family>
+          <suffix />
+        </name>
+      </informationRecipient>
+      <receivedOrganization>
+        <name>TBDFacilityName</name>
+        <addr use="WP">
+          <streetAddressLine>1234 Facility Drive</streetAddressLine>
+          <city>TBDFacilityCity</city>
+          <state>TBDFacilityState</state>
+          <postalCode>TBDFacilityZip</postalCode>
+          <county />
+          <country />
+        </addr>
+      </receivedOrganization>
+    </intendedRecipient>
+  </informationRecipient>
+  <componentOf>
+    <encompassingEncounter>
+      <id extension="9937012" root="2.16.840.1.113883.19" />
+      <code code="99213" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
+        displayName="Office outpatient visit 15 minutes">
+        <translation code="AMB" codeSystem="2.16.840.1.113883.5.4"
+          codeSystemName="HL7 ActEncounterCode" displayName="Ambulatory" />
+      </code>
+      <effectiveTime>
+        <low value="20190210" />
+        <high value="20190210" />
+      </effectiveTime>
+      <responsibleParty>
+        <assignedEntity>
+          <id extension="66666666666" root="2.16.840.1.113883.4.6" />
+          <addr use="H">
+            <streetAddressLine>1002 Healthcare Drive</streetAddressLine>
+            <city>TBDProvCity</city>
+            <state>TBDProvState</state>
+            <postalCode>TBDProvZip</postalCode>
+            <county />
+            <country>US</country>
+          </addr>
+          <telecom use="WP" value="tel:555-555-1002 ext 9998" />
+          <telecom use="WP" value="fax:555-555-1003 " />
+          <assignedPerson>
+            <name>
+              <given>Assigned</given>
+              <family>Amanda</family>
+              <suffix />
+            </name>
+          </assignedPerson>
+          <representedOrganization>
+            <id extension="TBDFacility#" root="2.16.840.1.113883.4.6" />
+            <name>TBDFacilityName</name>
+            <addr use="WP">
+              <streetAddressLine>1234 Facility Drive</streetAddressLine>
+              <city>TBDFacilityCity</city>
+              <state>TBDFacilityState</state>
+              <postalCode>TBDFacilityZip</postalCode>
+              <county />
+              <country />
+            </addr>
+          </representedOrganization>
+        </assignedEntity>
+      </responsibleParty>
+      <location>
+        <healthCareFacility>
+          <id extension="1347" root="2.16.840.1.113883.4.6" />
+          <code code="OF" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7RoleCode"
+            displayName="Outpatient Facility" />
+          <location>
+            <addr use="WP">
+              <streetAddressLine>1234 Facility Drive</streetAddressLine>
+              <city>TBDFacilityCity</city>
+              <state>TBDFacilityState</state>
+              <postalCode>TBDFacilityZip</postalCode>
+              <county />
+              <country />
+            </addr>
+          </location>
+          <serviceProviderOrganization>
+            <name>TBDFacilityName</name>
+            <telecom use="WP" value="tel:TBDFacilityPhone" />
+            <telecom use="WP" value="fax:TBDFacilityFax" />
+            <addr use="WP">
+              <streetAddressLine>1234 Facility Drive</streetAddressLine>
+              <city>TBDFacilityCity</city>
+              <state>TBDFacilityState</state>
+              <postalCode>TBDFacilityZip</postalCode>
+              <county />
+              <country />
+            </addr>
+          </serviceProviderOrganization>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.2.1" />
+          <code code="88084-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <text>
+            <br />
+            <paragraph>
+              <content styleCode="Bold">Subject:</content>
+            </paragraph>
+            <paragraph>Public Health Reporting Communication: one or more conditions are reportable,
+              or may be reportable, to public health.</paragraph>
+            <paragraph />
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.20" />
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.7" />
+              <id root="10de7831-de70-4168-bc66-3d745b94793b" />
+              <code code="131195008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                displayName="Subject of information" />
+              <text>Public Health Reporting Communication: one or more conditions are reportable, or
+                may be reportable, to public health.</text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.2.3" />
+          <code code="88082-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="Initial case report processing information Document" />
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.9" />
+              <id root="6bff7990-f218-4f9d-a5aa-eb7afa6e9a3c" />
+              <code code="RR5" codeSystem="2.16.840.1.114222.4.5.232"
+                codeSystemName="PHIN VS (CDC Local Coding System)"
+                displayName="Received eICR Information" />
+              <statusCode code="completed" />
+              <effectiveTime value="20190208172246-0400" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOCCLIN" moodCode="EVN">
+                  <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.115" />
+                  <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.10" />
+                  <id root="b637297b-ed15-40cb-ba22-a3b4bc286a88" />
+                  <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                    displayName="Public Health Case Report (eICR)" />
+                  <setId nullFlavor="NI" />
+                  <versionNumber nullFlavor="NI" />
+                </externalDocument>
+              </reference>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.29" />
+              <id root="39d966b9-8a3a-4024-93d8-138e97d5898a" />
+              <code code="RRVS19" codeSystem="2.16.840.1.114222.4.5.274"
+                codeSystemName="PHIN VS (CDC Local Coding System)" displayName="eICR processed" />
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.2.2" />
+          <code code="55112-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <text>
+            <paragraph>
+              <content styleCode="Bold">Summary:</content>
+            </paragraph>
+            <paragraph>Your organization electronically submitted an initial case report to
+              determine if reporting to public health is needed for a patient</paragraph>
+            <paragraph>"Gonorrhea (disorder)" is reportable to "Utah Department of Health". The
+              initial case report was sent to "Utah Department of Health". Additional information
+              may be required for this report.<br />
+            </paragraph>
+            <paragraph>
+              <content styleCode="Bold">"Gonorrhea (disorder)" for "Utah Department of Health" </content>
+            </paragraph>
+            <paragraph>Reporting is required within "1 Day(s)". Reporting to this Public Health
+              Agency is based on "Both patient home address and provider facility address"<br />
+            </paragraph>
+            <paragraph>
+              <content>&gt; Treatment Recommendations for Gonorrhea (<linkHtml
+                  href="https://www.cdc.gov/std/tg2015/tg-2015-print.pdf">Information only</linkHtml>
+                )<br />
+								<br />
+              </content>
+            </paragraph>
+            <paragraph>Additional Resources:<br />
+            </paragraph>
+            <paragraph>
+              <content>&gt; Utah Department of Health's Disease Plan for Gonorrhea (<linkHtml
+                  href="http://www.health.utah.gov/epi/diseases/gonorrhea/plan.pdf">Information only</linkHtml>
+                )<br />
+								<br />
+              </content>
+              <content>&gt; Gonorrhea information and statistics (<linkHtml
+                  href="https://www.cdc.gov/std/gonorrhea/default.htm">Information only</linkHtml>)<br />
+								<br />
+              </content>
+            </paragraph>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.20" />
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.8" />
+              <id root="0f643750-8008-4ce3-9615-853abe518b00" />
+              <code code="304561000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                displayName="Informing health care professional (procedure)" />
+              <text>Your organization electronically submitted an initial case report to determine
+                if reporting to public health is needed for a patient.
+              </text>
+              <statusCode code="completed" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.30" />
+              <code code="RR9" codeSystem="2.16.840.1.114222.4.5.232"
+                codeSystemName="PHIN Questions" displayName="Reportability response priority" />
+              <value code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Information Only"
+                xsi:type="CD" />
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.34" />
+              <code code="RR11" codeSystem="2.16.840.1.114222.4.5.232"
+                codeSystemName="PHIN Questions"
+                displayName="Reportability Response Coded Information" />
+              <statusCode code="completed" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.12" />
+                  <id root="31a59bfc-f9e1-4bd1-ac49-c041fbe38339" />
+                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"
+                    displayName="Condition">
+                    <translation code="75323-6" codeSystem="2.16.840.1.113883.6.1"
+                      codeSystemName="LOINC" displayName="Condition" />
+                  </code>
+                  <value code="15628003" codeSystem="2.16.840.1.113883.6.96"
+                    codeSystemName="SNOMED CT" displayName="Gonorrhea (disorder)" xsi:type="CD" />
+                  <entryRelationship typeCode="COMP">
+                    <organizer classCode="CLUSTER" moodCode="EVN">
+                      <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.13" />
+                      <id root="88364e61-a9dd-4ce3-a5ff-5ff54ba91a74" />
+                      <code code="RRVS7" codeSystem="2.16.840.1.114222.4.5.274"
+                        codeSystemName="Location Relevance"
+                        displayName="Both patient home address and provider facility address" />
+                      <statusCode code="completed" />
+                      <participant typeCode="LOC">
+                        <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.4.3" />
+                        <participantRole>
+                          <id extension="ut" root="2.16.840.1.113883.4.6" />
+                          <code code="RR12" codeSystem="2.16.840.1.114222.4.5.232"
+                            codeSystemName="PHIN Questions" displayName="Rules Authoring Agency" />
+                          <addr nullFlavor="NI" />
+                          <telecom nullFlavor="NI" />
+                          <playingEntity>
+                            <name>Utah Department of Health</name>
+                          </playingEntity>
+                        </participantRole>
+                      </participant>
+                      <participant typeCode="LOC">
+                        <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.4.1" />
+                        <participantRole>
+                          <id extension="ut" root="2.16.840.1.113883.4.6" />
+                          <code code="RR7" codeSystem="2.16.840.1.114222.4.5.232"
+                            codeSystemName="PHIN Questions" displayName="Routing Entity" />
+                          <addr nullFlavor="NI" />
+                          <telecom nullFlavor="NI" />
+                          <playingEntity>
+                            <name>Utah Department of Health</name>
+                          </playingEntity>
+                        </participantRole>
+                      </participant>
+                      <component typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.19" />
+                          <id root="8a46acd3-0d09-4751-ab9a-2cbcdf2f73a7" />
+                          <code code="RR1" codeSystem="2.16.840.1.114222.4.5.232"
+                            codeSystemName="PHIN Questions"
+                            displayName="Determination of reportability" />
+                          <value code="RRVS1" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Reportable" xsi:type="CD" />
+                          <entryRelationship typeCode="RSON">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.27" />
+                              <id root="67c92725-e5d0-4310-a3ca-149fc6add8b0" />
+                              <code code="RR3" codeSystem="2.16.840.1.114222.4.5.232"
+                                codeSystemName="PHIN Questions"
+                                displayName="Determination of reportability rule" />
+                              <value xsi:type="ST">All result values for laboratory tests specific
+                                for detecting of Neisseria gonorrhoeae nucleic acid in a clinical
+                                specimen by any method</value>
+                            </observation>
+                          </entryRelationship>
+                          <entryRelationship typeCode="RSON">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.27" />
+                              <id root="57d2a55b-0afb-44ad-a083-a5be441fd69d" />
+                              <code code="RR3" codeSystem="2.16.840.1.114222.4.5.232"
+                                codeSystemName="PHIN Questions"
+                                displayName="Determination of reportability rule" />
+                              <value xsi:type="ST">Detection of Neisseria gonorrhoeae nucleic acid
+                                by any method in a clinical specimen, including the following
+                                methods: - nucleic acid by hybridization with a nucleic acid probe -
+                                nucleic acid amplification (e.g., PCR)</value>
+                            </observation>
+                          </entryRelationship>
+                        </observation>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="385dd631-4a6c-447c-8ce9-687ddbd3feff" />
+                          <code code="RRVS10" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Treatment and/or prevention" />
+                          <priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Information only" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>Treatment Recommendations for Gonorrhea</originalText>
+                              </code>
+                              <text mediaType="text/html">
+                                <reference value="https://www.cdc.gov/std/tg2015/tg-2015-print.pdf" />
+                              </text>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="a16ccedc-1c0a-4a95-a5cd-35826b2c657c" />
+                          <code code="RRVS11" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Additional Resources" />
+                          <priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Information only" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>Utah Department of Health's Disease Plan for Gonorrhea</originalText>
+                              </code>
+                              <text mediaType="text/html">
+                                <reference
+                                  value="http://www.health.utah.gov/epi/diseases/gonorrhea/plan.pdf" />
+                              </text>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.20" />
+                          <id root="1231460f-be56-4434-855d-aa00c9ade2f7" />
+                          <code code="RRVS11" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Additional Resources" />
+                          <priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274"
+                            codeSystemName="PHIN VS (CDC Local Coding System)"
+                            displayName="Information only" />
+                          <reference typeCode="REFR">
+                            <externalDocument classCode="DOC" moodCode="EVN">
+                              <templateId extension="2017-04-01"
+                                root="2.16.840.1.113883.10.20.15.2.3.17" />
+                              <code nullFlavor="OTH">
+                                <originalText>Gonorrhea information and statistics</originalText>
+                              </code>
+                              <text mediaType="text/html">
+                                <reference value="https://www.cdc.gov/std/gonorrhea/default.htm" />
+                              </text>
+                            </externalDocument>
+                          </reference>
+                        </act>
+                      </component>
+                      <component typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId extension="2017-04-01"
+                            root="2.16.840.1.113883.10.20.15.2.3.14" />
+                          <id root="9080b9ba-f5cf-4aee-afc9-29cf566f2517" />
+                          <code code="RR4" codeSystem="2.16.840.1.114222.4.5.232"
+                            codeSystemName="PHIN Questions"
+                            displayName="Timeframe to report (urgency)" />
+                          <value unit="d" value="1" xsi:type="PQ"> </value>
+                        </observation>
+                      </component>
+                    </organizer>
+                  </entryRelationship>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
