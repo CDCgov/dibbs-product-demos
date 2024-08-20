@@ -1,0 +1,194 @@
+---
+title: "Convert to Flat File"
+---
+
+## Spining up the services
+
+Using the `docker-compose.yml` file we will pull the two DIBBs that we want to use and get them up and running locally.
+
+* `fhir-converter` - This is the service that will convert our eCR data to FHIR
+* `message-parser` - This is the service that will flatten our eCR data using parsing schema.
+
+We want to make sure we're in the root directory of the repository where the `docker-compose.yaml` file is located. We'll then run:
+
+```{bash}
+docker compose up -d
+```
+
+::: {.callout-note}
+You shouldn't have to be logged into Docker in order to pull these images but if you see any error messages indicated that there was some kind of authentication error, creating a Docker account and logging in can help.
+:::
+
+## Load the packages we'll be using
+
+```{r}
+library(fs)
+library(httr2)
+library(jsonlite)
+library(tidyverse)
+```
+
+## Working with the FHIR-Converter
+
+### Set up
+
+```{r}
+message_parser <- "http://localhost:8085"
+health_check <- str_glue("{message_parser}/")
+parsing_schema <- str_glue("{message_parser}/schemas")
+message_parser <- str_glue("{message_parser}/parse_message")
+```
+
+### Health check
+
+```{r}
+request(health_check) |>
+  req_perform() |>
+  resp_body_json()
+```
+
+### Check parsing schemas
+
+```{r}
+request(parsing_schema) |>
+  req_perform() |>
+  resp_body_json()
+```
+
+So we can see some different parsing schemas that are available to use. We can create our own and uplod it to the API to use. If you notice, there is a `config` directory. Inside this directory is a file named `ecr-parsing-schema.json`. Let's upload this schema to the API and use it for parsing the FHIR bundles we just created.
+
+```{r}
+ecr_parsing_schema <- read_json("config/ecr-parsing-schema.json")
+
+request(parsing_schema) |>
+  req_url_path_append("/ecr-parsing-schema.json") |>
+  req_method("PUT") |>
+    req_headers(
+    "Content-Type" = "application/json"
+  ) |>
+  req_body_json(data = list(
+    parsing_schema = ecr_parsing_schema,
+    overwrite = TRUE
+  )) |>
+  req_perform()
+```
+
+Let's check that our new parsing schema is in the list of available parsing schemas:
+
+```{r}
+request(health_check) |>
+  req_url_path_append("/schemas") |>
+  req_perform() |>
+  resp_body_json()
+```
+
+Great! Now we can use this parsing schema in the next step.
+
+### Flatten FHIR bundles into `csv` files
+
+In the `data/fhir-conversion` all of our converted FHIR bundles are saved. We can now send these to the `message-parser` service to flatten out the data we want based on the **parsing schema** we want to use (in this case we're using one that was developed to work along side our `record-linkage` service, so there will be some missing fields)
+
+__This function will `pluck` the `FhirResource` from the `response` from the `fhir-converter`__
+```{r}
+extract_fhir_bundle <- function(file_path) {
+  fromJSON(file_path) |>
+    pluck("response", "FhirResource")
+}
+```
+
+__`unlist` will drop `NULL` values and their keys; so we'll insert a `NA_character_` so that we retain the same structure across responses__
+```{r}
+replace_null_and_unlist <- function(resp_list) {
+  replaced <- map(resp_list, ~ if (is.null(.x)) NA_character_ else .x)
+  result <- unlist(replaced)
+  return(result)
+}
+```
+
+__Send the request with payload and return the `json` as an R object `list`__
+```{r}
+send_request <- function(fhir_bundle) {  
+  response <- request(message_parser) %>%
+    req_body_json(list(
+      message_format = "fhir",
+      message_type = "ecr",
+      parsing_schema_name = "ecr-parsing-schema.json",
+      message = fhir_bundle
+    )) |>
+    req_perform()
+  
+  return(resp_body_json(response))
+}
+```
+
+__Process the responses into `csv` files with a main `demographics.csv`, `labs.csv`, and `active-problems.csv`__
+```{r}
+# Function to process response and extract data
+process_response <- function(response) {
+  demographics_list <- discard(response$parsed_values, names(response$parsed_values) %in% c("labs", "active_problems"))
+  labs_list <- response$parsed_values |> pluck("labs")
+  active_problems_list <- response$parsed_values |> pluck("active_problems")
+  
+  demographics_df <- demographics_list %>%
+    replace_null_and_unlist() %>%
+    enframe() %>%
+    pivot_wider(names_from = name, values_from = value)
+  
+  if (!is.null(labs_list)) {
+    labs_df <- labs_list |>
+      map_dfr(~ replace_null_and_unlist(.x) |>
+                enframe() |>
+                pivot_wider(names_from = name, values_from = value))
+    
+    labs_df <- bind_cols(
+      demographics_df |> select(patient_id, eicr_id, eicr_set_id, eicr_version_number, authoring_datetime),
+      labs_df
+    )
+  } else {
+    labs_df <- tibble()
+  }
+  
+  if (!is.null(active_problems_list)) {
+    active_problems_df <- active_problems_list |>
+      map_dfr(~ replace_null_and_unlist(.x) |>
+                enframe() |>
+                pivot_wider(names_from = name, values_from = value))
+    
+    active_problems_df <- bind_cols(
+      demographics_df |> select(patient_id, eicr_id, eicr_set_id, eicr_version_number, authoring_datetime),
+      active_problems_df
+    )
+  } else {
+    active_problems_df <- tibble()
+  }
+  
+  list(demographics = demographics_df, active_problems = active_problems_df, labs = labs_df)
+}
+```
+
+__Iterate over all of the FHIR bundles in the `data/fhir-conversion` directory and create flat `csv` files__
+```{r}
+files <- dir_ls("data/fhir-conversion", glob = "*.json")
+
+results <- map(files, ~ {
+  fhir_bundle <- extract_fhir_bundle(.x)
+  response <- send_request(fhir_bundle)
+  process_response(response)
+})
+
+# combine demographics and write to csv
+demographics_all <- bind_rows(map(results, "demographics"))
+write_csv(demographics_all, str_glue("data/flat-ecr/demographics-{Sys.Date()}.csv"))
+
+# combine and write active_problems to csv if there is data
+active_problems_all <- bind_rows(map(results, "active_problems"), .id = NULL)
+if (nrow(active_problems_all) > 0) {
+  write_csv(active_problems_all, str_glue("data/flat-ecr/active-problems-{Sys.Date()}.csv"))
+}
+
+# combine and write labs to csv if there is data
+labs_all <- bind_rows(map(results, "labs"), .id = NULL)
+if (nrow(labs_all) > 0) {
+  write_csv(labs_all, str_glue("data/flat-ecr/labs-{Sys.Date()}.csv"))
+}
+```

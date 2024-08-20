@@ -1,0 +1,151 @@
+---
+title: "Convert to FHIR"
+engine: knitr
+---
+
+## Spining up the services
+
+Using the `docker-compose.yml` file we will pull the two DIBBs that we want to use and get them up and running locally.
+
+* `fhir-converter` - This is the service that will convert our eCR data to FHIR
+* `message-parser` - This is the service that will flatten our eCR data using parsing schema.
+
+We want to make sure we're in the root directory of the repository where the `docker-compose.yaml` file is located. We'll then run:
+
+```{bash}
+docker compose up -d
+```
+
+::: {.callout-note}
+You shouldn't have to be logged into Docker in order to pull these images but if you see any error messages indicated that there was some kind of authentication error, creating a Docker account and logging in can help.
+:::
+
+## Load the packages we'll be using
+
+```{r}
+library(fs)
+library(httr2)
+library(jsonlite)
+library(tidyverse)
+```
+
+## Working with the FHIR-Converter
+
+### Set up
+
+```{r}
+fhir_converter <- "http://localhost:8082"
+health_check <- str_glue("{fhir_converter}/")
+convert_to_fhir <- str_glue("{fhir_converter}/convert-to-fhir")
+```
+
+### Health check
+
+```{r}
+request(health_check) |>
+  req_perform() |>
+  resp_body_json()
+```
+
+### Convert eICR and RR to FHIR
+
+In the `data/eicr-and-rr` directory there are test COVID-19 eICR and RR pairs from the AIMS website that we can use to test the API
+
+```{r}
+ecr_data_directory <- path("data", "eicr-and-rr")
+fhir_bundle_directory <- path("data", "fhir-conversion")
+
+read_and_collapse_xml <- function(file_path) {
+  print(str_glue("Reading file: {file_path}"))
+  xml_content <- readLines(file_path, warn = FALSE)
+  paste(xml_content, collapse = "\n")
+}
+
+create_json_payload <- function(eicr_content, rr_content, input_type = "ecr", root_template = "EICR") {
+  list(
+    input_data = eicr_content,
+    input_type = input_type,
+    root_template = root_template,
+    rr_data = rr_content
+  )
+}
+
+send_post_request <- function(api_url, data) {
+  print("Sending request with data...")
+
+  response <- request(api_url) |>
+    req_body_json(data) |>
+    req_perform()
+
+  status <- resp_status(response)
+  print(str_glue("Response status: {status}"))
+
+  return(response)
+}
+
+save_json_response <- function(response, file_id, output_dir) {
+  json_response <- resp_body_json(response)
+  json_file_path <- path(output_dir, str_glue("{file_id}-bundle.json"))
+  write_json(json_response, json_file_path, pretty = TRUE, auto_unbox = TRUE)
+
+  return(json_file_path)
+}
+
+get_rr_file_path <- function(eicr_file_path) {
+  file_name <- path_file(eicr_file_path)
+
+  if (str_detect(file_name, "_eICR")) {
+    rr_file_name <- str_replace(file_name, "_eICR", "_RR")
+  } else if (str_detect(file_name, "_eicr")) {
+    rr_file_name <- str_replace(file_name, "_eicr", "_RR")
+  }
+
+  return(path(path_dir(eicr_file_path), rr_file_name))
+}
+
+process_files <- function(data_dir, output_dir, api_url) {
+  print("Starting file processing...")
+  file_list <- dir_ls(data_dir, glob = "*_eicr.xml|*_eICR.xml")
+
+  for (eicr_file_path in file_list) {
+    print(str_glue("Processing file: {eicr_file_path}"))
+    rr_file_path <- get_rr_file_path(eicr_file_path)
+    print(str_glue("Corresponding RR file: {rr_file_path}"))
+
+    if (!file_exists(rr_file_path)) {
+      print(str_glue("RR file does not exist for: {eicr_file_path}"))
+      next
+    }
+
+    eicr_content <- read_and_collapse_xml(eicr_file_path)
+    rr_content <- read_and_collapse_xml(rr_file_path)
+
+    file_id <- str_split(path_file(eicr_file_path), "_CDA_eICR|_eICR|_eicr")[[1]][[1]]
+    print(str_glue("File ID: {file_id}"))
+
+    data <- create_json_payload(
+      eicr_content = eicr_content, 
+      rr_content = rr_content)
+
+    tryCatch({
+      response <- send_post_request(api_url, data)
+      
+      if (resp_status(response) == 200) {
+        print(str_glue("Successfully converted the XML files for ID: {file_id}"))
+        json_file_path <- save_json_response(response, file_id, output_dir)
+        print(str_glue("Saved JSON response for ID: {file_id} to {json_file_path}"))
+      } else {
+        print(str_glue("Failed to convert the XML files for ID: {file_id}\nStatus code: {resp_status(response)}"))
+        print(str_glue("Response content: {resp_body_string(response)}"))
+      }
+    }, error = function(e) {
+      print(str_glue("Error during the request for ID {file_id}: {e$message}"))
+    })
+  }
+  print("File processing complete.")
+}
+```
+
+```{r}
+process_files(data_dir = ecr_data_directory, output_dir = fhir_bundle_directory, api_url = convert_to_fhir)
+```
