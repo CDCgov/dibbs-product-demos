@@ -1,0 +1,101 @@
+---
+title: "Convert to FHIR"
+---
+
+## Spining up the services
+
+Using the `docker-compose.yml` file we will pull the two DIBBs that we want to use and get them up and running locally.
+
+* `fhir-converter` - This is the service that will convert our eCR data to FHIR
+* `message-parser` - This is the service that will flatten our eCR data using parsing schema.
+
+We want to make sure we're in the root directory of the repository where the `docker-compose.yaml` file is located. We'll then run:
+
+```{bash}
+docker compose up -d
+```
+
+To make sure they're up and running, use this command:
+
+```{bash}
+docker ps
+```
+
+
+::: {.callout-note}
+You shouldn't have to be logged into Docker in order to pull these images but if you see any error messages indicated that there was some kind of authentication error, creating a Docker account and logging in can help.
+:::
+
+## Making calls to the services
+
+To interact with the two containers that are running above and to stay in the R ecosystem, we'll use the `httr2` library. If you've already installed the packages for this repo using `renv` then you already have this package installed. To load it in our session, run the following command:
+
+```{r}
+library(httr2)
+```
+
+Let's start with health checks for both of the services. First, let's assign these endpoints to variables so we know which ports we're using on our localhost.
+
+```{r}
+fhir_converter <- "http://localhost:8082"
+message_parser <- "http://localhost:8085"
+```
+
+### Health Checks
+
+Let's create our first request to the `fhir-converter` endpoint:
+
+```{r}
+req <- request(fhir_converter) |>
+  req_url_path_append("/")
+```
+
+Looking at the [API docs for the FHIR-Converter](https://cdcgov.github.io/phdi/latest/containers/fhir-converter.html) we see that the using a `GET` method on the services url with the forward-slash `/` _should_ return JSON that looks like:
+
+```json
+{
+  "status": "OK"
+}
+```
+
+So, the code above constructs the request and we assign it to the `req` variable. this alows us to perform the request and assign it to a new variable, which we'll called `resp` for response:
+
+```{r}
+resp <- req_perform(req)
+resp |> resp_status_desc()
+```
+
+`resp_status_desc()` will give us a description of the status of our request. We see an "OK" and that lets us know that the request was successful. Since the API docs tell us that the response for the health check is JSON we can also run:
+
+```{r}
+resp |> resp_body_json()
+```
+
+This tells us that the response's status is "OK", similar to the above but it is showing us the JSON response from the API request. Most endpoints will return JSON but not all of them so it's important to check the docs to make sure the endpoint you want to interact with contains the type you expect. You can also use `resp_content_type()` to find out if you're not sure:
+
+```{r}
+resp |> resp_content_type()
+```
+
+Now let's check the `message-parser`
+
+```{r}
+req <- request(message_parser) |>
+  req_url_path_append("/")
+resp <- req_perform(req)
+resp |> resp_body_json()
+```
+
+You can also retrieve the last response you've run using:
+
+```{r}
+last_response() |> resp_body_json()
+```
+
+You can inspect the headers of the response:
+
+```{r}
+resp |> resp_headers()
+```
+
+> TODO: Add more examples of how to interact with the services based on user feedback
