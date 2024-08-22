@@ -1,37 +1,11 @@
 # DIBBs Product Demos
 
-## What is DIBBs?
-
-### DIBBs
-
-**Definition:**  
-**DIBBs** (Data Integration Building Blocks) are microservice APIs designed to be connected in a variety of ways, enabling the construction of both simple and complex workflows.
-
-**Pronunciation:**  
-"DIBBs" sounds like when you say, "I call dibbs on the front seat" before a road trip.
-
-**Usage:**  
-DIBBs are modular components that can be flexibly combined to perform data integration tasks, supporting diverse and scalable solutions.
-
----
-
-**Example in a Sentence:**
-
-> "We'll use a few DIBBs to quickly set up the data pipeline for the eCR Parser."
-
----
-
-**Key Characteristics:**
-
-- **Modular:** Each DIBB is a standalone microservice API.
-- **Flexible:** Can be integrated in various configurations to suit different needs.
-- **Scalable:** Suitable for both simple tasks and complex data workflows.
-
-> **ℹ️ General disclaimer:** This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/organization/mission.htm). GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise.
+> [!IMPORTANT]
+> This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/organization/mission.htm). GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise.
 
 ## Overview
 
-This goal of this repository is to provide a central location for DIBBs product demos. The repository will contain both code and the assets required to run the code for various DIBBs products in a variety of deployment environments. The goal is to meet State, Tribal, Local, and Territorial (STLT) public health staff where they are at. This will range from production cloud deployments to 'production-lite' settings with shared servers or on individual staff's host machine. Our goal is for the same solution to both work in a variety of settings and meet you where you're at both in terms of technical capacity and commitment to the tools we create.
+This repository provides a central location for Data Integration Building Blocks (DIBBs) product demos. It contains both code and the assets required to run the code for various DIBBs products in a variety of deployment environments. These product demos can range from production cloud deployments to 'production-lite' settings with shared servers to local demos on an individual staff member's host machine. Our goal is to provide State, Tribal, Local, and Territorial (STLT) public health staff with the guidance they need to understand and run our products."
 
 ## Current DIBBs Product Demos
 
