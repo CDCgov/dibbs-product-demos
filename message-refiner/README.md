@@ -39,7 +39,7 @@ curl -JO http://localhost:8087/example-collection
 
 This will download a file from the API using the suggested filename so you can load it into Postman, a GUI for making API requests.
 
-> [!INFO]
+> [!IMPORTANT]
 > `curl` is a command line tool used to transfer data from or to a server using various protocols. If you do not have `curl` installed on your system, don't worry! You can download the file you need [here](https://github.com/CDCgov/phdi/blob/main/containers/message-refiner/assets/Message_Refiner_UAT.postman_collection.json). On the right hand side you'll see the word "Raw", next to it a button to copy the text, and next to that a button to download the file.
 
 ## Running the sample Postman collection
