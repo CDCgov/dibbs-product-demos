@@ -3,9 +3,9 @@ title: "Convert to FHIR"
 engine: knitr
 ---
 
-## Spining up the services
+## Spinning up the services
 
-Using the `docker-compose.yml` file we will pull the two DIBBs that we want to use and get them up and running locally.
+Using the `docker-compose.yaml` file we will pull the two DIBBs that we want to use and get them up and running locally.
 
 * `fhir-converter` - This is the service that will convert our eCR data to FHIR
 * `message-parser` - This is the service that will flatten our eCR data using parsing schema.
