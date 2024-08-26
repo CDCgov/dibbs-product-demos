@@ -1,0 +1,26 @@
+services:
+  message-refiner:
+    image: ghcr.io/cdcgov/phdi/message-refiner:latest
+    container_name: message-refiner
+    depends_on:
+      - "trigger-code-reference"
+    ports:
+      - "8087:8080"
+    environment:
+      - TRIGGER_CODE_REFERENCE_URL=http://trigger-code-reference-service:8087
+    platform: linux/amd64
+    networks:
+      - dibbs_network
+
+  trigger-code-reference:
+    image: ghcr.io/cdcgov/phdi/trigger-code-reference:latest
+    container_name: trigger-code-reference
+    ports:
+      - "8086:8080"
+    platform: linux/amd64
+    networks:
+      - dibbs_network
+
+networks:
+  dibbs_network:
+    driver: bridge
