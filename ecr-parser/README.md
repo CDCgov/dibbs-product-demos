@@ -142,6 +142,13 @@ You should see something like this:
     a64b2379d82b   ghcr.io/cdcgov/phdi/fhir-converter:latest   "/bin/sh -c '/root/.…"   2 days ago   Up 28 hours   0.0.0.0:8082->8080/tcp, :::8082->8080/tcp   fhir-converter
     cec3b9b493f7   ghcr.io/cdcgov/phdi/message-parser:latest   "/bin/sh -c 'uvicorn…"   2 days ago   Up 28 hours   0.0.0.0:8085->8080/tcp, :::8085->8080/tcp   message-parser
 
+### Updating the DIBBs container services
+
+In the `docker-compose.yaml` file there is a parameter named `pull_policy`, and it is set to `always`. This will ensure that when you run `docker compose up -d` it will always pull the latest image from the repository. This will keep current developments happening within `CDCgov/phdi` available to you as a user.
+
+> [!TIP]
+> If you don't want to pull the latest images when running `docker compose up -d` you can remove the `pull_policy` from the `docker-compose.yaml` file.
+
 ## Running the Quarto scripts <a id="id-scripts">
 
 The R scripts are run using Quarto, which is a powerful tool for running notebooks. They can also help you create reports, dashboards, books, blogs, and more.

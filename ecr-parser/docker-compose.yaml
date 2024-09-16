@@ -1,7 +1,9 @@
 services:
   fhir-converter:
     image: ghcr.io/cdcgov/phdi/fhir-converter:latest
-    container_name: fhir-converter
+    pull_policy: always
+    platform: linux/amd64
+    container_name: ecr-parser-fhir-converter
     ports:
       - "8082:8080"
     networks:
@@ -9,10 +11,11 @@ services:
 
   message-parser:
     image: ghcr.io/cdcgov/phdi/message-parser:latest
-    container_name: message-parser
+    pull_policy: always
+    platform: linux/amd64
+    container_name: ecr-parser-message-parser
     ports:
       - "8085:8080"
-    platform: linux/amd64
     networks:
       - dibbs_network
 

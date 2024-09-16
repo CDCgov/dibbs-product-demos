@@ -6,10 +6,10 @@
       "type": "batch",
       "entry": [
         {
-          "fullUrl": "urn:uuid:b637297b-ed15-40cb-ba22-a3b4bc286a88",
+          "fullUrl": "urn:uuid:e91bc1e8-2523-4047-a663-1e3e07812948",
           "resource": {
             "resourceType": "Composition",
-            "id": "b637297b-ed15-40cb-ba22-a3b4bc286a88",
+            "id": "e91bc1e8-2523-4047-a663-1e3e07812948",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition"
@@ -26,11 +26,13 @@
                     "system": "http://loinc.org"
                   }
                 ]
-              }
+              },
+              "value": "8d86218e-0fea-11eb-8216-a80388425cfb"
             },
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"
+                "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+                "valueString": "1"
               }
             ],
             "status": "final",
@@ -43,16 +45,16 @@
                 }
               ]
             },
-            "date": "2019-02-08T17:22:46-04:00",
+            "date": "2020-05-05T15:00:45-04:00",
             "title": "Initial Public Health Case Report",
             "confidentiality": "N",
             "section": [
               {
-                "id": "526baebe-ec05-54b5-42d1-cdc084249a1c",
+                "id": "cef8ef32-bc59-64a8-af9b-cc16a3db8050",
                 "title": "Encounters",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_2d72e0c7-7f36-4ca9-82a9-02933bd62a53_ref --><td>Office outpatient visit 15 minutes<\/td><td>02/10/2019<\/td><td>TBDFacilityName<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_dd5cda14-6b1b-4666-b928-b4995ac7dcd6_ref --><td>Office outpatient visit 15 minutes<\/td><td>05/13/2020<\/td><td>Utah Outpatient Clinic<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -66,11 +68,11 @@
                 "mode": "snapshot"
               },
               {
-                "id": "b82f44c1-751f-6338-bb45-c5d861c80488",
+                "id": "91143926-6339-f00d-f7f5-34cdf920ae5e",
                 "title": "History of Present Illness",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No history of present illness<\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Since May 10, 2020 the patient has had difficulty breathing and a fever;<\/p><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -84,7 +86,7 @@
                 "mode": "snapshot"
               },
               {
-                "id": "6380afb3-c297-c10b-482f-a7ddd50e932e",
+                "id": "e9466741-8c4f-69b6-1161-784fead85325",
                 "title": "Medications Administered",
                 "text": {
                   "status": "generated",
@@ -102,11 +104,11 @@
                 "mode": "snapshot"
               },
               {
-                "id": "a6d0f0f4-0ebd-bea6-607e-6121f11026a4",
+                "id": "12b22dc9-94f6-274f-808f-2acc3a1e9154",
                 "title": "Problem List",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No problems reported<\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Concern<\/th><th>Concern Status<\/th><th>Date(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_a1c0c380-eacc-4b40-9207-85164185558d_ref --><td>Problem<\/td><td>active<\/td><td>05/13/2020<\/td><\/tr><tr><td><ul><li><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Problem Type<\/th><th>Problem<\/th><th>Date(s)<\/th><th>Code<\/th><th>Code System<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><\/tr><\/thead><tbody><tr><td>symptom<\/td><td>Difficulty Breathing )finding)<\/td><td>05/13/2020<\/td><td>230145002<\/td><td>SNOMED-CT<\/td><td><\/td><td><\/td><\/tr><tr><td>symptom<\/td><td>Coronavirus infection (disorder)<\/td><td>05/13/2020<\/td><td>186747009<\/td><td>SNOMED-CT<\/td><td>2.16.840.1.114222.4.11.7508<\/td><td>20200429<\/td><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -117,14 +119,24 @@
                     }
                   ]
                 },
-                "mode": "snapshot"
+                "mode": "snapshot",
+                "entry": [
+                  {
+                    "display": "Problem - Difficulty Breathing )finding)",
+                    "reference": "Condition/3a6c0965-551e-e329-b2ba-b221bf127672"
+                  },
+                  {
+                    "display": "Problem - Coronavirus infection (disorder)",
+                    "reference": "Condition/a6b26af7-ef03-8f9a-0c69-9657da95fd82"
+                  }
+                ]
               },
               {
-                "id": "3d1bb889-26bd-d3d9-b884-bf37c9f145f8",
+                "id": "f13e3e53-627e-9e0a-18bd-8e95170332b5",
                 "title": "Reason for visit",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient believes they have Covid-19<\/p><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -138,11 +150,11 @@
                 "mode": "snapshot"
               },
               {
-                "id": "86c888a7-c983-0db4-55ae-d1ad409de7e4",
+                "id": "d5809386-0f35-f083-eb38-f04ed57374ae",
                 "title": "Results",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Results Panel<\/th><th>Date(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_f71a7477-f860-4a3c-a79e-5fe743cae1f4_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td><\/td><\/tr><tr><td><ul><li><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Test<\/th><th>Lab Test RCTC OID ***<\/th><th>Lab Test RCTC Version ***<\/th><th>Outcome<\/th><th>Date(s)<\/th><th>Lab Result RCTC OID ***<\/th><th>Lab Result RCTC Version ***<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_998576ea-7a30-4aa5-8f07-2662463ac620_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td><\/td><td><\/td><td>Detected (qualifier value)<\/td><td>01/04/2016<\/td><td>2.16.840.1.114222.4.11.7508<\/td><td>20171013<\/td><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No Lab Results<\/div>"
                 },
                 "code": {
                   "coding": [
@@ -153,19 +165,14 @@
                     }
                   ]
                 },
-                "mode": "snapshot",
-                "entry": [
-                  {
-                    "reference": "Observation/bc888e57-ff9b-26fe-853b-30ab7812108f"
-                  }
-                ]
+                "mode": "snapshot"
               },
               {
-                "id": "cb3e8d37-1c9a-dbac-2784-678565fa07ea",
+                "id": "d67e0b86-3e21-f588-c8a3-330b503c9f39",
                 "title": "Plan of Treatment",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Lab Test Order<\/th><th>Code<\/th><th>CodeSystem<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><th>Ordered Date<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_158cfe54-cbe1-42ce-b5ae-98a92d2d9e3d_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td>21415-5<\/td><td>LOINC<\/td><td><\/td><td><\/td><td>02/10/2019<\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nothing to report in plan of care section<\/div>"
                 },
                 "code": {
                   "coding": [
@@ -179,11 +186,11 @@
                 "mode": "snapshot"
               },
               {
-                "id": "27956361-d0f0-cbbe-8862-0f254d2c96a2",
+                "id": "a49f69dd-79c3-731a-a976-5e21b7d3b7f1",
                 "title": "Social History",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Female<\/td><td>12/27/1986<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_0d32d895-8df0-475b-9a4f-10757c6cb9e1_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><tr><td>Pregnancy Status<\/td><td>Unknown<\/td><td><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Female<\/td><td>10/27/2002<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_7573f474-c57c-4d93-aad4-da33dc59b8e0_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><tr><td>Pregnancy Status<\/td><td>No<\/td><td><\/td><\/tr><\/tbody><\/table><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -197,7 +204,7 @@
                 "mode": "snapshot"
               },
               {
-                "id": "b36a550e-50a9-5e05-b71a-88dd586bc7d4",
+                "id": "3f893a4f-ebcb-0001-6823-08efec6d931e",
                 "title": "Reportability Response Information Section",
                 "text": {
                   "status": "generated",
@@ -217,7 +224,7 @@
                           }
                         ]
                       },
-                      "value": "fdb24c25-5bcb-49a0-b148-db9968fde558"
+                      "value": "7f8d597f-18fc-4865-a97c-5e1977594f79"
                     }
                   },
                   {
@@ -244,42 +251,42 @@
                 },
                 "entry": [
                   {
-                    "display": "Relevant Reportable Condition Observation - Gonorrhea (disorder)",
-                    "reference": "Observation/31a59bfc-f9e1-4bd1-ac49-c041fbe38339"
+                    "display": "Relevant Reportable Condition Observation - Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "reference": "Observation/d1845880-2deb-4fc3-9c10-67af40bf7255"
                   }
                 ]
               }
             ],
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
             },
             "encounter": {
-              "reference": "Encounter/c20ce0ff-081b-4f7e-cf12-7b47ccd6b304"
+              "reference": "Encounter/0d104bf1-1bf7-43cf-7149-9a24086400ef"
             },
             "custodian": {
               "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
             },
             "author": [
               {
-                "reference": "Device/d8a3e46a-e8cd-9c3c-87b0-7537d99b940e"
+                "reference": "Device/7711b540-cedc-48f3-dad2-25f180997598"
               }
             ]
           },
           "request": {
             "method": "PUT",
-            "url": "Composition/b637297b-ed15-40cb-ba22-a3b4bc286a88"
+            "url": "Composition/e91bc1e8-2523-4047-a663-1e3e07812948"
           }
         },
         {
-          "fullUrl": "urn:uuid:c20ce0ff-081b-4f7e-cf12-7b47ccd6b304",
+          "fullUrl": "urn:uuid:0d104bf1-1bf7-43cf-7149-9a24086400ef",
           "resource": {
             "resourceType": "Encounter",
-            "id": "c20ce0ff-081b-4f7e-cf12-7b47ccd6b304",
+            "id": "0d104bf1-1bf7-43cf-7149-9a24086400ef",
             "status": "unknown",
             "class": {
-              "code": "99213",
-              "display": "Office outpatient visit 15 minutes",
-              "system": "http://www.ama-assn.org/go/cpt"
+              "code": "AMB",
+              "display": "Ambulatory",
+              "system": "urn:oid:2.16.840.1.113883.5.4"
             },
             "identifier": [
               {
@@ -288,18 +295,18 @@
               }
             ],
             "period": {
-              "start": "2019-02-10",
-              "end": "2019-02-10"
+              "start": "2020-05-13",
+              "end": "2020-05-13"
             },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
             },
             "location": [
               {
                 "id": "2.16.840.1.113883.4.6",
                 "location": {
-                  "reference": "Location/d7de7f0d-c7e8-8e98-3cfd-bcdf31872b25",
-                  "display": "TBDFacilityName"
+                  "reference": "Location/5720f527-1c32-5fb6-0a41-8d7ecdaa04d1",
+                  "display": "Utah Outpatient                                          Clinic"
                 },
                 "extension": [
                   {
@@ -340,34 +347,34 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Encounter/c20ce0ff-081b-4f7e-cf12-7b47ccd6b304"
+            "url": "Encounter/0d104bf1-1bf7-43cf-7149-9a24086400ef"
           }
         },
         {
-          "fullUrl": "urn:uuid:d7de7f0d-c7e8-8e98-3cfd-bcdf31872b25",
+          "fullUrl": "urn:uuid:5720f527-1c32-5fb6-0a41-8d7ecdaa04d1",
           "resource": {
             "resourceType": "Location",
-            "id": "d7de7f0d-c7e8-8e98-3cfd-bcdf31872b25",
+            "id": "5720f527-1c32-5fb6-0a41-8d7ecdaa04d1",
             "identifier": [
               {
                 "system": "http://hl7.org/fhir/sid/us-npi",
-                "value": "1347"
+                "value": "8434"
               }
             ],
-            "name": "TBDFacilityName",
+            "name": "Utah Outpatient                                          Clinic",
             "address": {
               "use": "work",
               "line": [
-                "1234 Facility Drive"
+                "0987 Facility Drive"
               ],
-              "city": "TBDFacilityCity",
-              "state": "TBDFacilityState",
-              "postalCode": "TBDFacilityZip"
+              "city": "Salt Lake City",
+              "state": "UT",
+              "postalCode": "84101"
             },
             "telecom": [
               {
                 "system": "phone",
-                "value": "TBDFacilityPhone",
+                "value": "888-000-9999",
                 "use": "work"
               }
             ],
@@ -388,7 +395,7 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Location/d7de7f0d-c7e8-8e98-3cfd-bcdf31872b25"
+            "url": "Location/5720f527-1c32-5fb6-0a41-8d7ecdaa04d1"
           }
         },
         {
@@ -417,28 +424,29 @@
             "name": [
               {
                 "use": "usual",
-                "text": "TBDFacilityName"
+                "text": "Utah Outpatient                                          Clinic"
               }
             ],
             "address": [
               {
                 "use": "home",
                 "line": [
-                  "1002 Healthcare Drive"
+                  "1234 Provider Street"
                 ],
-                "city": "TBDProvCity",
-                "state": "TBDProvState",
+                "city": "Salt Lake City",
+                "state": "UT",
                 "country": "US",
-                "postalCode": "TBDProvZip"
+                "postalCode": "84101",
+                "district": "Salt Lake County"
               },
               {
                 "use": "work",
                 "line": [
-                  "1234 Facility Drive"
+                  "0987 Facility Drive"
                 ],
-                "city": "TBDFacilityCity",
-                "state": "TBDFacilityState",
-                "postalCode": "TBDFacilityZip"
+                "city": "Salt Lake City",
+                "state": "UT",
+                "postalCode": "84101"
               }
             ]
           },
@@ -478,10 +486,10 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:31a59bfc-f9e1-4bd1-ac49-c041fbe38339",
+          "fullUrl": "urn:uuid:d1845880-2deb-4fc3-9c10-67af40bf7255",
           "resource": {
             "resourceType": "Observation",
-            "id": "31a59bfc-f9e1-4bd1-ac49-c041fbe38339",
+            "id": "d1845880-2deb-4fc3-9c10-67af40bf7255",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"
@@ -491,7 +499,7 @@
             "identifier": [
               {
                 "system": "urn:ietf:rfc:3986",
-                "value": "urn:uuid:31a59bfc-f9e1-4bd1-ac49-c041fbe38339"
+                "value": "urn:uuid:d1845880-2deb-4fc3-9c10-67af40bf7255"
               }
             ],
             "status": "final",
@@ -512,8 +520,8 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "code": "15628003",
-                  "display": "Gonorrhea (disorder)",
+                  "code": "840539006",
+                  "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
                   "system": "http://snomed.info/sct"
                 }
               ]
@@ -521,11 +529,15 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
-                "valueString": "All result values for laboratory tests specific                                for detecting of Neisseria gonorrhoeae nucleic acid in a clinical                                specimen by any method"
+                "valueString": "At least one of the following                                                  clinical findings: cough, shortness of breath,                                                  difficulty breathing, new olfactory disorder, or                                                  new taste disorder "
               },
               {
                 "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
-                "valueString": "Detection of Neisseria gonorrhoeae nucleic acid                                by any method in a clinical specimen, including the following                                methods: - nucleic acid by hybridization with a nucleic acid probe -                                nucleic acid amplification (e.g., PCR)"
+                "valueString": "COVID-19 (as a diagnosis or                                                  active problem)"
+              },
+              {
+                "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
+                "valueString": "Difficulty breathing"
               }
             ],
             "performer": [
@@ -537,7 +549,7 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Observation/31a59bfc-f9e1-4bd1-ac49-c041fbe38339"
+            "url": "Observation/d1845880-2deb-4fc3-9c10-67af40bf7255"
           }
         },
         {
@@ -551,22 +563,22 @@
                 "value": "TBDFacility#"
               }
             ],
-            "name": "TBDFacilityName",
+            "name": "Utah Outpatient Clinic",
             "address": [
               {
                 "use": "work",
                 "line": [
-                  "1234 Facility Drive"
+                  "0987 Facility Drive"
                 ],
-                "city": "TBDFacilityCity",
-                "state": "TBDFacilityState",
-                "postalCode": "TBDFacilityZip"
+                "city": "Salt Lake City",
+                "state": "UT",
+                "postalCode": "84101"
               }
             ],
             "telecom": [
               {
                 "system": "phone",
-                "value": "TBDFacilityPhone",
+                "value": "888-000-9999",
                 "use": "work"
               }
             ],
@@ -580,10 +592,10 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:d8a3e46a-e8cd-9c3c-87b0-7537d99b940e",
+          "fullUrl": "urn:uuid:7711b540-cedc-48f3-dad2-25f180997598",
           "resource": {
             "resourceType": "Device",
-            "id": "d8a3e46a-e8cd-9c3c-87b0-7537d99b940e",
+            "id": "7711b540-cedc-48f3-dad2-25f180997598",
             "identifier": [
               {
                 "system": "urn:ietf:rfc:3986",
@@ -605,14 +617,14 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Device/d8a3e46a-e8cd-9c3c-87b0-7537d99b940e"
+            "url": "Device/7711b540-cedc-48f3-dad2-25f180997598"
           }
         },
         {
-          "fullUrl": "urn:uuid:e3c8e261-7309-4104-b929-a6c0a733c1a5",
+          "fullUrl": "urn:uuid:a6d4db1a-7390-4966-8a6b-7d2a9d425422",
           "resource": {
             "resourceType": "Patient",
-            "id": "e3c8e261-7309-4104-b929-a6c0a733c1a5",
+            "id": "a6d4db1a-7390-4966-8a6b-7d2a9d425422",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -622,19 +634,23 @@
             "identifier": [
               {
                 "system": "urn:oid:2.16.840.1.113883.19.5",
-                "value": "PT-471325"
+                "value": "PT-470123"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/us-ssn",
+                "value": "555-55-5555"
               }
             ],
             "name": [
               {
                 "use": "official",
-                "family": "Everywoman",
+                "family": "Karri",
                 "given": [
-                  "Eve"
+                  "Kid"
                 ]
               }
             ],
-            "birthDate": "1986-12-27",
+            "birthDate": "2002-10-27",
             "deceasedBoolean": false,
             "gender": "female",
             "extension": [
@@ -644,13 +660,13 @@
                   {
                     "url": "ombCategory",
                     "valueCoding": {
-                      "code": "2106-3",
-                      "display": "WHITE"
+                      "code": "2028-9",
+                      "display": "Asian"
                     }
                   },
                   {
                     "url": "text",
-                    "valueString": "WHITE"
+                    "valueString": "Asian"
                   }
                 ]
               },
@@ -675,24 +691,48 @@
               {
                 "use": "home",
                 "line": [
-                  "1234 Patient Street"
+                  "2222 Home Street"
                 ],
-                "city": "TBDPatientCity",
-                "state": "TBDPatientState",
+                "city": "Salt Lake City",
+                "state": "UT",
                 "country": "US",
-                "postalCode": "TBDPatientZip"
+                "postalCode": "84101",
+                "district": "Salt Lake County"
               }
             ],
             "telecom": [
               {
                 "system": "phone",
-                "value": "555-555-2003",
+                "value": "555-555-2005",
                 "use": "home"
               },
               {
                 "system": "email",
-                "value": "eeeverywoman@email.com",
+                "value": "kkkidd@email.com",
                 "use": "home"
+              }
+            ],
+            "contact": [
+              {
+                "name": [
+                  {
+                    "use": "official",
+                    "family": "Contact",
+                    "given": [
+                      "Emer"
+                    ],
+                    "prefix": [
+                      "Mr"
+                    ]
+                  }
+                ],
+                "telecom": [
+                  {
+                    "system": "phone",
+                    "value": "+1-555-555-4567",
+                    "use": "mobile"
+                  }
+                ]
               }
             ],
             "communication": [
@@ -712,7 +752,7 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+            "url": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
           }
         },
         {
@@ -720,7 +760,7 @@
           "resource": {
             "resourceType": "CareTeam",
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
             },
             "meta": {
               "source": "ecr"
@@ -734,7 +774,7 @@
             "status": "unknown",
             "intent": "proposal",
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
             },
             "meta": {
               "source": "ecr"
@@ -746,121 +786,61 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:75b0088b-cafc-0be1-5375-1a45470b5251",
+          "fullUrl": "urn:uuid:2ac71acf-4bee-fc23-e1a9-e98f9a5f873a",
           "resource": {
-            "resourceType": "DiagnosticReport",
-            "id": "75b0088b-cafc-0be1-5375-1a45470b5251",
-            "identifier": [
+            "resourceType": "RelatedPerson",
+            "id": "2ac71acf-4bee-fc23-e1a9-e98f9a5f873a",
+            "name": [
               {
-                "system": "urn:ietf:rfc:3986",
-                "value": "urn:uuid:f71a7477-f860-4a3c-a79e-5fe743cae1f4"
-              }
-            ],
-            "status": "final",
-            "code": {
-              "coding": [
-                {
-                  "code": "21415-5",
-                  "display": "Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection",
-                  "system": "http://loinc.org"
-                }
-              ]
-            },
-            "effectivePeriod": {
-              "start": "2016-01-04",
-              "end": "2016-01-04"
-            },
-            "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
-            },
-            "result": [
-              {
-                "reference": "Observation/bc888e57-ff9b-26fe-853b-30ab7812108f"
-              }
-            ],
-            "meta": {
-              "source": "ecr"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "DiagnosticReport/75b0088b-cafc-0be1-5375-1a45470b5251"
-          }
-        },
-        {
-          "fullUrl": "urn:uuid:bc888e57-ff9b-26fe-853b-30ab7812108f",
-          "resource": {
-            "resourceType": "Observation",
-            "id": "bc888e57-ff9b-26fe-853b-30ab7812108f",
-            "meta": {
-              "profile": [
-                "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
-              ],
-              "source": "ecr"
-            },
-            "identifier": [
-              {
-                "system": "urn:ietf:rfc:3986",
-                "value": "urn:uuid:998576ea-7a30-4aa5-8f07-2662463ac620"
-              }
-            ],
-            "category": [
-              {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                    "code": "laboratory"
-                  }
+                "use": "official",
+                "family": "Mum",
+                "given": [
+                  "Martha"
                 ]
               }
             ],
-            "status": "final",
-            "code": {
-              "coding": [
-                {
-                  "code": "21415-5",
-                  "display": "Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection",
-                  "system": "http://loinc.org"
-                }
-              ]
+            "telecom": [
+              {
+                "system": "email",
+                "value": "mmmum@email.com",
+                "use": "home"
+              },
+              {
+                "system": "phone",
+                "value": "555-555-2005",
+                "use": "home"
+              }
+            ],
+            "address": [
+              {
+                "use": "home",
+                "line": [
+                  "2222 Home Street"
+                ],
+                "city": "Salt Lake City",
+                "state": "UT",
+                "country": "US",
+                "postalCode": "84101",
+                "district": "Salt Lake County"
+              }
+            ],
+            "patient": {
+              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
             },
-            "effectiveDateTime": "2016-01-04",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "260373001",
-                  "display": "Detected (qualifier value)",
-                  "system": "http://snomed.info/sct"
-                }
-              ]
-            },
-            "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Observation/bc888e57-ff9b-26fe-853b-30ab7812108f"
-          }
-        },
-        {
-          "fullUrl": "urn:uuid:",
-          "resource": {
-            "resourceType": "Device",
             "meta": {
               "source": "ecr"
             }
           },
           "request": {
             "method": "PUT",
-            "url": "Device/"
+            "url": "RelatedPerson/2ac71acf-4bee-fc23-e1a9-e98f9a5f873a"
           }
         },
         {
-          "fullUrl": "urn:uuid:9391910f-2e1f-22c6-eb9d-010ccaf98068",
+          "fullUrl": "urn:uuid:706fc39d-4dd3-8e99-d2db-6d7fc497a9c8",
           "resource": {
             "resourceType": "Observation",
-            "id": "9391910f-2e1f-22c6-eb9d-010ccaf98068",
+            "id": "706fc39d-4dd3-8e99-d2db-6d7fc497a9c8",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
@@ -887,7 +867,7 @@
                 }
               ]
             },
-            "effectiveDateTime": "1986-12-27",
+            "effectiveDateTime": "2002-10-27",
             "valueCodeableConcept": {
               "coding": [
                 {
@@ -898,66 +878,12 @@
               ]
             },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
             }
           },
           "request": {
             "method": "PUT",
-            "url": "Observation/9391910f-2e1f-22c6-eb9d-010ccaf98068"
-          }
-        },
-        {
-          "fullUrl": "urn:uuid:814a4da1-50f9-ca59-195a-61243c320221",
-          "resource": {
-            "resourceType": "Observation",
-            "id": "814a4da1-50f9-ca59-195a-61243c320221",
-            "meta": {
-              "profile": [
-                "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
-              ],
-              "source": "ecr"
-            },
-            "identifier": [
-              {
-                "system": "urn:oid:2.16.840.1.113883.19",
-                "value": "123456789"
-              }
-            ],
-            "category": [
-              {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                    "code": "social-history"
-                  }
-                ]
-              }
-            ],
-            "status": "final",
-            "code": {
-              "coding": [
-                {
-                  "code": "ASSERTION",
-                  "system": "urn:oid:2.16.840.1.113883.5.4"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "77386006",
-                  "display": "Pregnant",
-                  "system": "http://snomed.info/sct"
-                }
-              ]
-            },
-            "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Observation/814a4da1-50f9-ca59-195a-61243c320221"
+            "url": "Observation/706fc39d-4dd3-8e99-d2db-6d7fc497a9c8"
           }
         },
         {

@@ -6,10 +6,10 @@
       "type": "batch",
       "entry": [
         {
-          "fullUrl": "urn:uuid:b637297b-ed15-40cb-ba22-a3b4bc286a88",
+          "fullUrl": "urn:uuid:40fc3506-f9c2-45bf-a4f8-cbfe5cf744e8",
           "resource": {
             "resourceType": "Composition",
-            "id": "b637297b-ed15-40cb-ba22-a3b4bc286a88",
+            "id": "40fc3506-f9c2-45bf-a4f8-cbfe5cf744e8",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition"
@@ -26,11 +26,13 @@
                     "system": "http://loinc.org"
                   }
                 ]
-              }
+              },
+              "value": "8d86218e-0fea-11eb-8216-a80388425cfb"
             },
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"
+                "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+                "valueString": "1"
               }
             ],
             "status": "final",
@@ -43,16 +45,16 @@
                 }
               ]
             },
-            "date": "2019-02-08T17:22:46-04:00",
+            "date": "2020-05-05T15:00:45-04:00",
             "title": "Initial Public Health Case Report",
             "confidentiality": "N",
             "section": [
               {
-                "id": "526baebe-ec05-54b5-42d1-cdc084249a1c",
+                "id": "e39e49c5-6099-8b5a-8dfd-b360d3938660",
                 "title": "Encounters",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_2d72e0c7-7f36-4ca9-82a9-02933bd62a53_ref --><td>Office outpatient visit 15 minutes<\/td><td>02/10/2019<\/td><td>TBDFacilityName<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_9543eeed-b087-4014-bbdd-2f4b4a182e81_ref --><td>Office outpatient visit 15 minutes<\/td><td>05/12/2020<\/td><td>Provo Outpatient Clinic<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -66,11 +68,11 @@
                 "mode": "snapshot"
               },
               {
-                "id": "b82f44c1-751f-6338-bb45-c5d861c80488",
+                "id": "9f2146e1-0152-522b-0d38-ce5b6cc8f742",
                 "title": "History of Present Illness",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No history of present illness<\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient thinks he was in contact with a COVID-10 positive person;<\/p><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -84,7 +86,7 @@
                 "mode": "snapshot"
               },
               {
-                "id": "6380afb3-c297-c10b-482f-a7ddd50e932e",
+                "id": "e9466741-8c4f-69b6-1161-784fead85325",
                 "title": "Medications Administered",
                 "text": {
                   "status": "generated",
@@ -102,7 +104,7 @@
                 "mode": "snapshot"
               },
               {
-                "id": "a6d0f0f4-0ebd-bea6-607e-6121f11026a4",
+                "id": "3c081c28-d1c2-b515-4122-dc0697216f11",
                 "title": "Problem List",
                 "text": {
                   "status": "generated",
@@ -120,11 +122,11 @@
                 "mode": "snapshot"
               },
               {
-                "id": "3d1bb889-26bd-d3d9-b884-bf37c9f145f8",
+                "id": "a850380c-dccf-22d1-9be5-30c82ad1975f",
                 "title": "Reason for visit",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient thinks he was in contact with a COVID-10 positive person<\/p><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -138,17 +140,17 @@
                 "mode": "snapshot"
               },
               {
-                "id": "86c888a7-c983-0db4-55ae-d1ad409de7e4",
-                "title": "Results",
+                "id": "31f8b482-3db1-5028-ff2e-46321e18d919",
+                "title": "RESULTS",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Results Panel<\/th><th>Date(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_f71a7477-f860-4a3c-a79e-5fe743cae1f4_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td><\/td><\/tr><tr><td><ul><li><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Test<\/th><th>Lab Test RCTC OID ***<\/th><th>Lab Test RCTC Version ***<\/th><th>Outcome<\/th><th>Date(s)<\/th><th>Lab Result RCTC OID ***<\/th><th>Lab Result RCTC Version ***<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_998576ea-7a30-4aa5-8f07-2662463ac620_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td><\/td><td><\/td><td>Detected (qualifier value)<\/td><td>01/04/2016<\/td><td>2.16.840.1.114222.4.11.7508<\/td><td>20171013<\/td><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Lab Test Name<\/th><th>Lab Test Result Value<\/th><th>Lab Test Result Date<\/th><\/tr><\/thead><tbody><tr><td><\/td><td>Neisseria gonorrhoeae DNA [Presence] in Nasopharynx by NAA with probe detection<\/td><td>Detected<\/td><\/tr><tr><td><\/td><td>Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by NAA with probe detection<\/td><td>Not Detected<\/td><\/tr><tr><td><\/td><td>SARS-like Coronavirus N gene [Presence] in Unspecified specimen by NAA with probe detection<\/td><td>Not Detected<\/td><\/tr><\/tbody><\/table><\/div>"
                 },
                 "code": {
                   "coding": [
                     {
                       "code": "30954-2",
-                      "display": "Relevant diagnostic tests and/or laboratory data",
+                      "display": "RESULTS",
                       "system": "http://loinc.org"
                     }
                   ]
@@ -156,16 +158,22 @@
                 "mode": "snapshot",
                 "entry": [
                   {
-                    "reference": "Observation/bc888e57-ff9b-26fe-853b-30ab7812108f"
+                    "reference": "Observation/41832eda-226d-a99d-8cf2-71592f938e70"
+                  },
+                  {
+                    "reference": "Observation/b8a7f072-9694-1912-2763-a4442e351e33"
+                  },
+                  {
+                    "reference": "Observation/d8cd84c5-7ef8-9118-7c7f-4efb4f7e3dab"
                   }
                 ]
               },
               {
-                "id": "cb3e8d37-1c9a-dbac-2784-678565fa07ea",
+                "id": "a83effb4-fb76-e22d-3223-6d4db5218c39",
                 "title": "Plan of Treatment",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Lab Test Order<\/th><th>Code<\/th><th>CodeSystem<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><th>Ordered Date<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_158cfe54-cbe1-42ce-b5ae-98a92d2d9e3d_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td>21415-5<\/td><td>LOINC<\/td><td><\/td><td><\/td><td>02/10/2019<\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Lab Test Order<\/th><th>Code<\/th><th>CodeSystem<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><th>Ordered Date<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_d779f48e-a3d1-4c90-94b6-82a81cda24f3_ref --><td>SARS-related coronavirus RNA [Presence] in Unspecified specimen by NAA with probe detection<\/td><td>94647-5<\/td><td>LOINC<\/td><td><\/td><td><\/td><td>05/12/2020<\/td><\/tr><\/tbody><\/table><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -179,11 +187,11 @@
                 "mode": "snapshot"
               },
               {
-                "id": "27956361-d0f0-cbbe-8862-0f254d2c96a2",
+                "id": "f6d05dbd-4be5-e0aa-83cf-d7ee5ccd19d9",
                 "title": "Social History",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Female<\/td><td>12/27/1986<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_0d32d895-8df0-475b-9a4f-10757c6cb9e1_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><tr><td>Pregnancy Status<\/td><td>Unknown<\/td><td><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Male<\/td><td>09/13/1967<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_14ba4186-419e-4777-b65b-11ea1b21cfe8_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><\/tbody><\/table><\/div>"
                 },
                 "code": {
                   "coding": [
@@ -197,7 +205,7 @@
                 "mode": "snapshot"
               },
               {
-                "id": "b36a550e-50a9-5e05-b71a-88dd586bc7d4",
+                "id": "33a85ce5-9d85-fc53-fb02-63784592e250",
                 "title": "Reportability Response Information Section",
                 "text": {
                   "status": "generated",
@@ -217,7 +225,7 @@
                           }
                         ]
                       },
-                      "value": "fdb24c25-5bcb-49a0-b148-db9968fde558"
+                      "value": "60e380d5-f3fa-4b4b-8003-efd9732b96da"
                     }
                   },
                   {
@@ -245,61 +253,69 @@
                 "entry": [
                   {
                     "display": "Relevant Reportable Condition Observation - Gonorrhea (disorder)",
-                    "reference": "Observation/31a59bfc-f9e1-4bd1-ac49-c041fbe38339"
+                    "reference": "Observation/5bca6972-8606-4310-9bb7-08b2e16fa17e"
+                  },
+                  {
+                    "display": "Relevant Reportable Condition Observation - Chlamydial infection (disorder)",
+                    "reference": "Observation/7c33ab36-0229-4bac-9508-0bb3cd203c85"
+                  },
+                  {
+                    "display": "Relevant Reportable Condition Observation - Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                    "reference": "Observation/e5d840c1-d6be-4c1d-b196-672cbf097a09"
                   }
                 ]
               }
             ],
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
             },
             "encounter": {
-              "reference": "Encounter/c20ce0ff-081b-4f7e-cf12-7b47ccd6b304"
+              "reference": "Encounter/2e46650b-2159-0d9e-6784-1a4384dc4815"
             },
             "custodian": {
               "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
             },
             "author": [
               {
-                "reference": "Device/d8a3e46a-e8cd-9c3c-87b0-7537d99b940e"
+                "reference": "Device/0525caf2-b5bb-1452-cccf-9bcf972fe55e"
               }
             ]
           },
           "request": {
             "method": "PUT",
-            "url": "Composition/b637297b-ed15-40cb-ba22-a3b4bc286a88"
+            "url": "Composition/40fc3506-f9c2-45bf-a4f8-cbfe5cf744e8"
           }
         },
         {
-          "fullUrl": "urn:uuid:c20ce0ff-081b-4f7e-cf12-7b47ccd6b304",
+          "fullUrl": "urn:uuid:2e46650b-2159-0d9e-6784-1a4384dc4815",
           "resource": {
             "resourceType": "Encounter",
-            "id": "c20ce0ff-081b-4f7e-cf12-7b47ccd6b304",
+            "id": "2e46650b-2159-0d9e-6784-1a4384dc4815",
             "status": "unknown",
             "class": {
-              "code": "99213",
-              "display": "Office outpatient visit 15 minutes",
-              "system": "http://www.ama-assn.org/go/cpt"
+              "code": "AMB",
+              "display": "Ambulatory",
+              "system": "urn:oid:2.16.840.1.113883.5.4"
             },
             "identifier": [
               {
                 "system": "urn:oid:2.16.840.1.113883.19",
-                "value": "9937012"
+                "value": "9937014"
               }
             ],
             "period": {
-              "start": "2019-02-10",
-              "end": "2019-02-10"
+              "start": "2020-05-12",
+              "end": "2020-05-12"
             },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
             },
             "location": [
               {
                 "id": "2.16.840.1.113883.4.6",
                 "location": {
-                  "reference": "Location/d7de7f0d-c7e8-8e98-3cfd-bcdf31872b25",
-                  "display": "TBDFacilityName"
+                  "reference": "Location/97111eb3-8967-f01b-6b31-e252e853d795",
+                  "display": "Provo Outpatient Clinic"
                 },
                 "extension": [
                   {
@@ -340,34 +356,34 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Encounter/c20ce0ff-081b-4f7e-cf12-7b47ccd6b304"
+            "url": "Encounter/2e46650b-2159-0d9e-6784-1a4384dc4815"
           }
         },
         {
-          "fullUrl": "urn:uuid:d7de7f0d-c7e8-8e98-3cfd-bcdf31872b25",
+          "fullUrl": "urn:uuid:97111eb3-8967-f01b-6b31-e252e853d795",
           "resource": {
             "resourceType": "Location",
-            "id": "d7de7f0d-c7e8-8e98-3cfd-bcdf31872b25",
+            "id": "97111eb3-8967-f01b-6b31-e252e853d795",
             "identifier": [
               {
                 "system": "http://hl7.org/fhir/sid/us-npi",
-                "value": "1347"
+                "value": "2365"
               }
             ],
-            "name": "TBDFacilityName",
+            "name": "Provo Outpatient Clinic",
             "address": {
               "use": "work",
               "line": [
-                "1234 Facility Drive"
+                "1002 Healthcare Drive"
               ],
-              "city": "TBDFacilityCity",
-              "state": "TBDFacilityState",
-              "postalCode": "TBDFacilityZip"
+              "city": "Provo",
+              "state": "UT",
+              "postalCode": "84601"
             },
             "telecom": [
               {
                 "system": "phone",
-                "value": "TBDFacilityPhone",
+                "value": "555-777-0123",
                 "use": "work"
               }
             ],
@@ -388,7 +404,7 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Location/d7de7f0d-c7e8-8e98-3cfd-bcdf31872b25"
+            "url": "Location/97111eb3-8967-f01b-6b31-e252e853d795"
           }
         },
         {
@@ -417,7 +433,7 @@
             "name": [
               {
                 "use": "usual",
-                "text": "TBDFacilityName"
+                "text": "Provo Outpatient Clinic"
               }
             ],
             "address": [
@@ -426,19 +442,19 @@
                 "line": [
                   "1002 Healthcare Drive"
                 ],
-                "city": "TBDProvCity",
-                "state": "TBDProvState",
+                "city": "Provo",
+                "state": "UT",
                 "country": "US",
-                "postalCode": "TBDProvZip"
+                "postalCode": "84601"
               },
               {
                 "use": "work",
                 "line": [
-                  "1234 Facility Drive"
+                  "1002 Healthcare Drive"
                 ],
-                "city": "TBDFacilityCity",
-                "state": "TBDFacilityState",
-                "postalCode": "TBDFacilityZip"
+                "city": "Provo",
+                "state": "UT",
+                "postalCode": "84601"
               }
             ]
           },
@@ -478,10 +494,10 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:31a59bfc-f9e1-4bd1-ac49-c041fbe38339",
+          "fullUrl": "urn:uuid:5bca6972-8606-4310-9bb7-08b2e16fa17e",
           "resource": {
             "resourceType": "Observation",
-            "id": "31a59bfc-f9e1-4bd1-ac49-c041fbe38339",
+            "id": "5bca6972-8606-4310-9bb7-08b2e16fa17e",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"
@@ -491,7 +507,7 @@
             "identifier": [
               {
                 "system": "urn:ietf:rfc:3986",
-                "value": "urn:uuid:31a59bfc-f9e1-4bd1-ac49-c041fbe38339"
+                "value": "urn:uuid:5bca6972-8606-4310-9bb7-08b2e16fa17e"
               }
             ],
             "status": "final",
@@ -521,11 +537,11 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
-                "valueString": "All result values for laboratory tests specific                                for detecting of Neisseria gonorrhoeae nucleic acid in a clinical                                specimen by any method"
+                "valueString": "All results of tests for                                                  detection of Neisseria gonorrhoeae nucleic acid in                                                  a clinical specimen by any method (i.e., ‘all’                                                  nucleic acid test results)"
               },
               {
                 "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
-                "valueString": "Detection of Neisseria gonorrhoeae nucleic acid                                by any method in a clinical specimen, including the following                                methods: - nucleic acid by hybridization with a nucleic acid probe -                                nucleic acid amplification (e.g., PCR)"
+                "valueString": "Detection of Neisseria                                                  gonorrhoeae nucleic acid by any method in a                                                  clinical specimen, including the following                                                  methods: - nucleic acid by hybridization with a                                                  nucleic acid probe - nucleic acid amplification                                                  (e.g., PCR)"
               }
             ],
             "performer": [
@@ -537,7 +553,125 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Observation/31a59bfc-f9e1-4bd1-ac49-c041fbe38339"
+            "url": "Observation/5bca6972-8606-4310-9bb7-08b2e16fa17e"
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:7c33ab36-0229-4bac-9508-0bb3cd203c85",
+          "resource": {
+            "resourceType": "Observation",
+            "id": "7c33ab36-0229-4bac-9508-0bb3cd203c85",
+            "meta": {
+              "profile": [
+                "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"
+              ],
+              "source": "ecr"
+            },
+            "identifier": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "value": "urn:uuid:7c33ab36-0229-4bac-9508-0bb3cd203c85"
+              }
+            ],
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "code": "64572001",
+                  "display": "Condition",
+                  "system": "http://snomed.info/sct"
+                },
+                {
+                  "code": "75323-6",
+                  "display": "Condition",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "105629000",
+                  "display": "Chlamydial infection (disorder)",
+                  "system": "http://snomed.info/sct"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
+                "valueString": "All results of tests for                                                  detection of Chlamydia trachomatis nucleic acid in                                                  a clinical specimen by any method (i.e., ‘all’                                                  nucleic acid test results)"
+              }
+            ],
+            "performer": [
+              {
+                "reference": "Organization/50f3c505-0e03-09e3-1ce9-772f460361c2",
+                "display": "Utah Department of Health"
+              }
+            ]
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Observation/7c33ab36-0229-4bac-9508-0bb3cd203c85"
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:e5d840c1-d6be-4c1d-b196-672cbf097a09",
+          "resource": {
+            "resourceType": "Observation",
+            "id": "e5d840c1-d6be-4c1d-b196-672cbf097a09",
+            "meta": {
+              "profile": [
+                "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"
+              ],
+              "source": "ecr"
+            },
+            "identifier": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "value": "urn:uuid:e5d840c1-d6be-4c1d-b196-672cbf097a09"
+              }
+            ],
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "code": "64572001",
+                  "display": "Condition",
+                  "system": "http://snomed.info/sct"
+                },
+                {
+                  "code": "75323-6",
+                  "display": "Condition",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "840539006",
+                  "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                  "system": "http://snomed.info/sct"
+                }
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
+                "valueString": "All results of tests for                                                  detection of SARS-CoV-2 nucleic acid in a clinical                                                  specimen by any method "
+              }
+            ],
+            "performer": [
+              {
+                "reference": "Organization/50f3c505-0e03-09e3-1ce9-772f460361c2",
+                "display": "Utah Department of Health"
+              }
+            ]
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Observation/e5d840c1-d6be-4c1d-b196-672cbf097a09"
           }
         },
         {
@@ -551,22 +685,22 @@
                 "value": "TBDFacility#"
               }
             ],
-            "name": "TBDFacilityName",
+            "name": "Provo Outpatient Clinic",
             "address": [
               {
                 "use": "work",
                 "line": [
-                  "1234 Facility Drive"
+                  "1002 Healthcare Drive"
                 ],
-                "city": "TBDFacilityCity",
-                "state": "TBDFacilityState",
-                "postalCode": "TBDFacilityZip"
+                "city": "Provo",
+                "state": "UT",
+                "postalCode": "84601"
               }
             ],
             "telecom": [
               {
                 "system": "phone",
-                "value": "TBDFacilityPhone",
+                "value": "555-777-0123",
                 "use": "work"
               }
             ],
@@ -580,10 +714,10 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:d8a3e46a-e8cd-9c3c-87b0-7537d99b940e",
+          "fullUrl": "urn:uuid:0525caf2-b5bb-1452-cccf-9bcf972fe55e",
           "resource": {
             "resourceType": "Device",
-            "id": "d8a3e46a-e8cd-9c3c-87b0-7537d99b940e",
+            "id": "0525caf2-b5bb-1452-cccf-9bcf972fe55e",
             "identifier": [
               {
                 "system": "urn:ietf:rfc:3986",
@@ -605,14 +739,14 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Device/d8a3e46a-e8cd-9c3c-87b0-7537d99b940e"
+            "url": "Device/0525caf2-b5bb-1452-cccf-9bcf972fe55e"
           }
         },
         {
-          "fullUrl": "urn:uuid:e3c8e261-7309-4104-b929-a6c0a733c1a5",
+          "fullUrl": "urn:uuid:7a5c89dc-d859-4ef9-bebd-08f8d472248e",
           "resource": {
             "resourceType": "Patient",
-            "id": "e3c8e261-7309-4104-b929-a6c0a733c1a5",
+            "id": "7a5c89dc-d859-4ef9-bebd-08f8d472248e",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -622,21 +756,25 @@
             "identifier": [
               {
                 "system": "urn:oid:2.16.840.1.113883.19.5",
-                "value": "PT-471325"
+                "value": "PT-470125"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/us-ssn",
+                "value": "333-33-3333"
               }
             ],
             "name": [
               {
                 "use": "official",
-                "family": "Everywoman",
+                "family": "Adam",
                 "given": [
-                  "Eve"
+                  "Everyman"
                 ]
               }
             ],
-            "birthDate": "1986-12-27",
+            "birthDate": "1967-09-13",
             "deceasedBoolean": false,
-            "gender": "female",
+            "gender": "male",
             "extension": [
               {
                 "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
@@ -644,13 +782,13 @@
                   {
                     "url": "ombCategory",
                     "valueCoding": {
-                      "code": "2106-3",
-                      "display": "WHITE"
+                      "code": "2054-5",
+                      "display": "Black or African American"
                     }
                   },
                   {
                     "url": "text",
-                    "valueString": "WHITE"
+                    "valueString": "Black or African American"
                   }
                 ]
               },
@@ -675,12 +813,12 @@
               {
                 "use": "home",
                 "line": [
-                  "1234 Patient Street"
+                  "0987 Home Street"
                 ],
-                "city": "TBDPatientCity",
-                "state": "TBDPatientState",
+                "city": "Provo",
+                "state": "UT",
                 "country": "US",
-                "postalCode": "TBDPatientZip"
+                "postalCode": "84601"
               }
             ],
             "telecom": [
@@ -688,11 +826,29 @@
                 "system": "phone",
                 "value": "555-555-2003",
                 "use": "home"
-              },
+              }
+            ],
+            "contact": [
               {
-                "system": "email",
-                "value": "eeeverywoman@email.com",
-                "use": "home"
+                "name": [
+                  {
+                    "use": "official",
+                    "family": "Contact",
+                    "given": [
+                      "Emer"
+                    ],
+                    "prefix": [
+                      "Mr"
+                    ]
+                  }
+                ],
+                "telecom": [
+                  {
+                    "system": "phone",
+                    "value": "+1-555-555-3456",
+                    "use": "mobile"
+                  }
+                ]
               }
             ],
             "communication": [
@@ -712,7 +868,7 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+            "url": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
           }
         },
         {
@@ -720,7 +876,7 @@
           "resource": {
             "resourceType": "CareTeam",
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
             },
             "meta": {
               "source": "ecr"
@@ -734,7 +890,7 @@
             "status": "unknown",
             "intent": "proposal",
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
             },
             "meta": {
               "source": "ecr"
@@ -746,36 +902,32 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:75b0088b-cafc-0be1-5375-1a45470b5251",
+          "fullUrl": "urn:uuid:898d45b3-55b3-fdab-ba89-fe5279029e34",
           "resource": {
             "resourceType": "DiagnosticReport",
-            "id": "75b0088b-cafc-0be1-5375-1a45470b5251",
+            "id": "898d45b3-55b3-fdab-ba89-fe5279029e34",
             "identifier": [
               {
                 "system": "urn:ietf:rfc:3986",
-                "value": "urn:uuid:f71a7477-f860-4a3c-a79e-5fe743cae1f4"
+                "value": "urn:uuid:24323852-d5a0-47bd-9d0d-8dea227b84ad"
               }
             ],
             "status": "final",
             "code": {
               "coding": [
                 {
-                  "code": "21415-5",
-                  "display": "Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection",
+                  "code": "57180-2",
+                  "display": "Neisseria gonorrhoeae DNA [Presence] in Nasopharynx by NAA with probe detection",
                   "system": "http://loinc.org"
                 }
               ]
             },
-            "effectivePeriod": {
-              "start": "2016-01-04",
-              "end": "2016-01-04"
-            },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
             },
             "result": [
               {
-                "reference": "Observation/bc888e57-ff9b-26fe-853b-30ab7812108f"
+                "reference": "Observation/41832eda-226d-a99d-8cf2-71592f938e70"
               }
             ],
             "meta": {
@@ -784,14 +936,14 @@
           },
           "request": {
             "method": "PUT",
-            "url": "DiagnosticReport/75b0088b-cafc-0be1-5375-1a45470b5251"
+            "url": "DiagnosticReport/898d45b3-55b3-fdab-ba89-fe5279029e34"
           }
         },
         {
-          "fullUrl": "urn:uuid:bc888e57-ff9b-26fe-853b-30ab7812108f",
+          "fullUrl": "urn:uuid:41832eda-226d-a99d-8cf2-71592f938e70",
           "resource": {
             "resourceType": "Observation",
-            "id": "bc888e57-ff9b-26fe-853b-30ab7812108f",
+            "id": "41832eda-226d-a99d-8cf2-71592f938e70",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
@@ -800,8 +952,8 @@
             },
             "identifier": [
               {
-                "system": "urn:ietf:rfc:3986",
-                "value": "urn:uuid:998576ea-7a30-4aa5-8f07-2662463ac620"
+                "system": "urn:oid:2.16.840.1.113883.4.945.1",
+                "value": "http://localhost:4080/Observation/scenario-3-observation-2/_history/21532502-fcbf-470c-9e5e-71b7f4d3830c"
               }
             ],
             "category": [
@@ -818,13 +970,13 @@
             "code": {
               "coding": [
                 {
-                  "code": "21415-5",
-                  "display": "Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection",
+                  "code": "57180-2",
+                  "display": "Neisseria gonorrhoeae DNA [Presence] in Nasopharynx by NAA with probe detection",
                   "system": "http://loinc.org"
                 }
               ]
             },
-            "effectiveDateTime": "2016-01-04",
+            "effectiveDateTime": "2020-05-13T15:30:00Z",
             "valueCodeableConcept": {
               "coding": [
                 {
@@ -834,13 +986,24 @@
                 }
               ]
             },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "A",
+                    "display": "Abnormal",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+                  }
+                ]
+              }
+            ],
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
             }
           },
           "request": {
             "method": "PUT",
-            "url": "Observation/bc888e57-ff9b-26fe-853b-30ab7812108f"
+            "url": "Observation/41832eda-226d-a99d-8cf2-71592f938e70"
           }
         },
         {
@@ -857,10 +1020,220 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:9391910f-2e1f-22c6-eb9d-010ccaf98068",
+          "fullUrl": "urn:uuid:543e97f9-6d48-ebc6-1e93-15209394e805",
+          "resource": {
+            "resourceType": "DiagnosticReport",
+            "id": "543e97f9-6d48-ebc6-1e93-15209394e805",
+            "identifier": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "value": "urn:uuid:94fc09ba-06a8-40df-84f9-c68270da1440"
+              }
+            ],
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "code": "53926-2",
+                  "display": "Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by NAA with probe detection",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+            },
+            "result": [
+              {
+                "reference": "Observation/b8a7f072-9694-1912-2763-a4442e351e33"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
+          },
+          "request": {
+            "method": "PUT",
+            "url": "DiagnosticReport/543e97f9-6d48-ebc6-1e93-15209394e805"
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:b8a7f072-9694-1912-2763-a4442e351e33",
           "resource": {
             "resourceType": "Observation",
-            "id": "9391910f-2e1f-22c6-eb9d-010ccaf98068",
+            "id": "b8a7f072-9694-1912-2763-a4442e351e33",
+            "meta": {
+              "profile": [
+                "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+              ],
+              "source": "ecr"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.4.945.1",
+                "value": "http://localhost:4080/Observation/scenario-3-observation-1/_history/d3b78eb6-8926-4ea2-9b01-55b1162d978e"
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory"
+                  }
+                ]
+              }
+            ],
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "code": "53926-2",
+                  "display": "Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by NAA with probe detection",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "effectiveDateTime": "2020-05-13T15:30:00Z",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "260415000",
+                  "display": "Not Detected",
+                  "system": "http://snomed.info/sct"
+                }
+              ]
+            },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "N",
+                    "display": "Normal",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+                  }
+                ]
+              }
+            ],
+            "subject": {
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+            }
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Observation/b8a7f072-9694-1912-2763-a4442e351e33"
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:02e06a32-8e3a-044a-30bf-a847826541e1",
+          "resource": {
+            "resourceType": "DiagnosticReport",
+            "id": "02e06a32-8e3a-044a-30bf-a847826541e1",
+            "identifier": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "value": "urn:uuid:bcf43cb4-6d72-474f-975d-352c6a233734"
+              }
+            ],
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "code": "94310-0",
+                  "display": "SARS-like Coronavirus N gene [Presence] in Unspecified specimen by NAA with probe detection",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+            },
+            "result": [
+              {
+                "reference": "Observation/d8cd84c5-7ef8-9118-7c7f-4efb4f7e3dab"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
+          },
+          "request": {
+            "method": "PUT",
+            "url": "DiagnosticReport/02e06a32-8e3a-044a-30bf-a847826541e1"
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:d8cd84c5-7ef8-9118-7c7f-4efb4f7e3dab",
+          "resource": {
+            "resourceType": "Observation",
+            "id": "d8cd84c5-7ef8-9118-7c7f-4efb4f7e3dab",
+            "meta": {
+              "profile": [
+                "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+              ],
+              "source": "ecr"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.4.945.1",
+                "value": "http://localhost:4080/Observation/scenario-3-observation-3/_history/cf098ab8-e3d7-4c1b-8272-43536d093cf0"
+              }
+            ],
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory"
+                  }
+                ]
+              }
+            ],
+            "status": "final",
+            "code": {
+              "coding": [
+                {
+                  "code": "94310-0",
+                  "display": "SARS-like Coronavirus N gene [Presence] in Unspecified specimen by NAA with probe detection",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "effectiveDateTime": "2020-05-14T15:30:00Z",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "260415000",
+                  "display": "Not Detected",
+                  "system": "http://snomed.info/sct"
+                }
+              ]
+            },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "N",
+                    "display": "Normal",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+                  }
+                ]
+              }
+            ],
+            "subject": {
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+            }
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Observation/d8cd84c5-7ef8-9118-7c7f-4efb4f7e3dab"
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:ccdff1d8-9f24-7852-e877-c8fa409940bb",
+          "resource": {
+            "resourceType": "Observation",
+            "id": "ccdff1d8-9f24-7852-e877-c8fa409940bb",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
@@ -887,77 +1260,23 @@
                 }
               ]
             },
-            "effectiveDateTime": "1986-12-27",
+            "effectiveDateTime": "1967-09-13",
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "code": "F",
-                  "display": "Female",
+                  "code": "M",
+                  "display": "Male",
                   "system": "urn:oid:2.16.840.1.113883.5.1"
                 }
               ]
             },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
             }
           },
           "request": {
             "method": "PUT",
-            "url": "Observation/9391910f-2e1f-22c6-eb9d-010ccaf98068"
-          }
-        },
-        {
-          "fullUrl": "urn:uuid:814a4da1-50f9-ca59-195a-61243c320221",
-          "resource": {
-            "resourceType": "Observation",
-            "id": "814a4da1-50f9-ca59-195a-61243c320221",
-            "meta": {
-              "profile": [
-                "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
-              ],
-              "source": "ecr"
-            },
-            "identifier": [
-              {
-                "system": "urn:oid:2.16.840.1.113883.19",
-                "value": "123456789"
-              }
-            ],
-            "category": [
-              {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                    "code": "social-history"
-                  }
-                ]
-              }
-            ],
-            "status": "final",
-            "code": {
-              "coding": [
-                {
-                  "code": "ASSERTION",
-                  "system": "urn:oid:2.16.840.1.113883.5.4"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "77386006",
-                  "display": "Pregnant",
-                  "system": "http://snomed.info/sct"
-                }
-              ]
-            },
-            "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Observation/814a4da1-50f9-ca59-195a-61243c320221"
+            "url": "Observation/ccdff1d8-9f24-7852-e877-c8fa409940bb"
           }
         },
         {
