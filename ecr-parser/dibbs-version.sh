@@ -43,14 +43,32 @@ for service_info in "${services[@]}"; do
 
   # check if the local image exists
   local_image=$(docker inspect --format='{{index .RepoDigests 0}}' "$image" 2>/dev/null)
+
   if [ -z "$local_image" ]; then
-    echo -e "${YELLOW}Warning:${NC} $service image not found locally."
-    echo -e "You need to run ${YELLOW}'./dibbs-version.sh --update'${NC} to install it."
-    echo ""
+    # if running in --update mode, pull the image
+    if [ "$update_only" = true ]; then
+      echo "Pulling $service..."
+      pull_output=$(docker pull "$image" 2>&1)
+      if echo "$pull_output" | grep -q "Downloaded newer image"; then
+        status="${GREEN}$CHECK_MARK Successfully installed${NC}"
+      elif echo "$pull_output" | grep -q "Image is up to date"; then
+        status="${GREEN}$CHECK_MARK Already up to date${NC}"
+      else
+        status="${RED}$CROSS_MARK Failed to install${NC}"
+      fi
+      echo -e "$service:"
+      echo -e "  Status         : $status"
+      echo ""
+    else
+      # if not in update mode, warn the user
+      echo -e "${YELLOW}Warning:${NC} $service image not found locally."
+      echo -e "You need to run ${YELLOW}'./dibbs-version.sh --update'${NC} to install it."
+      echo ""
+    fi
     continue
   fi
 
-  # extract the digest
+  # extract the digest for checking or after pulling
   local_digest=$(echo "$local_image" | awk -F'@' '{print $2}')
 
   # check mode: check if the image is up to date
@@ -69,8 +87,8 @@ for service_info in "${services[@]}"; do
     echo ""
   fi
 
-  # update mode: if image needs an update, pull it
-  if [ "$update_only" = true ] || [ "$check_only" = false ]; then
+  # update mode: if image exists and needs an update, pull it
+  if [ "$update_only" = true ] && [ -n "$local_image" ]; then
     echo "Updating $service..."
     pull_output=$(docker pull "$image" 2>&1)
     if echo "$pull_output" | grep -q "Downloaded newer image"; then
