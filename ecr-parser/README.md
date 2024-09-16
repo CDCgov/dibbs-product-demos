@@ -144,29 +144,10 @@ You should see something like this:
 
 ### Updating the DIBBs container services
 
-There is a `bash` script named `dibbs-version.sh` that you can use to both check and update the DIBBs container services that you have installed on your machine. To run this script you can do the following:
+In the `docker-compose.yaml` file there is a parameter named `pull_policy`, and it is set to `always`. This will ensure that when you run `docker compose up -d` it will always pull the latest image from the repository. This will keep current developments happening within `CDCgov/phdi` available to you as a user.
 
-**To check whether you need to update (or `pull` a new image):**
-
-```bash
-./dibbs-version.sh --check-only
-```
-
-**To perform the update or `pull` (can be performed after a check or run on its own):**
-
-```bash
-./dibbs-version.sh --update
-```
-
-**To perform both of these in one go:**
-
-```bash
-./dibbs-version.sh
-```
-
-> [!NOTE]
-> If you are using Windows, you will need to run these commands in your WSL terminal or Git Bash. Currently there isn't a PowerShell script for this check.
-> [Let us know](https://github.com/CDCgov/dibbs-product-demos/issues/new?assignees=&labels=DxT&projects=&template=dxt-user-story-template.md&title=) if this is a feature you need and we can prioritize it!
+> [!TIP]
+> If you don't want to pull the latest images when running `docker compose up -d` you can remove the `pull_policy` from the `docker-compose.yaml` file.
 
 ## Running the Quarto scripts <a id="id-scripts">
 

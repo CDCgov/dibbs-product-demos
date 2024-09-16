@@ -1,6 +1,7 @@
 services:
   fhir-converter:
     image: ghcr.io/cdcgov/phdi/fhir-converter:latest
+    pull_policy: always
     container_name: fhir-converter
     ports:
       - "8082:8080"
@@ -9,6 +10,7 @@ services:
 
   message-parser:
     image: ghcr.io/cdcgov/phdi/message-parser:latest
+    pull_policy: always
     container_name: message-parser
     ports:
       - "8085:8080"
