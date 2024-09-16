@@ -142,6 +142,32 @@ You should see something like this:
     a64b2379d82b   ghcr.io/cdcgov/phdi/fhir-converter:latest   "/bin/sh -c '/root/.…"   2 days ago   Up 28 hours   0.0.0.0:8082->8080/tcp, :::8082->8080/tcp   fhir-converter
     cec3b9b493f7   ghcr.io/cdcgov/phdi/message-parser:latest   "/bin/sh -c 'uvicorn…"   2 days ago   Up 28 hours   0.0.0.0:8085->8080/tcp, :::8085->8080/tcp   message-parser
 
+### Updating the DIBBs container services
+
+There is a `bash` script named `dibbs-version.sh` that you can use to both check and update the DIBBs container services that you have installed on your machine. To run this script you can do the following:
+
+**To check whether you need to update (or `pull` a new image):**
+
+```bash
+./dibbs-version.sh --check-only
+```
+
+**To perform the update or `pull` (can be performed after a check or run on its own):**
+
+```bash
+./dibbs-version.sh --update
+```
+
+**To perform both of these in one go:**
+
+```bash
+./dibbs-version.sh
+```
+
+> [!NOTE]
+> If you are using Windows, you will need to run these commands in your WSL terminal or Git Bash. Currently there isn't a PowerShell script for this check.
+> [Let us know](https://github.com/CDCgov/dibbs-product-demos/issues/new?assignees=&labels=DxT&projects=&template=dxt-user-story-template.md&title=) if this is a feature you need and we can prioritize it!
+
 ## Running the Quarto scripts <a id="id-scripts">
 
 The R scripts are run using Quarto, which is a powerful tool for running notebooks. They can also help you create reports, dashboards, books, blogs, and more.
