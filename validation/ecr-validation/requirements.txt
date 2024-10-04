@@ -15,5 +15,5 @@ requests==2.31.0
 rich==13.7.1
 saxonche==12.4.2
 six==1.16.0
-urllib3==2.2.1
+urllib3==2.2.2
 wcwidth==0.2.13
