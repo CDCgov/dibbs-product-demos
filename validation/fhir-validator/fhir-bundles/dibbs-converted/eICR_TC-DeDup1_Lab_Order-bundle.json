@@ -1,0 +1,845 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:c34356e3-e6e7-4905-b239-c26c6e493921",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "c34356e3-e6e7-4905-b239-c26c6e493921",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition"
+          ],
+          "source": "ecr"
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "code": "55751-2",
+                  "display": "Public Health Case Report",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "value": "55"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+            "valueString": "1"
+          }
+        ],
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "55751-2",
+              "display": "Public Health Case Report",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "date": "2019-12-10T08:31:06-04:00",
+        "title": "Initial Public Health Case Report",
+        "confidentiality": "N",
+        "section": [
+          {
+            "id": "f5f684bd-5054-aa69-7825-e5568047a9f7",
+            "title": "Encounters",
+            "text": {
+              "status": "generated",
+              "div": "<table><thead><tr><th>Encounter</th><th>Date(s)</th><th>Location</th></tr></thead><tbody><tr><!-- data-id: id_0fe26f1c-67e5-4598-b5b8-aafd99ffe7c5_ref --><td>Office outpatient visit 15 minutes</td><td>02/10/2019</td><td>TBDFacilityName</td></tr><tr><td><ul><li><table><thead><tr></tr></thead><tbody><tr></tr></tbody></table></li></ul></td></tr></tbody></table>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "46240-8",
+                  "display": "History of encounters",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "b82f44c1-751f-6338-bb45-c5d861c80488",
+            "title": "History of Present Illness",
+            "text": {
+              "status": "generated",
+              "div": "No history of present illness"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "10164-2",
+                  "display": "History of Present Illness",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "6380afb3-c297-c10b-482f-a7ddd50e932e",
+            "title": "Medications Administered",
+            "text": {
+              "status": "generated",
+              "div": "No medications administered"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "29549-3",
+                  "display": "Medications Administered",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "a6d0f0f4-0ebd-bea6-607e-6121f11026a4",
+            "title": "Problem List",
+            "text": {
+              "status": "generated",
+              "div": "No problems reported"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "11450-4",
+                  "display": "Problem List",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "3d1bb889-26bd-d3d9-b884-bf37c9f145f8",
+            "title": "Reason for visit",
+            "text": {
+              "status": "generated"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "29299-5",
+                  "display": "Reason for visit",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "8988c4ac-fa51-e548-10f3-49efc4ef54c5",
+            "title": "Results",
+            "text": {
+              "status": "generated",
+              "div": "No Lab Results"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "30954-2",
+                  "display": "Relevant diagnostic tests and/or laboratory data",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "92ec0b70-37d8-08c6-6c72-acc870e0c5b6",
+            "title": "Plan of Treatment",
+            "text": {
+              "status": "generated",
+              "div": "<paragraph>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)</paragraph><table><thead><tr><th>Lab Test Order</th><th>Code</th><th>CodeSystem</th><th>RCTC OID ***</th><th>RCTC Version ***</th><th>Ordered Date</th></tr></thead><tbody><tr><!-- data-id: id_96ed1021-38fe-476a-9ef3-503c709dbf0e_ref --><td>Bordetella pertussis [Presence] in Sputum by Organism specific culture</td><td>43890-3</td><td>LOINC</td><td>2.16.840.1.114222.4.11.7508</td><td>20190617</td><td>02/10/2019</td></tr></tbody></table>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "18776-5",
+                  "display": "Plan of Treatment",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "fceb25d7-9b25-dec2-6d2f-8c1c79b562ea",
+            "title": "Social History",
+            "text": {
+              "status": "generated",
+              "div": "<table><thead><tr><th>Birth Sex</th><th>Value</th><th>Date</th></tr></thead><tbody><tr><td>Sex Assigned At Birth</td><td>Female</td><td>01/05/2018</td></tr></tbody></table><table><thead><tr><th>Social History Observation Type</th><th>Value</th><th>Dates(s)</th></tr></thead><tbody><tr><!-- data-id: id_e85c87a9-43e7-4a4b-bd5c-159b4609013a_ref --><td>Occupation / Employment details</td><td></td><td></td></tr><tr><td>Pregnancy Status</td><td>No</td><td></td></tr></tbody></table>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "29762-2",
+                  "display": "Social History",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "d57d7b55-8d8e-8059-daac-59e486801ae3",
+            "title": "Reportability Response Information Section",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reportability Response Information Section</div>"
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition",
+                "valueIdentifier": {
+                  "use": "official",
+                  "type": {
+                    "coding": [
+                      {
+                        "code": "88085-6",
+                        "display": "Reportability response report Document Public health",
+                        "system": "http://loinc.org"
+                      }
+                    ]
+                  },
+                  "value": "702baa80-6d51-4f05-acff-5890ccba88a3"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "RRVS19",
+                      "display": "eICR processed",
+                      "system": "urn:oid:2.16.840.1.114222.4.5.274"
+                    }
+                  ]
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "88085-6",
+                  "display": "Reportability response report Document Public health",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "display": "Relevant Reportable Condition Observation - Pertussis (disorder)",
+                "reference": "Observation/30d6b2d4-4660-437e-ac2d-1cae101c62f7"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/26821857-8c02-419b-ad72-50724514fe7c"
+        },
+        "encounter": {
+          "reference": "Encounter/baa7c66d-7ea1-0d5d-83c8-140971f11b36"
+        },
+        "custodian": {
+          "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+        },
+        "author": [
+          {
+            "reference": "Device/f03b1f77-6453-a7dc-f722-3515f91d8271"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/c34356e3-e6e7-4905-b239-c26c6e493921"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:baa7c66d-7ea1-0d5d-83c8-140971f11b36",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "baa7c66d-7ea1-0d5d-83c8-140971f11b36",
+        "status": "unknown",
+        "class": {
+          "code": "99213",
+          "display": "Office outpatient visit 15 minutes",
+          "system": "http://www.ama-assn.org/go/cpt"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.19",
+            "value": "9937012"
+          }
+        ],
+        "period": {
+          "start": "2019-02-10",
+          "end": "2019-02-10"
+        },
+        "subject": {
+          "reference": "Patient/26821857-8c02-419b-ad72-50724514fe7c"
+        },
+        "location": [
+          {
+            "id": "2.16.840.1.113883.4.6",
+            "location": {
+              "reference": "Location/39cea418-bfac-427b-a3e1-6f0c2c6365b7",
+              "display": "TBDFacilityName"
+            },
+            "extension": [
+              {
+                "url": "http://build.fhir.org/ig/HL7/case-reporting/StructureDefinition-us-ph-location-definitions.html#Location.type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "OF",
+                      "display": "Outpatient Facility",
+                      "system": "urn:oid:2.16.840.1.113883.5.111"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/5919d87f-6670-9c40-93d4-d348add5a878"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code": "ATND"
+                  }
+                ]
+              }
+            ],
+            "individual": {
+              "reference": "PractitionerRole/3295c58a-26aa-18e7-f4fd-0e203762937a"
+            }
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/baa7c66d-7ea1-0d5d-83c8-140971f11b36"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:39cea418-bfac-427b-a3e1-6f0c2c6365b7",
+      "resource": {
+        "resourceType": "Location",
+        "id": "39cea418-bfac-427b-a3e1-6f0c2c6365b7",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "9701"
+          }
+        ],
+        "name": "TBDFacilityName",
+        "address": {
+          "use": "work",
+          "line": ["1234 Facility Drive"],
+          "city": "TBDFacilityCity",
+          "state": "TBDFacilityState",
+          "postalCode": "TBDFacilityZip"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "TBDFacilityPhone",
+            "use": "work"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "OF",
+                "display": "Outpatient Facility",
+                "system": "urn:oid:2.16.840.1.113883.5.111"
+              }
+            ]
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/39cea418-bfac-427b-a3e1-6f0c2c6365b7"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5919d87f-6670-9c40-93d4-d348add5a878",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5919d87f-6670-9c40-93d4-d348add5a878",
+        "name": "TBDFacilityName",
+        "address": [
+          {
+            "use": "work",
+            "line": ["1234 Facility Drive"],
+            "city": "TBDFacilityCity",
+            "state": "TBDFacilityState",
+            "postalCode": "TBDFacilityZip"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "TBDFacilityPhone",
+            "use": "work"
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/5919d87f-6670-9c40-93d4-d348add5a878"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4581f291-448a-04ad-0508-e348f799a4b0",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "4581f291-448a-04ad-0508-e348f799a4b0",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ],
+          "source": "ecr"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/_datatype",
+            "valueString": "Responsible Party"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "66666666666"
+          }
+        ],
+        "name": [
+          {
+            "family": "Amanda",
+            "given": ["Assigned"]
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "line": ["1002 Healthcare Drive"],
+            "city": "TBDProvCity",
+            "state": "TBDProvState",
+            "country": "US",
+            "postalCode": "TBDProvZip"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "555-555-1002 ext 9998",
+            "use": "work"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "3295c58a-26aa-18e7-f4fd-0e203762937a",
+        "practitioner": {
+          "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+        },
+        "organization": {
+          "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+        },
+        "meta": {
+          "source": "ecr"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "TBDFacility#"
+          }
+        ],
+        "name": "TBDFacilityName",
+        "address": [
+          {
+            "use": "work",
+            "line": ["1234 Facility Drive"],
+            "city": "TBDFacilityCity",
+            "state": "TBDFacilityState",
+            "postalCode": "TBDFacilityZip"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "TBDFacilityPhone",
+            "use": "work"
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ea5fdf2b-51d2-c4da-5b00-9f58379a72ba",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "ea5fdf2b-51d2-c4da-5b00-9f58379a72ba",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization"
+          ],
+          "source": "ecr"
+        },
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.114222.4.5.232",
+                "code": "RR7",
+                "display": "Routing Entity"
+              }
+            ]
+          }
+        ],
+        "name": "Houston Health Department"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/ea5fdf2b-51d2-c4da-5b00-9f58379a72ba"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:30d6b2d4-4660-437e-ac2d-1cae101c62f7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "30d6b2d4-4660-437e-ac2d-1cae101c62f7",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"
+          ],
+          "source": "ecr"
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:30d6b2d4-4660-437e-ac2d-1cae101c62f7"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "64572001",
+              "display": "Condition",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "75323-6",
+              "display": "Condition",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "27836007",
+              "display": "Pertussis (disorder)",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
+            "valueString": "Age <= 2 years"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
+            "valueString": "Lab test ordered for (1) identification of                                Bordetella pertussis in a clinical specimen by organism-specific                                culture method, including identification tests performed on an                                isolate; or (2) detection of Bordetella pertussis nucleic acid in a                                clinical specimen by any method, excluding 'respiratory pathogen                                panels' (i.e., panels that include common respiratory pathogens                                other than Bordetella pertussis and Bordetella parapertussis)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Organization/ea5fdf2b-51d2-c4da-5b00-9f58379a72ba",
+            "display": "Houston Health Department"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/30d6b2d4-4660-437e-ac2d-1cae101c62f7"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f03b1f77-6453-a7dc-f722-3515f91d8271",
+      "resource": {
+        "resourceType": "Device",
+        "id": "f03b1f77-6453-a7dc-f722-3515f91d8271",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:2.16.840.1.113883.3.72.5.20"
+          }
+        ],
+        "property": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/device-category",
+                  "code": "software",
+                  "display": "software"
+                }
+              ]
+            }
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Device/f03b1f77-6453-a7dc-f722-3515f91d8271"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:26821857-8c02-419b-ad72-50724514fe7c",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "26821857-8c02-419b-ad72-50724514fe7c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+          ],
+          "source": "ecr"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.19.5",
+            "value": "PT-471325"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Willy",
+            "given": ["Baby"]
+          }
+        ],
+        "birthDate": "2018-01-05",
+        "deceasedBoolean": false,
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2106-3",
+                  "display": "WHITE"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "WHITE"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2186-5",
+                  "display": "Not Hispanic or Latino"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Not Hispanic or Latino"
+              }
+            ]
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "line": ["1234 Patient Street"],
+            "city": "TBDPatientCity",
+            "state": "TBDPatientState",
+            "country": "US",
+            "postalCode": "TBDPatientZip"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "555-555-2003",
+            "use": "home"
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "en",
+                  "display": "English"
+                }
+              ]
+            },
+            "preferred": true
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/26821857-8c02-419b-ad72-50724514fe7c"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:",
+      "resource": {
+        "resourceType": "CareTeam",
+        "subject": {
+          "reference": "Patient/26821857-8c02-419b-ad72-50724514fe7c"
+        },
+        "meta": {
+          "source": "ecr"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:",
+      "resource": {
+        "resourceType": "CarePlan",
+        "status": "unknown",
+        "intent": "proposal",
+        "subject": {
+          "reference": "Patient/26821857-8c02-419b-ad72-50724514fe7c"
+        },
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ff69289b-ebdb-4db3-281e-13f1d66b81da",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ff69289b-ebdb-4db3-281e-13f1d66b81da",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "source": "ecr"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "76689-9",
+              "display": "Sex Assigned At Birth",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "effectiveDateTime": "2018-01-05",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "F",
+              "display": "Female",
+              "system": "urn:oid:2.16.840.1.113883.5.1"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/26821857-8c02-419b-ad72-50724514fe7c"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/ff69289b-ebdb-4db3-281e-13f1d66b81da"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/"
+      }
+    }
+  ]
+}

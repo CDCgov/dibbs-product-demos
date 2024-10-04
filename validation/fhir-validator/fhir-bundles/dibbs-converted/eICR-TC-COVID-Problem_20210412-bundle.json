@@ -1,0 +1,945 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:e91bc1e8-2523-4047-a663-1e3e07812948",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "e91bc1e8-2523-4047-a663-1e3e07812948",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition"
+          ],
+          "source": "ecr"
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "code": "55751-2",
+                  "display": "Public Health Case Report",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "value": "8d86218e-0fea-11eb-8216-a80388425cfb"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+            "valueString": "1"
+          }
+        ],
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "55751-2",
+              "display": "Public Health Case Report",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "date": "2020-05-05T15:00:45-04:00",
+        "title": "Initial Public Health Case Report",
+        "confidentiality": "N",
+        "section": [
+          {
+            "id": "cef8ef32-bc59-64a8-af9b-cc16a3db8050",
+            "title": "Encounters",
+            "text": {
+              "status": "generated",
+              "div": "<table><thead><tr><th>Encounter</th><th>Date(s)</th><th>Location</th></tr></thead><tbody><tr><!-- data-id: id_dd5cda14-6b1b-4666-b928-b4995ac7dcd6_ref --><td>Office outpatient visit 15 minutes</td><td>05/13/2020</td><td>Utah Outpatient Clinic</td></tr><tr><td><ul><li><table><thead><tr></tr></thead><tbody><tr></tr></tbody></table></li></ul></td></tr></tbody></table>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "46240-8",
+                  "display": "History of encounters",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "91143926-6339-f00d-f7f5-34cdf920ae5e",
+            "title": "History of Present Illness",
+            "text": {
+              "status": "generated",
+              "div": "<paragraph>Since May 10, 2020 the patient has had difficulty breathing and a fever;</paragraph>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "10164-2",
+                  "display": "History of Present Illness",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "e9466741-8c4f-69b6-1161-784fead85325",
+            "title": "Medications Administered",
+            "text": {
+              "status": "generated",
+              "div": "No medications administered"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "29549-3",
+                  "display": "Medications Administered",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "12b22dc9-94f6-274f-808f-2acc3a1e9154",
+            "title": "Problem List",
+            "text": {
+              "status": "generated",
+              "div": "<table><thead><tr><th>Concern</th><th>Concern Status</th><th>Date(s)</th></tr></thead><tbody><tr><!-- data-id: id_a1c0c380-eacc-4b40-9207-85164185558d_ref --><td>Problem</td><td>active</td><td>05/13/2020</td></tr><tr><td><ul><li><paragraph>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)</paragraph><table><thead><tr><th>Problem Type</th><th>Problem</th><th>Date(s)</th><th>Code</th><th>Code System</th><th>RCTC OID ***</th><th>RCTC Version ***</th></tr></thead><tbody><tr><td>symptom</td><td>Difficulty Breathing )finding)</td><td>05/13/2020</td><td>230145002</td><td>SNOMED-CT</td><td></td><td></td></tr><tr><td>symptom</td><td>Coronavirus infection (disorder)</td><td>05/13/2020</td><td>186747009</td><td>SNOMED-CT</td><td>2.16.840.1.114222.4.11.7508</td><td>20200429</td></tr></tbody></table></li></ul></td></tr></tbody></table>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "11450-4",
+                  "display": "Problem List",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "display": "Problem - Difficulty Breathing )finding)",
+                "reference": "Condition/3a6c0965-551e-e329-b2ba-b221bf127672"
+              },
+              {
+                "display": "Problem - Coronavirus infection (disorder)",
+                "reference": "Condition/a6b26af7-ef03-8f9a-0c69-9657da95fd82"
+              }
+            ]
+          },
+          {
+            "id": "f13e3e53-627e-9e0a-18bd-8e95170332b5",
+            "title": "Reason for visit",
+            "text": {
+              "status": "generated",
+              "div": "<paragraph>Patient believes they have Covid-19</paragraph>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "29299-5",
+                  "display": "Reason for visit",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/cda/ccda/StructureDefinition/2.16.840.1.113883.10.20.22.2.12",
+                "valueString": "Patient believes they have Covid-19 "
+              }
+            ]
+          },
+          {
+            "id": "d5809386-0f35-f083-eb38-f04ed57374ae",
+            "title": "Results",
+            "text": {
+              "status": "generated",
+              "div": "No Lab Results"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "30954-2",
+                  "display": "Relevant diagnostic tests and/or laboratory data",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "d67e0b86-3e21-f588-c8a3-330b503c9f39",
+            "title": "Plan of Treatment",
+            "text": {
+              "status": "generated",
+              "div": "Nothing to report in plan of care section"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "18776-5",
+                  "display": "Plan of Treatment",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "a49f69dd-79c3-731a-a976-5e21b7d3b7f1",
+            "title": "Social History",
+            "text": {
+              "status": "generated",
+              "div": "<table><thead><tr><th>Birth Sex</th><th>Value</th><th>Date</th></tr></thead><tbody><tr><td>Sex Assigned At Birth</td><td>Female</td><td>10/27/2002</td></tr></tbody></table><table><thead><tr><th>Social History Observation Type</th><th>Value</th><th>Dates(s)</th></tr></thead><tbody><tr><!-- data-id: id_7573f474-c57c-4d93-aad4-da33dc59b8e0_ref --><td>Occupation / Employment details</td><td></td><td></td></tr><tr><td>Pregnancy Status</td><td>No</td><td></td></tr></tbody></table>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "code": "29762-2",
+                  "display": "Social History",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "mode": "snapshot"
+          },
+          {
+            "id": "3f893a4f-ebcb-0001-6823-08efec6d931e",
+            "title": "Reportability Response Information Section",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reportability Response Information Section</div>"
+            },
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition",
+                "valueIdentifier": {
+                  "use": "official",
+                  "type": {
+                    "coding": [
+                      {
+                        "code": "88085-6",
+                        "display": "Reportability response report Document Public health",
+                        "system": "http://loinc.org"
+                      }
+                    ]
+                  },
+                  "value": "7f8d597f-18fc-4865-a97c-5e1977594f79"
+                }
+              },
+              {
+                "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-extension",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "RRVS19",
+                      "display": "eICR processed",
+                      "system": "urn:oid:2.16.840.1.114222.4.5.274"
+                    }
+                  ]
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "88085-6",
+                  "display": "Reportability response report Document Public health",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "display": "Relevant Reportable Condition Observation - Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+                "reference": "Observation/d1845880-2deb-4fc3-9c10-67af40bf7255"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/088cd061-c27a-46ac-8293-fced3c5bb9c6"
+        },
+        "encounter": {
+          "reference": "Encounter/0d104bf1-1bf7-43cf-7149-9a24086400ef"
+        },
+        "custodian": {
+          "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+        },
+        "author": [
+          {
+            "reference": "Device/7711b540-cedc-48f3-dad2-25f180997598"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/e91bc1e8-2523-4047-a663-1e3e07812948"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0d104bf1-1bf7-43cf-7149-9a24086400ef",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "0d104bf1-1bf7-43cf-7149-9a24086400ef",
+        "status": "unknown",
+        "class": {
+          "code": "AMB",
+          "display": "Ambulatory",
+          "system": "urn:oid:2.16.840.1.113883.5.4"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.19",
+            "value": "9937012"
+          }
+        ],
+        "period": {
+          "start": "2020-05-13",
+          "end": "2020-05-13"
+        },
+        "subject": {
+          "reference": "Patient/088cd061-c27a-46ac-8293-fced3c5bb9c6"
+        },
+        "location": [
+          {
+            "id": "2.16.840.1.113883.4.6",
+            "location": {
+              "reference": "Location/5720f527-1c32-5fb6-0a41-8d7ecdaa04d1",
+              "display": "Utah Outpatient                                          Clinic"
+            },
+            "extension": [
+              {
+                "url": "http://build.fhir.org/ig/HL7/case-reporting/StructureDefinition-us-ph-location-definitions.html#Location.type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "OF",
+                      "display": "Outpatient Facility",
+                      "system": "urn:oid:2.16.840.1.113883.5.111"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/f8428613-c364-510c-d266-107a5ca7c91e"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code": "ATND"
+                  }
+                ]
+              }
+            ],
+            "individual": {
+              "reference": "PractitionerRole/5067a56c-1503-4ec2-81d1-0d8c20a24bce"
+            }
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/0d104bf1-1bf7-43cf-7149-9a24086400ef"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5720f527-1c32-5fb6-0a41-8d7ecdaa04d1",
+      "resource": {
+        "resourceType": "Location",
+        "id": "5720f527-1c32-5fb6-0a41-8d7ecdaa04d1",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "8434"
+          }
+        ],
+        "name": "Utah Outpatient                                          Clinic",
+        "address": {
+          "use": "work",
+          "line": ["0987 Facility Drive"],
+          "city": "Salt Lake City",
+          "state": "UT",
+          "postalCode": "84101"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "888-000-9999",
+            "use": "work"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "OF",
+                "display": "Outpatient Facility",
+                "system": "urn:oid:2.16.840.1.113883.5.111"
+              }
+            ]
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/5720f527-1c32-5fb6-0a41-8d7ecdaa04d1"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f8428613-c364-510c-d266-107a5ca7c91e",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "f8428613-c364-510c-d266-107a5ca7c91e",
+        "name": "Utah Outpatient                                          Clinic",
+        "address": [
+          {
+            "use": "work",
+            "line": ["0987 Facility Drive"],
+            "city": "Salt Lake City",
+            "state": "UT",
+            "postalCode": "84101"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "888-000-9999",
+            "use": "work"
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/f8428613-c364-510c-d266-107a5ca7c91e"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4581f291-448a-04ad-0508-e348f799a4b0",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "4581f291-448a-04ad-0508-e348f799a4b0",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ],
+          "source": "ecr"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/_datatype",
+            "valueString": "Responsible Party"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "66666666666"
+          }
+        ],
+        "name": [
+          {
+            "family": "Seven",
+            "given": ["Henry"],
+            "suffix": ["MD"]
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "line": ["1234 Provider Street"],
+            "city": "Salt Lake City",
+            "state": "UT",
+            "country": "US",
+            "postalCode": "84101",
+            "district": "Salt Lake County"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "555-777-0123",
+            "use": "work"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "5067a56c-1503-4ec2-81d1-0d8c20a24bce",
+        "practitioner": {
+          "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+        },
+        "organization": {
+          "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+        },
+        "meta": {
+          "source": "ecr"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "TBDFacility#"
+          }
+        ],
+        "name": "Utah Outpatient Clinic",
+        "address": [
+          {
+            "use": "work",
+            "line": ["0987 Facility Drive"],
+            "city": "Salt Lake City",
+            "state": "UT",
+            "postalCode": "84101"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "888-000-9999",
+            "use": "work"
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:50f3c505-0e03-09e3-1ce9-772f460361c2",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "50f3c505-0e03-09e3-1ce9-772f460361c2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization"
+          ],
+          "source": "ecr"
+        },
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.114222.4.5.232",
+                "code": "RR7",
+                "display": "Routing Entity"
+              }
+            ]
+          }
+        ],
+        "name": "Utah Department of Health"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/50f3c505-0e03-09e3-1ce9-772f460361c2"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d1845880-2deb-4fc3-9c10-67af40bf7255",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d1845880-2deb-4fc3-9c10-67af40bf7255",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"
+          ],
+          "source": "ecr"
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:d1845880-2deb-4fc3-9c10-67af40bf7255"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "64572001",
+              "display": "Condition",
+              "system": "http://snomed.info/sct"
+            },
+            {
+              "code": "75323-6",
+              "display": "Condition",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "840539006",
+              "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
+            "valueString": "At least one of the following                                                  clinical findings: cough, shortness of breath,                                                  difficulty breathing, new olfactory disorder, or                                                  new taste disorder "
+          },
+          {
+            "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
+            "valueString": "COVID-19 (as a diagnosis or                                                  active problem)"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-determination-of-reportability-rule-extension",
+            "valueString": "Difficulty breathing"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Organization/50f3c505-0e03-09e3-1ce9-772f460361c2",
+            "display": "Utah Department of Health"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/d1845880-2deb-4fc3-9c10-67af40bf7255"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7711b540-cedc-48f3-dad2-25f180997598",
+      "resource": {
+        "resourceType": "Device",
+        "id": "7711b540-cedc-48f3-dad2-25f180997598",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:2.16.840.1.113883.3.72.5.20"
+          }
+        ],
+        "property": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/device-category",
+                  "code": "software",
+                  "display": "software"
+                }
+              ]
+            }
+          }
+        ],
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Device/7711b540-cedc-48f3-dad2-25f180997598"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:088cd061-c27a-46ac-8293-fced3c5bb9c6",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "088cd061-c27a-46ac-8293-fced3c5bb9c6",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+          ],
+          "source": "ecr"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.19.5",
+            "value": "PT-470123"
+          },
+          {
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "555-55-5555"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Karri",
+            "given": ["Kid"]
+          }
+        ],
+        "birthDate": "2002-10-27",
+        "deceasedBoolean": false,
+        "gender": "female",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2028-9",
+                  "display": "Asian"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Asian"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2186-5",
+                  "display": "Not Hispanic or Latino"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Not Hispanic or Latino"
+              }
+            ]
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "line": ["2222 Home Street"],
+            "city": "Salt Lake City",
+            "state": "UT",
+            "country": "US",
+            "postalCode": "84101",
+            "district": "Salt Lake County"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "555-555-2005",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "kkkidd@email.com",
+            "use": "home"
+          }
+        ],
+        "contact": [
+          {
+            "name": [
+              {
+                "use": "official",
+                "family": "Contact",
+                "given": ["Emer"],
+                "prefix": ["Mr"]
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "+1-555-555-4567",
+                "use": "mobile"
+              }
+            ]
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "en",
+                  "display": "English"
+                }
+              ]
+            },
+            "preferred": true
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/088cd061-c27a-46ac-8293-fced3c5bb9c6"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:",
+      "resource": {
+        "resourceType": "CareTeam",
+        "subject": {
+          "reference": "Patient/088cd061-c27a-46ac-8293-fced3c5bb9c6"
+        },
+        "meta": {
+          "source": "ecr"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:",
+      "resource": {
+        "resourceType": "CarePlan",
+        "status": "unknown",
+        "intent": "proposal",
+        "subject": {
+          "reference": "Patient/088cd061-c27a-46ac-8293-fced3c5bb9c6"
+        },
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2ac71acf-4bee-fc23-e1a9-e98f9a5f873a",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "2ac71acf-4bee-fc23-e1a9-e98f9a5f873a",
+        "name": [
+          {
+            "use": "official",
+            "family": "Mum",
+            "given": ["Martha"]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "mmmum@email.com",
+            "use": "home"
+          },
+          {
+            "system": "phone",
+            "value": "555-555-2005",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "line": ["2222 Home Street"],
+            "city": "Salt Lake City",
+            "state": "UT",
+            "country": "US",
+            "postalCode": "84101",
+            "district": "Salt Lake County"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/088cd061-c27a-46ac-8293-fced3c5bb9c6"
+        },
+        "meta": {
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RelatedPerson/2ac71acf-4bee-fc23-e1a9-e98f9a5f873a"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:706fc39d-4dd3-8e99-d2db-6d7fc497a9c8",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "706fc39d-4dd3-8e99-d2db-6d7fc497a9c8",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "source": "ecr"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "76689-9",
+              "display": "Sex Assigned At Birth",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "effectiveDateTime": "2002-10-27",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "F",
+              "display": "Female",
+              "system": "urn:oid:2.16.840.1.113883.5.1"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/088cd061-c27a-46ac-8293-fced3c5bb9c6"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/706fc39d-4dd3-8e99-d2db-6d7fc497a9c8"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:",
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "source": "ecr"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/"
+      }
+    }
+  ]
+}

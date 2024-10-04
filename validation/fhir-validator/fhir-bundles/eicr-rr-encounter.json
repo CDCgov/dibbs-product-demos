@@ -1,0 +1,32 @@
+{
+  "resourceType": "Encounter",
+  "id": "encounter-eicr-saga-anderson-001",
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB",
+    "display": "Ambulatory"
+  },
+  "subject": {
+    "reference": "Patient/patient-saga-anderson-001"
+  },
+  "period": {
+    "start": "2021-08-02T09:00:00Z",
+    "end": "2021-08-02T10:30:00Z"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "11429006",
+          "display": "Consultation"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for Encounter</div>"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-eicr-status-001",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-observation"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>eICR was processed</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.114222.4.5.274",
+        "code": "RRVS17",
+        "display": "eICR was processed"
+      }
+    ]
+  }
+}

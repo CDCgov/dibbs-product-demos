@@ -1,0 +1,53 @@
+{
+  "resourceType": "Condition",
+  "id": "condition-covid19-001",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "840539006",
+        "display": "COVID-19"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-saga-anderson-001"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-eicr-saga-anderson-001"
+  },
+  "onsetDateTime": "2021-08-02T09:15:00Z",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for Condition</div>"
+  }
+}

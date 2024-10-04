@@ -1,0 +1,186 @@
+{
+  "resourceType": "Composition",
+  "id": "composition-eicr-covid19-001",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition"
+    ]
+  },
+  "identifier": {
+    "system": "http://hospital-system.org/compositions",
+    "value": "eicr-covid19-identifier-001"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "55751-2",
+        "display": "Public health Case report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-saga-anderson-001"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-eicr-saga-anderson-001"
+  },
+  "date": "2021-08-03T12:45:00Z",
+  "author": [
+    {
+      "reference": "Practitioner/practitioner-emma-nelson-001"
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/organization-nelson-family-practice-001"
+  },
+  "title": "COVID-19 Public Health Case Report",
+  "section": [
+    {
+      "title": "Reason for Visit",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "51852-2",
+            "display": "Letter"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Encounter/encounter-eicr-saga-anderson-001"
+        }
+      ]
+    },
+    {
+      "title": "Chief Complaint",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "10154-3",
+            "display": "Chief complaint Narrative - Reported"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Encounter/encounter-eicr-saga-anderson-001"
+        }
+      ],
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Chief Complaint: COVID-19 related symptoms reported by the patient.</div>"
+      }
+    },
+    {
+      "title": "Condition",
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "840539006",
+            "display": "COVID-19"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Encounter/encounter-eicr-saga-anderson-001"
+        }
+      ]
+    },
+    {
+      "title": "Results",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11502-2",
+            "display": "Laboratory report"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Encounter/encounter-eicr-saga-anderson-001"
+        }
+      ]
+    },
+    {
+      "title": "History of Present Illness",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11348-0",
+            "display": "History of Past illness Narrative"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient reports 5-day history of fever, cough, and difficulty breathing, consistent with COVID-19.</div>"
+      }
+    },
+    {
+      "title": "Problem Section",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11450-4",
+            "display": "Problem list - Reported"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Encounter/encounter-eicr-saga-anderson-001"
+        }
+      ],
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Primary Problem: COVID-19 infection.</div>"
+      }
+    },
+    {
+      "title": "Medications Administered",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29549-3",
+            "display": "Medication administered Narrative"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Administered medications include acetaminophen for fever management.</div>"
+      }
+    },
+    {
+      "title": "Social History",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social history Narrative"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient reports no recent travel, but has been in contact with confirmed COVID-19 cases.</div>"
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">COVID-19 Public Health Case Report</div>"
+  }
+}
