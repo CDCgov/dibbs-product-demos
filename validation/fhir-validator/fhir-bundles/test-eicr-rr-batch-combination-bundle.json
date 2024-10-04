@@ -1,0 +1,336 @@
+{
+  "resourceType": "Bundle",
+  "id": "5bf22a44-001f-46e4-9f6f-4a2c89708bd9",
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:123e4567-e89b-12d3-a456-426614174000",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-saga-anderson",
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "value": "MRN123456",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR",
+                  "display": "Medical Record Number"
+                }
+              ]
+            }
+          },
+          {
+            "use": "official",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "value": "SSN987-65-4320",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "SS",
+                  "display": "Social Security Number"
+                }
+              ]
+            }
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Ms. Saga Anderson",
+            "family": "Anderson",
+            "given": ["Saga"],
+            "prefix": ["Ms."]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "206-555-0123",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1987-11-11",
+        "address": [
+          {
+            "use": "home",
+            "type": "both",
+            "text": "6 Watery Lighthouse Trailer Park Way, Unit #2, Watery, WA, 98440",
+            "line": ["6 Watery Lighthouse Trailer Park Way", "Unit #2"],
+            "city": "Watery",
+            "state": "WA",
+            "postalCode": "98440",
+            "country": "United States"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for Patient</div>"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/patient-saga-anderson"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:234e4567-e89b-12d3-a456-426614174001",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "practitioner-emma-nelson",
+        "name": [
+          {
+            "family": "Nelson",
+            "given": ["Emma"],
+            "prefix": ["Dr."]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for Practitioner</div>"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/practitioner-emma-nelson"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:345e4567-e89b-12d3-a456-426614174002",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "organization-nelson-family-practice",
+        "name": "Nelson Family Practice",
+        "address": [
+          {
+            "line": ["123 Harbor St"],
+            "city": "Bright Falls",
+            "state": "WA",
+            "postalCode": "98440",
+            "country": "United States"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "206-555-0199",
+            "use": "work"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for Organization</div>"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/organization-nelson-family-practice"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:456e4567-e89b-12d3-a456-426614174003",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "composition-eicr-covid",
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55751-2",
+              "display": "Public health Case report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-saga-anderson"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-eicr-saga-anderson"
+        },
+        "date": "2021-08-02T22:13:23Z",
+        "author": [
+          {
+            "reference": "Practitioner/practitioner-emma-nelson"
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/organization-nelson-family-practice"
+        },
+        "title": "Public Health Case Report for COVID-19",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-initiation-type-extension",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.10.20.15.2.5.11",
+                  "code": "PHC2235",
+                  "display": "Alternately Initiated eICR"
+                }
+              ]
+            }
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for Composition</div>"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/composition-eicr-covid"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:567e4567-e89b-12d3-a456-426614174010",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "composition-rr-covid-response",
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55182-0",
+              "display": "Quality Reporting Document Architecture incidence report Document"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-saga-anderson"
+        },
+        "date": "2021-08-03T12:00:00Z",
+        "author": [
+          {
+            "reference": "Organization/organization-nelson-family-practice"
+          }
+        ],
+        "title": "COVID-19 Reportability Response",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for RR Composition</div>"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/composition-rr-covid-response"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:678e4567-e89b-12d3-a456-426614174020",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "rr-processing-status",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "82593-5",
+              "display": "Immunization summary report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-saga-anderson"
+        },
+        "effectiveDateTime": "2021-08-03T12:30:00Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "394849002",
+              "display": "High priority"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Organization/organization-nelson-family-practice"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for RR Observation</div>"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/rr-processing-status"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:789e4567-e89b-12d3-a456-426614174030",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "rr-condition-status",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85668-2",
+              "display": "Deprecated Long-Term Care Hospital (LTCH) Continuity Assessment Record and Evaluation (CARE) Data Set (LCDS) - Unplanned Discharge - version 3.00 [CMS Assessment]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-saga-anderson"
+        },
+        "effectiveDateTime": "2021-08-03T12:45:00Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "840539006",
+              "display": "COVID-19"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Organization/organization-nelson-family-practice"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for Reportable Condition Observation</div>"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/rr-condition-status"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:789e4567-e89b-12d3-a456-426614174006",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-eicr-saga-anderson",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "Ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/patient-saga-anderson"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated Narrative for Encounter</div>"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/encounter-eicr-saga-anderson"
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="PHDC.xsl"?>
+<ClinicalDocument
+  xmlns="urn:hl7-org:v3"
+  xmlns:sdt="urn:hl7-org:sdtc"
+  xmlns:sdtcxmlnamespaceholder="urn:hl7-org:v3"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:hl7-org:v3 CDA_SDTC.xsd">
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000020" />
+  <id root="2.16.840.1.113883.19" extension="17a02ad6-90cf-427b-8f50-1a4e95322178" />
+  <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+    displayName="Public Health Case Report - PHRI" />
+  <title>Public Health Case Report - Data from the DIBBs FHIR to PHDC Converter</title>
+  <effectiveTime value="20240214174633" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+  <setId extension="CLOSED_CASE" displayable="true" />
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+      <id extension="8a68b5e4-0196-44d5-a194-fe38f89a268a" root="2.16.840.1.113883.4.1"
+        assigningAuthorityName="LR" />
+      <addr use="H">
+        <streetAddressLine>6 Watery Lighthouse Trailer Park Way</streetAddressLine>
+        <streetAddressLine>Unit #2</streetAddressLine>
+        <city>Watery</city>
+        <state>WA</state>
+        <postalCode>98440</postalCode>
+        <country>United States</country>
+      </addr>
+      <patient>
+        <name use="L">
+          <prefix>Ms.</prefix>
+          <given>Saga</given>
+          <family>Anderson</family>
+        </name>
+        <administrativeGenderCode displayName="female" />
+        <birthTime value="19871111" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20240214174633" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.19.5" />
+      <assignedPerson>
+        <name>
+          <family>CDC PRIME DIBBs</family>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id extension="b389dc4d-4723-490e-b1f7-467776cacddb" />
+        <name>Nelson Family Practice</name>
+        <telecom value="206-555-0199" />
+        <addr>
+          <streetAddressLine>123 Harbor St</streetAddressLine>
+          <city>Bright Falls</city>
+          <state>WA</state>
+          <postalCode>98440</postalCode>
+          <country>United States</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <id extension="164ba26e-3f73-455e-96b5-09432aeb1327" assigningAuthorityName="LR" />
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="Social history" />
+          <title>SOCIAL HISTORY INFORMATION</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <id extension="d2795455-e0a6-4a5f-aad6-3d554004bf1c" assigningAuthorityName="LR" />
+          <code code="55752-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="Clinical Information" />
+          <title>Clinical Information</title>
+          <entry typeCode="COMP">
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="22322-2" codeSystem="LOINC"
+                displayName="Hepatitis A virus IgM antibody [Presence] in Serum by Immunoassay" />
+              <value />
+            </observation>
+          </entry>
+          <entry typeCode="COMP">
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="22320-6" codeSystem="LOINC"
+                displayName="Hepatitis A virus IgG Ab [Presence] in Serum by Immunoassay" />
+              <value />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="1234567-RPT" codeSystem="Local-codesystem-oid" codeSystemName="LocalSystem"
+            displayName="Generic Repeating Questions Section" />
+          <title>REPEATING QUESTIONS</title>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

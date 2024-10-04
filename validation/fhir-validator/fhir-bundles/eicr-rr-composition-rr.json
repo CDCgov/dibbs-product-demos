@@ -1,0 +1,125 @@
+{
+  "resourceType": "Composition",
+  "id": "composition-rr-covid19-001",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2024-09-26T00:00:00.000Z",
+    "profile": ["http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition"]
+  },
+  "identifier": {
+    "system": "http://acme.org/identifiers",
+    "value": "RR12347"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "88085-6",
+        "display": "Reportability response report Document Public health"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-saga-anderson-001"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-eicr-saga-anderson-001"
+  },
+  "date": "2024-09-26T12:30:00Z",
+  "author": [
+    {
+      "reference": "Organization/organization-nelson-family-practice-001"
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/organization-nelson-family-practice-001"
+  },
+  "title": "COVID-19 Reportability Response",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+      "valueString": "1"
+    },
+    {
+      "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-information-recipient-extension",
+      "valueReference": {
+        "reference": "Practitioner/practitioner-emma-nelson-001"
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This is the narrative content for the reportability response</div>"
+  },
+  "section": [
+    {
+      "title": "Reportability Response Subject Section",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "88084-9",
+            "display": "Reportable condition response information and summary Document"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Public Health Reporting: COVID-19 is reportable.</div>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/observation-rr-covid19-001"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-extension",
+          "extension": [
+            {
+              "url": "eICRProcessingStatus",
+              "valueReference": {
+                "reference": "Observation/observation-eicr-status-001",
+                "display": "Processed"
+              }
+            }
+          ]
+        },
+        {
+          "url": "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-priority-extension",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.114222.4.5.274",
+                "code": "RRVS17",
+                "display": "Immediate action required"
+              }
+            ]
+          }
+        }
+      ],
+      "title": "COVID-19 Reportability Response Summary Section",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "55112-7",
+            "display": "Document summary"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">COVID-19 is reportable to public health. Immediate action is required.</div>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/observation-rr-covid19-001"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<ELR>
+  <Patient>
+    <PatientID>123456</PatientID>
+    <FirstName>John</FirstName>
+    <LastName>Doe</LastName>
+    <DateOfBirth>1980-01-01</DateOfBirth>
+    <Gender>M</Gender>
+    <Address>
+      <Street>123 Main St</Street>
+      <City>Anytown</City>
+      <State>CA</State>
+      <ZipCode>12345</ZipCode>
+    </Address>
+  </Patient>
+  <Provider>
+    <ProviderID>78910</ProviderID>
+    <Name>Dr. Jane Smith</Name>
+    <Facility>Anytown Medical Lab</Facility>
+    <Address>
+      <Street>456 First Ave</Street>
+      <City>Anytown</City>
+      <State>CA</State>
+      <ZipCode>67890</ZipCode>
+    </Address>
+  </Provider>
+  <LabOrder>
+    <OrderID>101112</OrderID>
+    <DateOrdered>2024-01-31</DateOrdered>
+    <Tests>
+      <Test>
+        <TestCode>XYZ123</TestCode>
+        <TestName>Complete Blood Count</TestName>
+        <Result>Normal</Result>
+      </Test>
+      <Test>
+        <TestCode>ABC456</TestCode>
+        <TestName>Lipid Panel</TestName>
+        <Result>High Cholesterol</Result>
+      </Test>
+    </Tests>
+  </LabOrder>
+</ELR>
