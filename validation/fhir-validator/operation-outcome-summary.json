@@ -1,0 +1,53 @@
+{
+    "severity_counts": {
+        "error": 8,
+        "warning": 45
+    },
+    "issue_code_counts": {
+        "structure": 11,
+        "code-invalid": 4,
+        "invalid": 6,
+        "not-found": 3,
+        "required": 28,
+        "invariant": 1
+    },
+    "error_details": {
+        "structure": [
+            "Slice 'Composition.extension:sliceExtensionVersionNumber': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Composition.section:sliceHistoryOfPresentIllnessSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Composition.section:sliceReasonForVisitSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Composition.section:sliceResultsSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Composition.section:sliceProblemSection.entry:sliceEICRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Composition.section:sliceEICRSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRSummary': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-organization' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])",
+            "Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-observation' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])",
+            "Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/rr-observation' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])"
+        ],
+        "code-invalid": [
+            "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)",
+            "Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.8|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found",
+            "Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found"
+        ],
+        "invalid": [
+            "Best Practice Recommendation: In general, all observations should have a performer",
+            "Best Practice Recommendation: In general, all observations should have a subject",
+            "Best Practice Recommendation: In general, all observations should have an effective[x] ()"
+        ],
+        "not-found": [
+            "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated"
+        ],
+        "required": [
+            "Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules",
+            "Entry 1 matches the reference Practitioner/practitioner-emma-nelson-001 by type and id but it's fullUrl urn:uuid:d4a6b124-0aea-4b5d-9453-ba70f7770d26 does not match the full target URL urn:uuid:practitioner-emma-nelson-001 by Bundle resolution rules",
+            "Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules",
+            "Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules",
+            "Entry 6 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules",
+            "Entry 8 matches the reference Observation/observation-eicr-status-001 by type and id but it's fullUrl urn:uuid:bdeb53b2-b19a-4d3d-a110-35115fd8a486 does not match the full target URL urn:uuid:observation-eicr-status-001 by Bundle resolution rules"
+        ],
+        "invariant": [
+            "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        ]
+    }
+}
