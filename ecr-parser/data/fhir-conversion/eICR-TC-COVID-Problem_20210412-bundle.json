@@ -16,19 +16,21 @@
               ],
               "source": "ecr"
             },
-            "identifier": {
-              "use": "official",
-              "type": {
-                "coding": [
-                  {
-                    "code": "55751-2",
-                    "display": "Public Health Case Report",
-                    "system": "http://loinc.org"
-                  }
-                ]
-              },
-              "value": "8d86218e-0fea-11eb-8216-a80388425cfb"
-            },
+            "identifier": [
+              {
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "55751-2",
+                      "display": "Public Health Case Report",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "value": "8d86218e-0fea-11eb-8216-a80388425cfb"
+              }
+            ],
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
@@ -54,7 +56,7 @@
                 "title": "Encounters",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_dd5cda14-6b1b-4666-b928-b4995ac7dcd6_ref --><td>Office outpatient visit 15 minutes<\/td><td>05/13/2020<\/td><td>Utah Outpatient Clinic<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_dd5cda14-6b1b-4666-b928-b4995ac7dcd6_ref --><td>Office outpatient visit 15 minutes<\/td><td>05/13/2020<\/td><td>Utah Outpatient Clinic<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -72,7 +74,7 @@
                 "title": "History of Present Illness",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Since May 10, 2020 the patient has had difficulty breathing and a fever;<\/p><\/div>"
+                  "div": "<paragraph>Since May 10, 2020 the patient has had difficulty breathing and a fever;<\/paragraph>"
                 },
                 "code": {
                   "coding": [
@@ -90,7 +92,7 @@
                 "title": "Medications Administered",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No medications administered<\/div>"
+                  "div": "No medications administered"
                 },
                 "code": {
                   "coding": [
@@ -108,7 +110,7 @@
                 "title": "Problem List",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Concern<\/th><th>Concern Status<\/th><th>Date(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_a1c0c380-eacc-4b40-9207-85164185558d_ref --><td>Problem<\/td><td>active<\/td><td>05/13/2020<\/td><\/tr><tr><td><ul><li><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Problem Type<\/th><th>Problem<\/th><th>Date(s)<\/th><th>Code<\/th><th>Code System<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><\/tr><\/thead><tbody><tr><td>symptom<\/td><td>Difficulty Breathing )finding)<\/td><td>05/13/2020<\/td><td>230145002<\/td><td>SNOMED-CT<\/td><td><\/td><td><\/td><\/tr><tr><td>symptom<\/td><td>Coronavirus infection (disorder)<\/td><td>05/13/2020<\/td><td>186747009<\/td><td>SNOMED-CT<\/td><td>2.16.840.1.114222.4.11.7508<\/td><td>20200429<\/td><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Concern<\/th><th>Concern Status<\/th><th>Date(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_a1c0c380-eacc-4b40-9207-85164185558d_ref --><td>Problem<\/td><td>active<\/td><td>05/13/2020<\/td><\/tr><tr><td><ul><li><paragraph>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/paragraph><table><thead><tr><th>Problem Type<\/th><th>Problem<\/th><th>Date(s)<\/th><th>Code<\/th><th>Code System<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><\/tr><\/thead><tbody><tr><td>symptom<\/td><td>Difficulty Breathing )finding)<\/td><td>05/13/2020<\/td><td>230145002<\/td><td>SNOMED-CT<\/td><td><\/td><td><\/td><\/tr><tr><td>symptom<\/td><td>Coronavirus infection (disorder)<\/td><td>05/13/2020<\/td><td>186747009<\/td><td>SNOMED-CT<\/td><td>2.16.840.1.114222.4.11.7508<\/td><td>20200429<\/td><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -136,7 +138,7 @@
                 "title": "Reason for visit",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient believes they have Covid-19<\/p><\/div>"
+                  "div": "<paragraph>Patient believes they have Covid-19<\/paragraph>"
                 },
                 "code": {
                   "coding": [
@@ -147,14 +149,20 @@
                     }
                   ]
                 },
-                "mode": "snapshot"
+                "mode": "snapshot",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/cda/ccda/StructureDefinition/2.16.840.1.113883.10.20.22.2.12",
+                    "valueString": "Patient believes they have Covid-19 "
+                  }
+                ]
               },
               {
                 "id": "d5809386-0f35-f083-eb38-f04ed57374ae",
                 "title": "Results",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No Lab Results<\/div>"
+                  "div": "No Lab Results"
                 },
                 "code": {
                   "coding": [
@@ -172,7 +180,7 @@
                 "title": "Plan of Treatment",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nothing to report in plan of care section<\/div>"
+                  "div": "Nothing to report in plan of care section"
                 },
                 "code": {
                   "coding": [
@@ -190,7 +198,7 @@
                 "title": "Social History",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Female<\/td><td>10/27/2002<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_7573f474-c57c-4d93-aad4-da33dc59b8e0_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><tr><td>Pregnancy Status<\/td><td>No<\/td><td><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Female<\/td><td>10/27/2002<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_7573f474-c57c-4d93-aad4-da33dc59b8e0_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><tr><td>Pregnancy Status<\/td><td>No<\/td><td><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -258,7 +266,7 @@
               }
             ],
             "subject": {
-              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
+              "reference": "Patient/851efaa8-71b7-4335-a19f-6402b9440a58"
             },
             "encounter": {
               "reference": "Encounter/0d104bf1-1bf7-43cf-7149-9a24086400ef"
@@ -299,7 +307,7 @@
               "end": "2020-05-13"
             },
             "subject": {
-              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
+              "reference": "Patient/851efaa8-71b7-4335-a19f-6402b9440a58"
             },
             "location": [
               {
@@ -324,6 +332,9 @@
                 ]
               }
             ],
+            "serviceProvider": {
+              "reference": "Organization/f8428613-c364-510c-d266-107a5ca7c91e"
+            },
             "participant": [
               {
                 "type": [
@@ -337,7 +348,7 @@
                   }
                 ],
                 "individual": {
-                  "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+                  "reference": "PractitionerRole/5067a56c-1503-4ec2-81d1-0d8c20a24bce"
                 }
               }
             ],
@@ -399,6 +410,39 @@
           }
         },
         {
+          "fullUrl": "urn:uuid:f8428613-c364-510c-d266-107a5ca7c91e",
+          "resource": {
+            "resourceType": "Organization",
+            "id": "f8428613-c364-510c-d266-107a5ca7c91e",
+            "name": "Utah Outpatient                                          Clinic",
+            "address": [
+              {
+                "use": "work",
+                "line": [
+                  "0987 Facility Drive"
+                ],
+                "city": "Salt Lake City",
+                "state": "UT",
+                "postalCode": "84101"
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "888-000-9999",
+                "use": "work"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Organization/f8428613-c364-510c-d266-107a5ca7c91e"
+          }
+        },
+        {
           "fullUrl": "urn:uuid:4581f291-448a-04ad-0508-e348f799a4b0",
           "resource": {
             "resourceType": "Practitioner",
@@ -423,8 +467,13 @@
             ],
             "name": [
               {
-                "use": "usual",
-                "text": "Utah Outpatient                                          Clinic"
+                "family": "Seven",
+                "given": [
+                  "Henry"
+                ],
+                "suffix": [
+                  "MD"
+                ]
               }
             ],
             "address": [
@@ -438,7 +487,49 @@
                 "country": "US",
                 "postalCode": "84101",
                 "district": "Salt Lake County"
-              },
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "555-777-0123",
+                "use": "work"
+              }
+            ]
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "PractitionerRole",
+            "id": "5067a56c-1503-4ec2-81d1-0d8c20a24bce",
+            "practitioner": {
+              "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+            },
+            "organization": {
+              "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+            },
+            "meta": {
+              "source": "ecr"
+            }
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+          "resource": {
+            "resourceType": "Organization",
+            "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+            "identifier": [
+              {
+                "system": "http://hl7.org/fhir/sid/us-npi",
+                "value": "TBDFacility#"
+              }
+            ],
+            "name": "Utah Outpatient Clinic",
+            "address": [
               {
                 "use": "work",
                 "line": [
@@ -448,11 +539,21 @@
                 "state": "UT",
                 "postalCode": "84101"
               }
-            ]
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "888-000-9999",
+                "use": "work"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
           },
           "request": {
             "method": "PUT",
-            "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+            "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
           }
         },
         {
@@ -553,45 +654,6 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
-          "resource": {
-            "resourceType": "Organization",
-            "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
-            "identifier": [
-              {
-                "system": "http://hl7.org/fhir/sid/us-npi",
-                "value": "TBDFacility#"
-              }
-            ],
-            "name": "Utah Outpatient Clinic",
-            "address": [
-              {
-                "use": "work",
-                "line": [
-                  "0987 Facility Drive"
-                ],
-                "city": "Salt Lake City",
-                "state": "UT",
-                "postalCode": "84101"
-              }
-            ],
-            "telecom": [
-              {
-                "system": "phone",
-                "value": "888-000-9999",
-                "use": "work"
-              }
-            ],
-            "meta": {
-              "source": "ecr"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
-          }
-        },
-        {
           "fullUrl": "urn:uuid:7711b540-cedc-48f3-dad2-25f180997598",
           "resource": {
             "resourceType": "Device",
@@ -602,15 +664,19 @@
                 "value": "urn:uuid:2.16.840.1.113883.3.72.5.20"
               }
             ],
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/device-category",
-                  "code": "software",
-                  "display": "software"
+            "property": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/device-category",
+                      "code": "software",
+                      "display": "software"
+                    }
+                  ]
                 }
-              ]
-            },
+              }
+            ],
             "meta": {
               "source": "ecr"
             }
@@ -621,10 +687,10 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:a6d4db1a-7390-4966-8a6b-7d2a9d425422",
+          "fullUrl": "urn:uuid:851efaa8-71b7-4335-a19f-6402b9440a58",
           "resource": {
             "resourceType": "Patient",
-            "id": "a6d4db1a-7390-4966-8a6b-7d2a9d425422",
+            "id": "851efaa8-71b7-4335-a19f-6402b9440a58",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -752,7 +818,7 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
+            "url": "Patient/851efaa8-71b7-4335-a19f-6402b9440a58"
           }
         },
         {
@@ -760,7 +826,7 @@
           "resource": {
             "resourceType": "CareTeam",
             "subject": {
-              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
+              "reference": "Patient/851efaa8-71b7-4335-a19f-6402b9440a58"
             },
             "meta": {
               "source": "ecr"
@@ -774,7 +840,7 @@
             "status": "unknown",
             "intent": "proposal",
             "subject": {
-              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
+              "reference": "Patient/851efaa8-71b7-4335-a19f-6402b9440a58"
             },
             "meta": {
               "source": "ecr"
@@ -825,7 +891,7 @@
               }
             ],
             "patient": {
-              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
+              "reference": "Patient/851efaa8-71b7-4335-a19f-6402b9440a58"
             },
             "meta": {
               "source": "ecr"
@@ -878,7 +944,7 @@
               ]
             },
             "subject": {
-              "reference": "Patient/a6d4db1a-7390-4966-8a6b-7d2a9d425422"
+              "reference": "Patient/851efaa8-71b7-4335-a19f-6402b9440a58"
             }
           },
           "request": {

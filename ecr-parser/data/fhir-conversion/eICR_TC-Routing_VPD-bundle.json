@@ -16,19 +16,21 @@
               ],
               "source": "ecr"
             },
-            "identifier": {
-              "use": "official",
-              "type": {
-                "coding": [
-                  {
-                    "code": "55751-2",
-                    "display": "Public Health Case Report",
-                    "system": "http://loinc.org"
-                  }
-                ]
-              },
-              "value": "55"
-            },
+            "identifier": [
+              {
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "55751-2",
+                      "display": "Public Health Case Report",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "value": "55"
+              }
+            ],
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
@@ -54,7 +56,7 @@
                 "title": "Encounters",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_67f15a64-ff4f-44c1-ba3a-3e1b6e277e8c_ref --><td>Office outpatient visit 15 minutes<\/td><td>02/10/2019<\/td><td>TBDFacilityName<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_67f15a64-ff4f-44c1-ba3a-3e1b6e277e8c_ref --><td>Office outpatient visit 15 minutes<\/td><td>02/10/2019<\/td><td>TBDFacilityName<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -72,7 +74,7 @@
                 "title": "History of Present Illness",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No history of present illness<\/div>"
+                  "div": "No history of present illness"
                 },
                 "code": {
                   "coding": [
@@ -90,7 +92,7 @@
                 "title": "Medications Administered",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No medications administered<\/div>"
+                  "div": "No medications administered"
                 },
                 "code": {
                   "coding": [
@@ -108,7 +110,7 @@
                 "title": "Problem List",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No problems reported<\/div>"
+                  "div": "No problems reported"
                 },
                 "code": {
                   "coding": [
@@ -125,8 +127,7 @@
                 "id": "3d1bb889-26bd-d3d9-b884-bf37c9f145f8",
                 "title": "Reason for visit",
                 "text": {
-                  "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><\/div>"
+                  "status": "generated"
                 },
                 "code": {
                   "coding": [
@@ -144,7 +145,7 @@
                 "title": "Results",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Results Panel<\/th><th>Date(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_1b725785-576d-4e91-96d4-abe44a5fa957_ref --><td>Bordetella pertussis [Presence] in Sputum by Organism specific culture<\/td><td><\/td><\/tr><tr><td><ul><li><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Test<\/th><th>Lab Test RCTC OID ***<\/th><th>Lab Test RCTC Version ***<\/th><th>Outcome<\/th><th>Date(s)<\/th><th>Lab Result RCTC OID ***<\/th><th>Lab Result RCTC Version ***<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_53aec782-8f2e-4634-b574-beead5bcaf97_ref --><td>Bordetella pertussis [Presence] in Sputum by Organism specific culture<\/td><td>2.16.840.1.114222.4.11.7508<\/td><td>20190617<\/td><td>Detected (qualifier value)<\/td><td><\/td><td><\/td><td><\/td><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Results Panel<\/th><th>Date(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_1b725785-576d-4e91-96d4-abe44a5fa957_ref --><td>Bordetella pertussis [Presence] in Sputum by Organism specific culture<\/td><td><\/td><\/tr><tr><td><ul><li><paragraph>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/paragraph><table><thead><tr><th>Test<\/th><th>Lab Test RCTC OID ***<\/th><th>Lab Test RCTC Version ***<\/th><th>Outcome<\/th><th>Date(s)<\/th><th>Lab Result RCTC OID ***<\/th><th>Lab Result RCTC Version ***<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_53aec782-8f2e-4634-b574-beead5bcaf97_ref --><td>Bordetella pertussis [Presence] in Sputum by Organism specific culture<\/td><td>2.16.840.1.114222.4.11.7508<\/td><td>20190617<\/td><td>Detected (qualifier value)<\/td><td><\/td><td><\/td><td><\/td><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -167,7 +168,7 @@
                 "title": "Plan of Treatment",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Lab Test Order<\/th><th>Code<\/th><th>CodeSystem<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><th>Ordered Date<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_0b8ea3a4-3e1e-4003-b807-6ce992180d39_ref --><td>Bordetella pertussis [Presence] in Sputum by Organism specific culture<\/td><td>43890-3<\/td><td>LOINC<\/td><td><\/td><td><\/td><td>02/10/2019<\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<paragraph>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/paragraph><table><thead><tr><th>Lab Test Order<\/th><th>Code<\/th><th>CodeSystem<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><th>Ordered Date<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_0b8ea3a4-3e1e-4003-b807-6ce992180d39_ref --><td>Bordetella pertussis [Presence] in Sputum by Organism specific culture<\/td><td>43890-3<\/td><td>LOINC<\/td><td><\/td><td><\/td><td>02/10/2019<\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -185,7 +186,7 @@
                 "title": "Social History",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Female<\/td><td>01/05/2018<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_e3e5d047-4b48-4993-bbcc-4d40592c6c51_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><tr><td>Pregnancy Status<\/td><td>No<\/td><td><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Female<\/td><td>01/05/2018<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_e3e5d047-4b48-4993-bbcc-4d40592c6c51_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><tr><td>Pregnancy Status<\/td><td>No<\/td><td><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -253,7 +254,7 @@
               }
             ],
             "subject": {
-              "reference": "Patient/e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f"
+              "reference": "Patient/64e0d81d-61aa-4b25-b415-dfbb305dc930"
             },
             "relatesTo": [
               {
@@ -308,7 +309,7 @@
               "end": "2019-02-10"
             },
             "subject": {
-              "reference": "Patient/e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f"
+              "reference": "Patient/64e0d81d-61aa-4b25-b415-dfbb305dc930"
             },
             "location": [
               {
@@ -333,6 +334,9 @@
                 ]
               }
             ],
+            "serviceProvider": {
+              "reference": "Organization/5919d87f-6670-9c40-93d4-d348add5a878"
+            },
             "participant": [
               {
                 "type": [
@@ -346,7 +350,7 @@
                   }
                 ],
                 "individual": {
-                  "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+                  "reference": "PractitionerRole/0b4b8a6e-08be-95b1-bae1-2e4fabd1c9a0"
                 }
               }
             ],
@@ -408,6 +412,39 @@
           }
         },
         {
+          "fullUrl": "urn:uuid:5919d87f-6670-9c40-93d4-d348add5a878",
+          "resource": {
+            "resourceType": "Organization",
+            "id": "5919d87f-6670-9c40-93d4-d348add5a878",
+            "name": "TBDFacilityName",
+            "address": [
+              {
+                "use": "work",
+                "line": [
+                  "1234 Facility Drive"
+                ],
+                "city": "TBDFacilityCity",
+                "state": "TBDFacilityState",
+                "postalCode": "TBDFacilityZip"
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "TBDFacilityPhone",
+                "use": "work"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Organization/5919d87f-6670-9c40-93d4-d348add5a878"
+          }
+        },
+        {
           "fullUrl": "urn:uuid:4581f291-448a-04ad-0508-e348f799a4b0",
           "resource": {
             "resourceType": "Practitioner",
@@ -432,8 +469,10 @@
             ],
             "name": [
               {
-                "use": "usual",
-                "text": "TBDFacilityName            "
+                "family": "Amanda",
+                "given": [
+                  "Assigned"
+                ]
               }
             ],
             "address": [
@@ -446,7 +485,49 @@
                 "state": "TBDProvState",
                 "country": "US",
                 "postalCode": "TBDProvZip"
-              },
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "555-555-1002 ext 9998",
+                "use": "work"
+              }
+            ]
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "PractitionerRole",
+            "id": "0b4b8a6e-08be-95b1-bae1-2e4fabd1c9a0",
+            "practitioner": {
+              "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+            },
+            "organization": {
+              "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+            },
+            "meta": {
+              "source": "ecr"
+            }
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+          "resource": {
+            "resourceType": "Organization",
+            "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+            "identifier": [
+              {
+                "system": "http://hl7.org/fhir/sid/us-npi",
+                "value": "TBDFacility#"
+              }
+            ],
+            "name": "TBDFacilityName",
+            "address": [
               {
                 "use": "work",
                 "line": [
@@ -456,11 +537,21 @@
                 "state": "TBDFacilityState",
                 "postalCode": "TBDFacilityZip"
               }
-            ]
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "TBDFacilityPhone",
+                "use": "work"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
           },
           "request": {
             "method": "PUT",
-            "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+            "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
           }
         },
         {
@@ -561,45 +652,6 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
-          "resource": {
-            "resourceType": "Organization",
-            "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
-            "identifier": [
-              {
-                "system": "http://hl7.org/fhir/sid/us-npi",
-                "value": "TBDFacility#"
-              }
-            ],
-            "name": "TBDFacilityName",
-            "address": [
-              {
-                "use": "work",
-                "line": [
-                  "1234 Facility Drive"
-                ],
-                "city": "TBDFacilityCity",
-                "state": "TBDFacilityState",
-                "postalCode": "TBDFacilityZip"
-              }
-            ],
-            "telecom": [
-              {
-                "system": "phone",
-                "value": "TBDFacilityPhone",
-                "use": "work"
-              }
-            ],
-            "meta": {
-              "source": "ecr"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
-          }
-        },
-        {
           "fullUrl": "urn:uuid:1a3298d9-e090-a7a3-5f58-6ce68c7fc88a",
           "resource": {
             "resourceType": "Device",
@@ -610,15 +662,19 @@
                 "value": "urn:uuid:2.16.840.1.113883.3.72.5.20"
               }
             ],
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/device-category",
-                  "code": "software",
-                  "display": "software"
+            "property": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/device-category",
+                      "code": "software",
+                      "display": "software"
+                    }
+                  ]
                 }
-              ]
-            },
+              }
+            ],
             "meta": {
               "source": "ecr"
             }
@@ -629,10 +685,10 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f",
+          "fullUrl": "urn:uuid:64e0d81d-61aa-4b25-b415-dfbb305dc930",
           "resource": {
             "resourceType": "Patient",
-            "id": "e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f",
+            "id": "64e0d81d-61aa-4b25-b415-dfbb305dc930",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -726,7 +782,7 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Patient/e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f"
+            "url": "Patient/64e0d81d-61aa-4b25-b415-dfbb305dc930"
           }
         },
         {
@@ -734,7 +790,7 @@
           "resource": {
             "resourceType": "CareTeam",
             "subject": {
-              "reference": "Patient/e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f"
+              "reference": "Patient/64e0d81d-61aa-4b25-b415-dfbb305dc930"
             },
             "meta": {
               "source": "ecr"
@@ -748,7 +804,7 @@
             "status": "unknown",
             "intent": "proposal",
             "subject": {
-              "reference": "Patient/e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f"
+              "reference": "Patient/64e0d81d-61aa-4b25-b415-dfbb305dc930"
             },
             "meta": {
               "source": "ecr"
@@ -781,7 +837,7 @@
               ]
             },
             "subject": {
-              "reference": "Patient/e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f"
+              "reference": "Patient/64e0d81d-61aa-4b25-b415-dfbb305dc930"
             },
             "result": [
               {
@@ -844,25 +900,12 @@
               ]
             },
             "subject": {
-              "reference": "Patient/e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f"
+              "reference": "Patient/64e0d81d-61aa-4b25-b415-dfbb305dc930"
             }
           },
           "request": {
             "method": "PUT",
             "url": "Observation/6fa716ad-5c5e-4af7-84c8-7dc7914517d1"
-          }
-        },
-        {
-          "fullUrl": "urn:uuid:",
-          "resource": {
-            "resourceType": "Device",
-            "meta": {
-              "source": "ecr"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Device/"
           }
         },
         {
@@ -907,7 +950,7 @@
               ]
             },
             "subject": {
-              "reference": "Patient/e84cb2dd-5c9b-4cd1-bc61-91580b8ac82f"
+              "reference": "Patient/64e0d81d-61aa-4b25-b415-dfbb305dc930"
             }
           },
           "request": {
