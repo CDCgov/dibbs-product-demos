@@ -16,18 +16,20 @@
               ],
               "source": "ecr"
             },
-            "identifier": {
-              "use": "official",
-              "type": {
-                "coding": [
-                  {
-                    "code": "55751-2",
-                    "display": "Public Health Case Report",
-                    "system": "http://loinc.org"
-                  }
-                ]
+            "identifier": [
+              {
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "55751-2",
+                      "display": "Public Health Case Report",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                }
               }
-            },
+            ],
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"
@@ -52,7 +54,7 @@
                 "title": "Encounters",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_2d72e0c7-7f36-4ca9-82a9-02933bd62a53_ref --><td>Office outpatient visit 15 minutes<\/td><td>02/10/2019<\/td><td>TBDFacilityName<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_2d72e0c7-7f36-4ca9-82a9-02933bd62a53_ref --><td>Office outpatient visit 15 minutes<\/td><td>02/10/2019<\/td><td>TBDFacilityName<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -70,7 +72,7 @@
                 "title": "History of Present Illness",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No history of present illness<\/div>"
+                  "div": "No history of present illness"
                 },
                 "code": {
                   "coding": [
@@ -88,7 +90,7 @@
                 "title": "Medications Administered",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No medications administered<\/div>"
+                  "div": "No medications administered"
                 },
                 "code": {
                   "coding": [
@@ -106,7 +108,7 @@
                 "title": "Problem List",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No problems reported<\/div>"
+                  "div": "No problems reported"
                 },
                 "code": {
                   "coding": [
@@ -123,8 +125,7 @@
                 "id": "3d1bb889-26bd-d3d9-b884-bf37c9f145f8",
                 "title": "Reason for visit",
                 "text": {
-                  "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><\/div>"
+                  "status": "generated"
                 },
                 "code": {
                   "coding": [
@@ -142,7 +143,7 @@
                 "title": "Results",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Results Panel<\/th><th>Date(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_f71a7477-f860-4a3c-a79e-5fe743cae1f4_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td><\/td><\/tr><tr><td><ul><li><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Test<\/th><th>Lab Test RCTC OID ***<\/th><th>Lab Test RCTC Version ***<\/th><th>Outcome<\/th><th>Date(s)<\/th><th>Lab Result RCTC OID ***<\/th><th>Lab Result RCTC Version ***<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_998576ea-7a30-4aa5-8f07-2662463ac620_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td><\/td><td><\/td><td>Detected (qualifier value)<\/td><td>01/04/2016<\/td><td>2.16.840.1.114222.4.11.7508<\/td><td>20171013<\/td><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Results Panel<\/th><th>Date(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_f71a7477-f860-4a3c-a79e-5fe743cae1f4_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td><\/td><\/tr><tr><td><ul><li><paragraph>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/paragraph><table><thead><tr><th>Test<\/th><th>Lab Test RCTC OID ***<\/th><th>Lab Test RCTC Version ***<\/th><th>Outcome<\/th><th>Date(s)<\/th><th>Lab Result RCTC OID ***<\/th><th>Lab Result RCTC Version ***<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_998576ea-7a30-4aa5-8f07-2662463ac620_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td><\/td><td><\/td><td>Detected (qualifier value)<\/td><td>01/04/2016<\/td><td>2.16.840.1.114222.4.11.7508<\/td><td>20171013<\/td><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -165,7 +166,7 @@
                 "title": "Plan of Treatment",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Lab Test Order<\/th><th>Code<\/th><th>CodeSystem<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><th>Ordered Date<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_158cfe54-cbe1-42ce-b5ae-98a92d2d9e3d_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td>21415-5<\/td><td>LOINC<\/td><td><\/td><td><\/td><td>02/10/2019<\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<paragraph>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/paragraph><table><thead><tr><th>Lab Test Order<\/th><th>Code<\/th><th>CodeSystem<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><th>Ordered Date<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_158cfe54-cbe1-42ce-b5ae-98a92d2d9e3d_ref --><td>Neisseria gonorrhoeae DNA [Presence] in Urethra by NAA with probe detection<\/td><td>21415-5<\/td><td>LOINC<\/td><td><\/td><td><\/td><td>02/10/2019<\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -183,7 +184,7 @@
                 "title": "Social History",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Female<\/td><td>12/27/1986<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_0d32d895-8df0-475b-9a4f-10757c6cb9e1_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><tr><td>Pregnancy Status<\/td><td>Unknown<\/td><td><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Female<\/td><td>12/27/1986<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_0d32d895-8df0-475b-9a4f-10757c6cb9e1_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><tr><td>Pregnancy Status<\/td><td>Unknown<\/td><td><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -251,7 +252,7 @@
               }
             ],
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/74c557bd-ceb6-442a-8d84-ff32397c2777"
             },
             "encounter": {
               "reference": "Encounter/c20ce0ff-081b-4f7e-cf12-7b47ccd6b304"
@@ -292,7 +293,7 @@
               "end": "2019-02-10"
             },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/74c557bd-ceb6-442a-8d84-ff32397c2777"
             },
             "location": [
               {
@@ -317,6 +318,9 @@
                 ]
               }
             ],
+            "serviceProvider": {
+              "reference": "Organization/5919d87f-6670-9c40-93d4-d348add5a878"
+            },
             "participant": [
               {
                 "type": [
@@ -330,7 +334,7 @@
                   }
                 ],
                 "individual": {
-                  "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+                  "reference": "PractitionerRole/3295c58a-26aa-18e7-f4fd-0e203762937a"
                 }
               }
             ],
@@ -392,6 +396,39 @@
           }
         },
         {
+          "fullUrl": "urn:uuid:5919d87f-6670-9c40-93d4-d348add5a878",
+          "resource": {
+            "resourceType": "Organization",
+            "id": "5919d87f-6670-9c40-93d4-d348add5a878",
+            "name": "TBDFacilityName",
+            "address": [
+              {
+                "use": "work",
+                "line": [
+                  "1234 Facility Drive"
+                ],
+                "city": "TBDFacilityCity",
+                "state": "TBDFacilityState",
+                "postalCode": "TBDFacilityZip"
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "TBDFacilityPhone",
+                "use": "work"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Organization/5919d87f-6670-9c40-93d4-d348add5a878"
+          }
+        },
+        {
           "fullUrl": "urn:uuid:4581f291-448a-04ad-0508-e348f799a4b0",
           "resource": {
             "resourceType": "Practitioner",
@@ -416,8 +453,10 @@
             ],
             "name": [
               {
-                "use": "usual",
-                "text": "TBDFacilityName"
+                "family": "Amanda",
+                "given": [
+                  "Assigned"
+                ]
               }
             ],
             "address": [
@@ -430,7 +469,49 @@
                 "state": "TBDProvState",
                 "country": "US",
                 "postalCode": "TBDProvZip"
-              },
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "555-555-1002 ext 9998",
+                "use": "work"
+              }
+            ]
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "PractitionerRole",
+            "id": "3295c58a-26aa-18e7-f4fd-0e203762937a",
+            "practitioner": {
+              "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+            },
+            "organization": {
+              "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+            },
+            "meta": {
+              "source": "ecr"
+            }
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+          "resource": {
+            "resourceType": "Organization",
+            "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+            "identifier": [
+              {
+                "system": "http://hl7.org/fhir/sid/us-npi",
+                "value": "TBDFacility#"
+              }
+            ],
+            "name": "TBDFacilityName",
+            "address": [
               {
                 "use": "work",
                 "line": [
@@ -440,11 +521,21 @@
                 "state": "TBDFacilityState",
                 "postalCode": "TBDFacilityZip"
               }
-            ]
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "TBDFacilityPhone",
+                "use": "work"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
           },
           "request": {
             "method": "PUT",
-            "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+            "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
           }
         },
         {
@@ -541,45 +632,6 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
-          "resource": {
-            "resourceType": "Organization",
-            "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
-            "identifier": [
-              {
-                "system": "http://hl7.org/fhir/sid/us-npi",
-                "value": "TBDFacility#"
-              }
-            ],
-            "name": "TBDFacilityName",
-            "address": [
-              {
-                "use": "work",
-                "line": [
-                  "1234 Facility Drive"
-                ],
-                "city": "TBDFacilityCity",
-                "state": "TBDFacilityState",
-                "postalCode": "TBDFacilityZip"
-              }
-            ],
-            "telecom": [
-              {
-                "system": "phone",
-                "value": "TBDFacilityPhone",
-                "use": "work"
-              }
-            ],
-            "meta": {
-              "source": "ecr"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
-          }
-        },
-        {
           "fullUrl": "urn:uuid:d8a3e46a-e8cd-9c3c-87b0-7537d99b940e",
           "resource": {
             "resourceType": "Device",
@@ -590,15 +642,19 @@
                 "value": "urn:uuid:2.16.840.1.113883.3.72.5.20"
               }
             ],
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/device-category",
-                  "code": "software",
-                  "display": "software"
+            "property": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/device-category",
+                      "code": "software",
+                      "display": "software"
+                    }
+                  ]
                 }
-              ]
-            },
+              }
+            ],
             "meta": {
               "source": "ecr"
             }
@@ -609,10 +665,10 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:e3c8e261-7309-4104-b929-a6c0a733c1a5",
+          "fullUrl": "urn:uuid:74c557bd-ceb6-442a-8d84-ff32397c2777",
           "resource": {
             "resourceType": "Patient",
-            "id": "e3c8e261-7309-4104-b929-a6c0a733c1a5",
+            "id": "74c557bd-ceb6-442a-8d84-ff32397c2777",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -712,7 +768,7 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+            "url": "Patient/74c557bd-ceb6-442a-8d84-ff32397c2777"
           }
         },
         {
@@ -720,7 +776,7 @@
           "resource": {
             "resourceType": "CareTeam",
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/74c557bd-ceb6-442a-8d84-ff32397c2777"
             },
             "meta": {
               "source": "ecr"
@@ -734,7 +790,7 @@
             "status": "unknown",
             "intent": "proposal",
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/74c557bd-ceb6-442a-8d84-ff32397c2777"
             },
             "meta": {
               "source": "ecr"
@@ -771,7 +827,7 @@
               "end": "2016-01-04"
             },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/74c557bd-ceb6-442a-8d84-ff32397c2777"
             },
             "result": [
               {
@@ -835,25 +891,12 @@
               ]
             },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/74c557bd-ceb6-442a-8d84-ff32397c2777"
             }
           },
           "request": {
             "method": "PUT",
             "url": "Observation/bc888e57-ff9b-26fe-853b-30ab7812108f"
-          }
-        },
-        {
-          "fullUrl": "urn:uuid:",
-          "resource": {
-            "resourceType": "Device",
-            "meta": {
-              "source": "ecr"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Device/"
           }
         },
         {
@@ -898,7 +941,7 @@
               ]
             },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/74c557bd-ceb6-442a-8d84-ff32397c2777"
             }
           },
           "request": {
@@ -952,7 +995,7 @@
               ]
             },
             "subject": {
-              "reference": "Patient/e3c8e261-7309-4104-b929-a6c0a733c1a5"
+              "reference": "Patient/74c557bd-ceb6-442a-8d84-ff32397c2777"
             }
           },
           "request": {

@@ -16,19 +16,21 @@
               ],
               "source": "ecr"
             },
-            "identifier": {
-              "use": "official",
-              "type": {
-                "coding": [
-                  {
-                    "code": "55751-2",
-                    "display": "Public Health Case Report",
-                    "system": "http://loinc.org"
-                  }
-                ]
-              },
-              "value": "8d86218e-0fea-11eb-8216-a80388425cfb"
-            },
+            "identifier": [
+              {
+                "use": "official",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "55751-2",
+                      "display": "Public Health Case Report",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "value": "8d86218e-0fea-11eb-8216-a80388425cfb"
+              }
+            ],
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
@@ -54,7 +56,7 @@
                 "title": "Encounters",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_9543eeed-b087-4014-bbdd-2f4b4a182e81_ref --><td>Office outpatient visit 15 minutes<\/td><td>05/12/2020<\/td><td>Provo Outpatient Clinic<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Encounter<\/th><th>Date(s)<\/th><th>Location<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_9543eeed-b087-4014-bbdd-2f4b4a182e81_ref --><td>Office outpatient visit 15 minutes<\/td><td>05/12/2020<\/td><td>Provo Outpatient Clinic<\/td><\/tr><tr><td><ul><li><table><thead><tr><\/tr><\/thead><tbody><tr><\/tr><\/tbody><\/table><\/li><\/ul><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -72,7 +74,7 @@
                 "title": "History of Present Illness",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient thinks he was in contact with a COVID-10 positive person;<\/p><\/div>"
+                  "div": "<paragraph>Patient thinks he was in contact with a COVID-10 positive person;<\/paragraph>"
                 },
                 "code": {
                   "coding": [
@@ -90,7 +92,7 @@
                 "title": "Medications Administered",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No medications administered<\/div>"
+                  "div": "No medications administered"
                 },
                 "code": {
                   "coding": [
@@ -108,7 +110,7 @@
                 "title": "Problem List",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No problems reported<\/div>"
+                  "div": "No problems reported"
                 },
                 "code": {
                   "coding": [
@@ -126,7 +128,7 @@
                 "title": "Reason for visit",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient thinks he was in contact with a COVID-10 positive person<\/p><\/div>"
+                  "div": "<paragraph>Patient thinks he was in contact with a COVID-10 positive person<\/paragraph>"
                 },
                 "code": {
                   "coding": [
@@ -137,14 +139,20 @@
                     }
                   ]
                 },
-                "mode": "snapshot"
+                "mode": "snapshot",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/cda/ccda/StructureDefinition/2.16.840.1.113883.10.20.22.2.12",
+                    "valueString": "Patient thinks he was in contact with a COVID-10 positive person "
+                  }
+                ]
               },
               {
                 "id": "31f8b482-3db1-5028-ff2e-46321e18d919",
                 "title": "RESULTS",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Lab Test Name<\/th><th>Lab Test Result Value<\/th><th>Lab Test Result Date<\/th><\/tr><\/thead><tbody><tr><td><\/td><td>Neisseria gonorrhoeae DNA [Presence] in Nasopharynx by NAA with probe detection<\/td><td>Detected<\/td><\/tr><tr><td><\/td><td>Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by NAA with probe detection<\/td><td>Not Detected<\/td><\/tr><tr><td><\/td><td>SARS-like Coronavirus N gene [Presence] in Unspecified specimen by NAA with probe detection<\/td><td>Not Detected<\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Lab Test Name<\/th><th>Lab Test Result Value<\/th><th>Lab Test Result Date<\/th><\/tr><\/thead><tbody><tr><td><\/td><td>Neisseria gonorrhoeae DNA [Presence] in Nasopharynx by NAA with probe detection<\/td><td>Detected<\/td><\/tr><tr><td><\/td><td>Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by NAA with probe detection<\/td><td>Not Detected<\/td><\/tr><tr><td><\/td><td>SARS-like Coronavirus N gene [Presence] in Unspecified specimen by NAA with probe detection<\/td><td>Not Detected<\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -173,7 +181,7 @@
                 "title": "Plan of Treatment",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/p><table><thead><tr><th>Lab Test Order<\/th><th>Code<\/th><th>CodeSystem<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><th>Ordered Date<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_d779f48e-a3d1-4c90-94b6-82a81cda24f3_ref --><td>SARS-related coronavirus RNA [Presence] in Unspecified specimen by NAA with probe detection<\/td><td>94647-5<\/td><td>LOINC<\/td><td><\/td><td><\/td><td>05/12/2020<\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<paragraph>*** In the table below, row entries with values under RCTC columns triggered this Electronic Initial Case Report (eICR)<\/paragraph><table><thead><tr><th>Lab Test Order<\/th><th>Code<\/th><th>CodeSystem<\/th><th>RCTC OID ***<\/th><th>RCTC Version ***<\/th><th>Ordered Date<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_d779f48e-a3d1-4c90-94b6-82a81cda24f3_ref --><td>SARS-related coronavirus RNA [Presence] in Unspecified specimen by NAA with probe detection<\/td><td>94647-5<\/td><td>LOINC<\/td><td><\/td><td><\/td><td>05/12/2020<\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -191,7 +199,7 @@
                 "title": "Social History",
                 "text": {
                   "status": "generated",
-                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Male<\/td><td>09/13/1967<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_14ba4186-419e-4777-b65b-11ea1b21cfe8_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><\/tbody><\/table><\/div>"
+                  "div": "<table><thead><tr><th>Birth Sex<\/th><th>Value<\/th><th>Date<\/th><\/tr><\/thead><tbody><tr><td>Sex Assigned At Birth<\/td><td>Male<\/td><td>09/13/1967<\/td><\/tr><\/tbody><\/table><table><thead><tr><th>Social History Observation Type<\/th><th>Value<\/th><th>Dates(s)<\/th><\/tr><\/thead><tbody><tr><!-- data-id: id_14ba4186-419e-4777-b65b-11ea1b21cfe8_ref --><td>Occupation / Employment details<\/td><td><\/td><td><\/td><\/tr><\/tbody><\/table>"
                 },
                 "code": {
                   "coding": [
@@ -267,7 +275,7 @@
               }
             ],
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             },
             "encounter": {
               "reference": "Encounter/2e46650b-2159-0d9e-6784-1a4384dc4815"
@@ -308,7 +316,7 @@
               "end": "2020-05-12"
             },
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             },
             "location": [
               {
@@ -333,6 +341,9 @@
                 ]
               }
             ],
+            "serviceProvider": {
+              "reference": "Organization/ccc9d8cf-4198-7065-a0f5-a2f661362b4a"
+            },
             "participant": [
               {
                 "type": [
@@ -346,7 +357,7 @@
                   }
                 ],
                 "individual": {
-                  "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+                  "reference": "PractitionerRole/e056fd1c-3655-abe8-0ea6-abb58cecfa3c"
                 }
               }
             ],
@@ -408,6 +419,39 @@
           }
         },
         {
+          "fullUrl": "urn:uuid:ccc9d8cf-4198-7065-a0f5-a2f661362b4a",
+          "resource": {
+            "resourceType": "Organization",
+            "id": "ccc9d8cf-4198-7065-a0f5-a2f661362b4a",
+            "name": "Provo Outpatient Clinic",
+            "address": [
+              {
+                "use": "work",
+                "line": [
+                  "1002 Healthcare Drive"
+                ],
+                "city": "Provo",
+                "state": "UT",
+                "postalCode": "84601"
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "555-777-0123",
+                "use": "work"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Organization/ccc9d8cf-4198-7065-a0f5-a2f661362b4a"
+          }
+        },
+        {
           "fullUrl": "urn:uuid:4581f291-448a-04ad-0508-e348f799a4b0",
           "resource": {
             "resourceType": "Practitioner",
@@ -432,8 +476,13 @@
             ],
             "name": [
               {
-                "use": "usual",
-                "text": "Provo Outpatient Clinic"
+                "family": "Hippocrates",
+                "given": [
+                  "Harold"
+                ],
+                "suffix": [
+                  "MD"
+                ]
               }
             ],
             "address": [
@@ -446,7 +495,49 @@
                 "state": "UT",
                 "country": "US",
                 "postalCode": "84601"
-              },
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "555-777-0123",
+                "use": "work"
+              }
+            ]
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "PractitionerRole",
+            "id": "e056fd1c-3655-abe8-0ea6-abb58cecfa3c",
+            "practitioner": {
+              "reference": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+            },
+            "organization": {
+              "reference": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
+            },
+            "meta": {
+              "source": "ecr"
+            }
+          }
+        },
+        {
+          "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+          "resource": {
+            "resourceType": "Organization",
+            "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
+            "identifier": [
+              {
+                "system": "http://hl7.org/fhir/sid/us-npi",
+                "value": "TBDFacility#"
+              }
+            ],
+            "name": "Provo Outpatient Clinic",
+            "address": [
               {
                 "use": "work",
                 "line": [
@@ -456,11 +547,21 @@
                 "state": "UT",
                 "postalCode": "84601"
               }
-            ]
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "555-777-0123",
+                "use": "work"
+              }
+            ],
+            "meta": {
+              "source": "ecr"
+            }
           },
           "request": {
             "method": "PUT",
-            "url": "Practitioner/4581f291-448a-04ad-0508-e348f799a4b0"
+            "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
           }
         },
         {
@@ -675,45 +776,6 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:daf02ea4-2048-a2c3-e24f-7313a37bd19b",
-          "resource": {
-            "resourceType": "Organization",
-            "id": "daf02ea4-2048-a2c3-e24f-7313a37bd19b",
-            "identifier": [
-              {
-                "system": "http://hl7.org/fhir/sid/us-npi",
-                "value": "TBDFacility#"
-              }
-            ],
-            "name": "Provo Outpatient Clinic",
-            "address": [
-              {
-                "use": "work",
-                "line": [
-                  "1002 Healthcare Drive"
-                ],
-                "city": "Provo",
-                "state": "UT",
-                "postalCode": "84601"
-              }
-            ],
-            "telecom": [
-              {
-                "system": "phone",
-                "value": "555-777-0123",
-                "use": "work"
-              }
-            ],
-            "meta": {
-              "source": "ecr"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b"
-          }
-        },
-        {
           "fullUrl": "urn:uuid:0525caf2-b5bb-1452-cccf-9bcf972fe55e",
           "resource": {
             "resourceType": "Device",
@@ -724,15 +786,19 @@
                 "value": "urn:uuid:2.16.840.1.113883.3.72.5.20"
               }
             ],
-            "category": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/device-category",
-                  "code": "software",
-                  "display": "software"
+            "property": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/device-category",
+                      "code": "software",
+                      "display": "software"
+                    }
+                  ]
                 }
-              ]
-            },
+              }
+            ],
             "meta": {
               "source": "ecr"
             }
@@ -743,10 +809,10 @@
           }
         },
         {
-          "fullUrl": "urn:uuid:7a5c89dc-d859-4ef9-bebd-08f8d472248e",
+          "fullUrl": "urn:uuid:6a4e3742-f7f5-415a-a2d8-2c967bd90e02",
           "resource": {
             "resourceType": "Patient",
-            "id": "7a5c89dc-d859-4ef9-bebd-08f8d472248e",
+            "id": "6a4e3742-f7f5-415a-a2d8-2c967bd90e02",
             "meta": {
               "profile": [
                 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
@@ -868,7 +934,7 @@
           },
           "request": {
             "method": "PUT",
-            "url": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+            "url": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
           }
         },
         {
@@ -876,7 +942,7 @@
           "resource": {
             "resourceType": "CareTeam",
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             },
             "meta": {
               "source": "ecr"
@@ -890,7 +956,7 @@
             "status": "unknown",
             "intent": "proposal",
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             },
             "meta": {
               "source": "ecr"
@@ -923,7 +989,7 @@
               ]
             },
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             },
             "result": [
               {
@@ -998,25 +1064,12 @@
               }
             ],
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             }
           },
           "request": {
             "method": "PUT",
             "url": "Observation/41832eda-226d-a99d-8cf2-71592f938e70"
-          }
-        },
-        {
-          "fullUrl": "urn:uuid:",
-          "resource": {
-            "resourceType": "Device",
-            "meta": {
-              "source": "ecr"
-            }
-          },
-          "request": {
-            "method": "PUT",
-            "url": "Device/"
           }
         },
         {
@@ -1041,7 +1094,7 @@
               ]
             },
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             },
             "result": [
               {
@@ -1116,7 +1169,7 @@
               }
             ],
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             }
           },
           "request": {
@@ -1146,7 +1199,7 @@
               ]
             },
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             },
             "result": [
               {
@@ -1221,7 +1274,7 @@
               }
             ],
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             }
           },
           "request": {
@@ -1271,7 +1324,7 @@
               ]
             },
             "subject": {
-              "reference": "Patient/7a5c89dc-d859-4ef9-bebd-08f8d472248e"
+              "reference": "Patient/6a4e3742-f7f5-415a-a2d8-2c967bd90e02"
             }
           },
           "request": {

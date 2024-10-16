@@ -22,179 +22,437 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results</h1>
- <p>8 errors, 45 warnings, 0 hints. Generated Oct 4, 2024, 3:24:20 PM by Validator Version 6.3.29 (Git# 53ec74518475). Built 2024-09-26T12:30:54.127Z (8 days old) (3638ms)</p>
+ <p>84 errors, 55 warnings, 0 hints. Generated Oct 16, 2024, 11:23:49 AM by Validator Version 6.3.32 (Git# 54bf319161d4). Built 2024-10-14T06:04:19.383Z (53 hours old) (6886ms)</p>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#;1"><b>fhir-bundles/eicr-rr-batch-bundle.json</b></a></td><td><b>8</b></td><td><b>45</b></td><td><b>0</b></td>
+     <td><a href="#;1"><b>fhir-bundles/dibbs-converted/eICR-TC-COVID-LabPos_20210412-bundle.json</b></a></td><td><b>84</b></td><td><b>55</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
 <a name="l1"> </a>
-<h2><a href="file:fhir-bundles/eicr-rr-batch-bundle.json">fhir-bundles/eicr-rr-batch-bundle.json</a></h2>
+<h2><a href="file:fhir-bundles/dibbs-converted/eICR-TC-COVID-LabPos_20210412-bundle.json">fhir-bundles/dibbs-converted/eICR-TC-COVID-LabPos_20210412-bundle.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource/*Practitioner/practitioner-emma-nelson-001*/.identifier[0].type (l241/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource/*Organization/organization-nelson-family-practice-001*/.identifier[0].type (l296/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource/*Organization/organization-nelson-family-practice-001*/.meta.profile[0] (l283/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-organization' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource/*Encounter/encounter-eicr-saga-anderson-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[4].resource/*Condition/condition-covid19-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[4].resource/*Condition/condition-covid19-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[5].resource/*Observation/observation-covid19-pcr-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[5].resource/*Observation/observation-covid19-pcr-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[5].resource/*Observation/observation-covid19-pcr-001*/.performer[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[5].resource/*Observation/observation-covid19-pcr-001*/.meta.profile[0] (l440/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-observation' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.performer[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/ (l504/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource/*Observation/observation-rr-covid19-001*/.meta.profile[0] (l504/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/ecr/StructureDefinition/rr-observation' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error reading Http Response from http://hl7.org/fhir/us/ecr: Error parsing JSON source: Unexpected char 'T' in json stream at Line 1 (path=[null])</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource/*Observation/observation-condition-status-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource/*Observation/observation-condition-status-001*/.performer[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/ (l605/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/ (l605/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/ (l605/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/.code.coding[0].system (l618/c10)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/.code.coding[0] (l618/c10)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource/*Observation/observation-eicr-status-001*/.code (l618/c10)</b></td><td><b>warning</b></td><td title="null"><b>Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.8|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.author[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 1 matches the reference Practitioner/practitioner-emma-nelson-001 by type and id but it's fullUrl urn:uuid:d4a6b124-0aea-4b5d-9453-ba70f7770d26 does not match the full target URL urn:uuid:practitioner-emma-nelson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.custodian</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[0].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[1].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[2].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[3].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[5].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.identifier (l16/c10)</b></td><td><b>error</b></td><td title="null"><b>The property identifier must be an Object, not an Array (at Bundle.entry[0].resource.identifier)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/ (l635/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.extension:sliceExtensionVersionNumber': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+     <td><b>Bundle.entry[0].resource.section[1].text.div (l74/c53)</b></td><td><b>error</b></td><td title="null"><b>Error parsing XHTML: Unable to Parse HTML - does not start with tag. Found N at line 1 column 0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/ (l635/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceReasonForVisitSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+     <td><b>Bundle.entry[0].resource.section[2].text.div (l92/c51)</b></td><td><b>error</b></td><td title="null"><b>Error parsing XHTML: Unable to Parse HTML - does not start with tag. Found N at line 1 column 0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/ (l635/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceHistoryOfPresentIllnessSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+     <td><b>Bundle.entry[0].resource.section[3].text.div (l110/c44)</b></td><td><b>error</b></td><td title="null"><b>Error parsing XHTML: Unable to Parse HTML - does not start with tag. Found N at line 1 column 0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/ (l635/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceResultsSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+     <td><b>Bundle.entry[10].resource.contact[0].name (l768/c14)</b></td><td><b>error</b></td><td title="null"><b>The property name must be an Object, not an Array (at Bundle.entry[10].resource.contact[0].name)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[9].resource/*Composition/composition-eicr-covid19-001*/.section[5] (l762/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceProblemSection.entry:sliceEICRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.extension[1].value.ofType(Reference)</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 1 matches the reference Practitioner/practitioner-emma-nelson-001 by type and id but it's fullUrl urn:uuid:d4a6b124-0aea-4b5d-9453-ba70f7770d26 does not match the full target URL urn:uuid:practitioner-emma-nelson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 0 matches the reference Patient/patient-saga-anderson-001 by type and id but it's fullUrl urn:uuid:2efff959-4359-458b-8b69-f1c60f5070bc does not match the full target URL urn:uuid:patient-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.encounter</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 3 matches the reference Encounter/encounter-eicr-saga-anderson-001 by type and id but it's fullUrl urn:uuid:bb63a3d8-714d-4418-adbb-4f585f069c0b does not match the full target URL urn:uuid:encounter-eicr-saga-anderson-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.author[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.custodian</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 2 matches the reference Organization/organization-nelson-family-practice-001 by type and id but it's fullUrl urn:uuid:e591b5a8-06f5-4ca6-a074-527f9a17ab0f does not match the full target URL urn:uuid:organization-nelson-family-practice-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[0].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 6 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[0].extension[0].value.ofType(Reference)</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 8 matches the reference Observation/observation-eicr-status-001 by type and id but it's fullUrl urn:uuid:bdeb53b2-b19a-4d3d-a110-35115fd8a486 does not match the full target URL urn:uuid:observation-eicr-status-001 by Bundle resolution rules</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept).coding[0] (l922/c18)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].extension[1].value.ofType(CodeableConcept) (l922/c18)</b></td><td><b>warning</b></td><td title="null"><b>Unable to check whether the code is in the value set 'http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.5|1' because the code system urn:oid:2.16.840.1.114222.4.5.274 was not found</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1].entry[0]</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 6 matches the reference Observation/observation-rr-covid19-001 by type and id but it's fullUrl urn:uuid:a228ecdc-1fd9-46b2-a01c-37f9dd5b73ac does not match the full target URL urn:uuid:observation-rr-covid19-001 by Bundle resolution rules</b></td>
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[0].code.coding[0].display (l58/c14)</b></td><td><b>error</b></td><td title="null"><b>Wrong Display Name 'History of encounters' for http://loinc.org#46240-8. There are no valid display names found for language(s) 'en'. Default display is 'History of Hospitalizations+Outpatient visits Narrative'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/ (l828/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceEICRSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[0].text.div (l56/c395)</b></td><td><b>error</b></td><td title="XHTML_XHTML_NS_InValid"><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1] (l906/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRSummary': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[0].text.div (l56/c395)</b></td><td><b>error</b></td><td title="XHTML_XHTML_Name_Invalid"><b>Wrong name on the XHTML ('table') - must start with div</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[10].resource/*Composition/composition-rr-covid19-001*/.section[1] (l906/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceRRSummarySection.entry:sliceRRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[1].code.coding[0].display (l76/c14)</b></td><td><b>error</b></td><td title="null"><b>Wrong Display Name 'History of Present Illness' for http://loinc.org#10164-2. There are no valid display names found for language(s) 'en'. Default display is 'History of Present illness Narrative'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[1].text.div (l74/c53)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Narrative#txt-1"><b>Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, &lt;a&gt; elements (either name or href), images and internally contained style attributes'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[1].text.div (l74/c53)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Narrative#txt-2"><b>Constraint failed: txt-2: 'The narrative SHALL have some non-whitespace content'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[2].code.coding[0].display (l94/c14)</b></td><td><b>error</b></td><td title="null"><b>Wrong Display Name 'Medications Administered' for http://loinc.org#29549-3. There are no valid display names found for language(s) 'en'. Default display is 'Medication administered Narrative'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[2].text.div (l92/c51)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Narrative#txt-1"><b>Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, &lt;a&gt; elements (either name or href), images and internally contained style attributes'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[2].text.div (l92/c51)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Narrative#txt-2"><b>Constraint failed: txt-2: 'The narrative SHALL have some non-whitespace content'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[3].code.coding[0].display (l112/c14)</b></td><td><b>error</b></td><td title="null"><b>Wrong Display Name 'Problem List' for http://loinc.org#11450-4. There are no valid display names found for language(s) 'en'. Default display is 'Problem list - Reported'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[3].text.div (l110/c44)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Narrative#txt-1"><b>Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, &lt;a&gt; elements (either name or href), images and internally contained style attributes'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[3].text.div (l110/c44)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Narrative#txt-2"><b>Constraint failed: txt-2: 'The narrative SHALL have some non-whitespace content'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[4].text (l126/c14)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Narrative.div: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Narrative|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[5].code.coding[0].display (l147/c14)</b></td><td><b>error</b></td><td title="null"><b>Wrong Display Name 'Relevant diagnostic tests and/or laboratory data' for http://loinc.org#30954-2. There are no valid display names found for language(s) 'en'. Default display is 'Relevant diagnostic tests/laboratory data Narrative'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[5].text.div (l145/c999)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Narrative#txt-1"><b>Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, &lt;a&gt; elements (either name or href), images and internally contained style attributes'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[5].text.div (l145/c999)</b></td><td><b>error</b></td><td title="XHTML_XHTML_NS_InValid"><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[5].text.div (l145/c999)</b></td><td><b>error</b></td><td title="XHTML_XHTML_Name_Invalid"><b>Wrong name on the XHTML ('table') - must start with div</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[5].text.div (l145/c999)</b></td><td><b>error</b></td><td title="XHTML_XHTML_Element_Illegal"><b>Invalid element name in the XHTML ('paragraph')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[6].code.coding[0].display (l170/c14)</b></td><td><b>error</b></td><td title="null"><b>Wrong Display Name 'Plan of Treatment' for http://loinc.org#18776-5. There are no valid display names found for language(s) 'en'. Default display is 'Plan of care note'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[6].text.div (l168/c579)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Narrative#txt-1"><b>Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, &lt;a&gt; elements (either name or href), images and internally contained style attributes'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[6].text.div (l168/c579)</b></td><td><b>error</b></td><td title="XHTML_XHTML_NS_InValid"><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[6].text.div (l168/c579)</b></td><td><b>error</b></td><td title="XHTML_XHTML_Name_Invalid"><b>Wrong name on the XHTML ('paragraph') - must start with div</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[7].code.coding[0].display (l188/c14)</b></td><td><b>error</b></td><td title="null"><b>Wrong Display Name 'Social History' for http://loinc.org#29762-2. There are no valid display names found for language(s) 'en'. Default display is 'Social history Narrative'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[7].text.div (l186/c525)</b></td><td><b>error</b></td><td title="XHTML_XHTML_NS_InValid"><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[7].text.div (l186/c525)</b></td><td><b>error</b></td><td title="XHTML_XHTML_Name_Invalid"><b>Wrong name on the XHTML ('table') - must start with div</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8] (l199/c12)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition is not allowed to be used at this point (allowed = ; this element is [BackboneElement, Bundle.entry.resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section, Composition.section])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>The Extension 'http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition' definition allows for the types [] but found type Identifier</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0].url (l208/c87)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0].value.ofType(Identifier) (l209/c18)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.extension: minimum required = 2, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.extension:sliceExtensionVersionNumber': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.extension:sliceExtensionInformationRecipient': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.identifier: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.subject: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.encounter: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.author: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.title: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.custodian: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0] (l207/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceEICRSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource (l605/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[0].value.ofType(Identifier).type (l211/c20)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#88085-6)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[1] (l223/c16)</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>The Extension 'http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-extension' definition allows for the types [] but found type CodeableConcept</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[1] (l223/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Extension.extension:eICRProcessingStatus': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-extension|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[1] (l223/c16)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Extension.value[x]: max allowed = 0, but found 1 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-extension|2.1.1)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource (l605/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[8].extension[1].value.ofType(CodeableConcept).coding[0].system (l225/c18)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[8].resource (l605/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/ (l7/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/ (l7/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.identifier: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/ (l7/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceChiefComplaintSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.subject (l253/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Patient/ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.encounter (l256/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Encounter/74349de7-8460-0535-1a63-32a884da7953 among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-encounter</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.custodian (l259/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[3] (l105/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.section:sliceProblemSection.entry: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[3] (l105/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceProblemSection.entry:sliceEICRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[5] (l140/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Composition.section:sliceResultsSection.entry:sliceUSCoreObservationResults': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section[6] (l163/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.section:slicePlanOfTreatmentSection.entry: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource/*Encounter/74349de7-8460-0535-1a63-32a884da7953*/.class (l279/c10)</b></td><td><b>warning</b></td><td title="Terminology_TX_Confirm_5"><b>The code provided (urn:oid:2.16.840.1.113883.5.4#AMB) is not in the value set 'ActEncounterCode' (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource/*Encounter/74349de7-8460-0535-1a63-32a884da7953*/.participant[0].individual</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_NO_FU"><b>Entry 5 matches the reference PractitionerRole/c7fa2361-52dd-2f0d-0b28-63578455ea0a by type and id but it does not match the full target URL urn:uuid:c7fa2361-52dd-2f0d-0b28-63578455ea0a by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource/*Encounter/74349de7-8460-0535-1a63-32a884da7953*/.location[0].extension[0] (l305/c16)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://build.fhir.org/ig/HL7/case-reporting/StructureDefinition-us-ph-location-definitions.html#Location.type could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource/*Encounter/74349de7-8460-0535-1a63-32a884da7953*/.location[0].extension[0].value.ofType(CodeableConcept).coding[0].system (l307/c18)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.113883.5.111' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource/*Encounter/74349de7-8460-0535-1a63-32a884da7953*/ (l275/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource/*Location/6f413a19-36e7-8bb5-087b-1cc791fd46e8*/.type[0].coding[0] (l378/c12)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.113883.5.111' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource/*Location/6f413a19-36e7-8bb5-087b-1cc791fd46e8*/.type[0] (l378/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ServiceDeliveryLocationRoleType' (http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = urn:oid:2.16.840.1.113883.5.111#OF)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource/*Location/6f413a19-36e7-8bb5-087b-1cc791fd46e8*/ (l351/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource/*Organization/79bdfaa0-ce22-d988-0414-9478c38f3bdf*/ (l399/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4].resource/*Practitioner/4581f291-448a-04ad-0508-e348f799a4b0*/ (l432/c8)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://hl7.org/fhir/StructureDefinition/_datatype is not allowed to be used at this point (allowed = e:Base; this element is [Bundle.entry.resource/*Practitioner/4581f291-448a-04ad-0508-e348f799a4b0*/, Practitioner])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4].resource/*Practitioner/4581f291-448a-04ad-0508-e348f799a4b0*/ (l432/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[5] (l484/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[5].resource/*PractitionerRole/c7fa2361-52dd-2f0d-0b28-63578455ea0a*/.practitioner</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[5].resource/*PractitionerRole/c7fa2361-52dd-2f0d-0b28-63578455ea0a*/.organization</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[5].resource/*PractitionerRole/c7fa2361-52dd-2f0d-0b28-63578455ea0a*/ (l485/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[6].resource/*Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b*/ (l501/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[7].resource/*Organization/f4556c30-6c86-2995-e2df-f45c8cb572c9*/.type[0].coding[0].system (l551/c12)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.232' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[7].resource/*Organization/f4556c30-6c86-2995-e2df-f45c8cb572c9*/ (l540/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource/*Organization/f4556c30-6c86-2995-e2df-f45c8cb572c9*/ (l540/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Organization.telecom: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/ (l581/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/ (l581/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/.extension[0].value.ofType(string) (l623/c227)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'All results of tests for                                                  detection of SARS-CoV-2 nucleic acid in a clinical                                                  specimen by any method '</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/.code.coding[0].display (l597/c10)</b></td><td><b>error</b></td><td title="null"><b>Wrong Display Name 'Condition' for http://snomed.info/sct#64572001. Valid display is one of 7 choices: 'Disease', 'Clinical disease AND/OR syndrome', 'Disorder', 'Syndrome', 'Disorders', 'Diseases' or 'Disease (disorder)' (for the language(s) 'en')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/ (l581/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/ (l581/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Observation.extension:determinationOfReportability': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/ (l581/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Observation.performer:rulesAuthoringAgency': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/ (l581/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Observation.performer:routingEntity': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation|2.1.1). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/ (l581/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Observation.component: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation|2.1.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[8].resource/*Observation/17f6392f-9340-45d3-a1c8-bc0a30d09f53*/.code (l597/c10)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set 'Location Relevance (eCR)' (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.6|1), and a coding from this value set is required) (codes = http://snomed.info/sct#64572001, http://loinc.org#75323-6)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[9].resource/*Device/4838911e-2cd4-280a-d907-47dcfcd0ca92*/.property[0].type.coding[0].system (l659/c14)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://hl7.org/fhir/device-category' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[9].resource/*Device/4838911e-2cd4-280a-d907-47dcfcd0ca92*/.property[0].type.coding[0].system (l662/c66)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/device-category' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[9].resource/*Device/4838911e-2cd4-280a-d907-47dcfcd0ca92*/ (l648/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[10].resource/*Patient/ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7*/.extension[0].extension[0].value.ofType(Coding) (l716/c18)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[10].resource/*Patient/ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7*/.extension[1].extension[0].value.ofType(Coding) (l732/c18)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[10].resource/*Patient/ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7*/ (l681/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[11].fullUrl (l806/c29)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_UUID_Valid"><b>UUIDs must be valid and lowercase ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[11].resource/*CareTeam/null*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 10 matches the reference Patient/ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 by type and id but it's fullUrl urn:uuid:ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 does not match the full target URL urn:ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[11].resource/*CareTeam/null*/ (l807/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[12].fullUrl (l818/c29)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_UUID_Valid"><b>UUIDs must be valid and lowercase ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[12].resource/*CarePlan/null*/.subject</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU"><b>Entry 10 matches the reference Patient/ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 by type and id but it's fullUrl urn:uuid:ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 does not match the full target URL urn:ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 by Bundle resolution rules</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[12].resource/*CarePlan/null*/ (l819/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[13].resource/*DiagnosticReport/a40cd786-e08d-a4ea-e5fc-07c6757d822c*/.code.coding[0].code (l847/c10)</b></td><td><b>error</b></td><td title="null"><b>Unknown code '94310-0 ' in the CodeSystem 'http://loinc.org' version '2.78'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[13].resource/*DiagnosticReport/a40cd786-e08d-a4ea-e5fc-07c6757d822c*/.code.coding[0].code (l850/c33)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Code_WS"><b>The code '94310-0 ' is not valid (whitespace rules)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[13].resource/*DiagnosticReport/a40cd786-e08d-a4ea-e5fc-07c6757d822c*/ (l837/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[14].resource/*Observation/062a8097-9fac-01f5-ca15-216e690f5d6f*/ (l879/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[14].resource/*Observation/062a8097-9fac-01f5-ca15-216e690f5d6f*/.code.coding[0].code (l905/c10)</b></td><td><b>error</b></td><td title="null"><b>Unknown code '94310-0 ' in the CodeSystem 'http://loinc.org' version '2.78'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[14].resource/*Observation/062a8097-9fac-01f5-ca15-216e690f5d6f*/.code.coding[0].code (l908/c33)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Code_WS"><b>The code '94310-0 ' is not valid (whitespace rules)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[14].resource/*Observation/062a8097-9fac-01f5-ca15-216e690f5d6f*/ (l879/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[14].resource/*Observation/062a8097-9fac-01f5-ca15-216e690f5d6f*/.meta.profile[0] (l879/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error from http://hl7.org/fhir/us/core: Unparseable HTML</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[15].resource/*Observation/d9ee89be-d99e-55c9-e255-c6b71f9f9a88*/ (l935/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[15].resource/*Observation/d9ee89be-d99e-55c9-e255-c6b71f9f9a88*/.value.ofType(CodeableConcept).coding[0].system (l965/c10)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.113883.5.1' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[15].resource/*Observation/d9ee89be-d99e-55c9-e255-c6b71f9f9a88*/ (l935/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[15].resource/*Observation/d9ee89be-d99e-55c9-e255-c6b71f9f9a88*/.meta.profile[0] (l935/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error from http://hl7.org/fhir/us/core: Unparseable HTML</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[16].resource/*Observation/ccd25b34-cab0-f669-b4e9-217f70ea81bb*/ (l985/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[16].resource/*Observation/ccd25b34-cab0-f669-b4e9-217f70ea81bb*/ (l985/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[16].resource/*Observation/ccd25b34-cab0-f669-b4e9-217f70ea81bb*/.value.ofType(CodeableConcept).coding[0].code (l1020/c10)</b></td><td><b>error</b></td><td title="null"><b>Unknown code '2200' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[16].resource/*Observation/ccd25b34-cab0-f669-b4e9-217f70ea81bb*/ (l985/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[16].resource/*Observation/ccd25b34-cab0-f669-b4e9-217f70ea81bb*/.meta.profile[0] (l985/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error from http://hl7.org/fhir/us/core: Unparseable HTML</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[17].fullUrl (l1039/c29)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_UUID_Valid"><b>UUIDs must be valid and lowercase ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource/*Observation/null*/ (l1040/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource/*Observation/null*/ (l1040/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource/*Observation/null*/ (l1040/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[17].resource/*Observation/null*/ (l1040/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Observation.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[17].resource/*Observation/null*/ (l1040/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Observation.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource/*Observation/null*/ (l1040/c8)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource/*Observation/null*/.meta.profile[0] (l1040/c8)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_ERROR"><b>Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error from http://hl7.org/fhir/us/core: Unparseable HTML</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Bundle#bdl-3"><b>Constraint failed: bdl-3: 'entry.request mandatory for batch/transaction/history, otherwise prohibited'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Bundle#bdl-7"><b>Constraint failed: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[8].resource (l581/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[8].resource (l581/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[14].resource (l879/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[15].resource (l935/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[16].resource (l985/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[16].resource (l985/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource (l1040/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource (l1040/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[17].resource (l1040/c8)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
    </tr>
 </table>

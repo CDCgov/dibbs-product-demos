@@ -1,0 +1,113 @@
+{
+    "severity_counts": {
+        "error": 84,
+        "warning": 55
+    },
+    "issue_code_counts": {
+        "not-supported": 2,
+        "code-invalid": 9,
+        "invalid": 47,
+        "required": 6,
+        "structure": 41,
+        "invariant": 28,
+        "not-found": 6
+    },
+    "error_details": {
+        "not-supported": [
+            "This element is not allowed by the profile http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1"
+        ],
+        "code-invalid": [
+            "None of the codings provided are in the value set 'Location Relevance (eCR)' (http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.113883.10.20.15.2.5.6|1), and a coding from this value set is required) (codes = http://snomed.info/sct#64572001, http://loinc.org#75323-6)",
+            "Unknown code '94310-0 ' in the CodeSystem 'http://loinc.org' version '2.78'",
+            "Unknown code '2200' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801'",
+            "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#88085-6)",
+            "The code provided (urn:oid:2.16.840.1.113883.5.4#AMB) is not in the value set 'ActEncounterCode' (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)",
+            "None of the codings provided are in the value set 'ServiceDeliveryLocationRoleType' (http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = urn:oid:2.16.840.1.113883.5.111#OF)",
+            "A code with no system has no defined meaning, and it cannot be validated. A system should be provided"
+        ],
+        "invalid": [
+            "The property identifier must be an Object, not an Array (at Bundle.entry[0].resource.identifier)",
+            "Wrong name on the XHTML ('table') - must start with div",
+            "Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')",
+            "Wrong Display Name 'History of encounters' for http://loinc.org#46240-8. There are no valid display names found for language(s) 'en'. Default display is 'History of Hospitalizations+Outpatient visits Narrative'",
+            "Error parsing XHTML: Unable to Parse HTML - does not start with tag. Found N at line 1 column 0",
+            "Wrong Display Name 'History of Present Illness' for http://loinc.org#10164-2. There are no valid display names found for language(s) 'en'. Default display is 'History of Present illness Narrative'",
+            "Wrong Display Name 'Medications Administered' for http://loinc.org#29549-3. There are no valid display names found for language(s) 'en'. Default display is 'Medication administered Narrative'",
+            "Wrong Display Name 'Problem List' for http://loinc.org#11450-4. There are no valid display names found for language(s) 'en'. Default display is 'Problem list - Reported'",
+            "Invalid element name in the XHTML ('paragraph')",
+            "Wrong Display Name 'Relevant diagnostic tests and/or laboratory data' for http://loinc.org#30954-2. There are no valid display names found for language(s) 'en'. Default display is 'Relevant diagnostic tests/laboratory data Narrative'",
+            "Wrong name on the XHTML ('paragraph') - must start with div",
+            "Wrong Display Name 'Plan of Treatment' for http://loinc.org#18776-5. There are no valid display names found for language(s) 'en'. Default display is 'Plan of care note'",
+            "Wrong Display Name 'Social History' for http://loinc.org#29762-2. There are no valid display names found for language(s) 'en'. Default display is 'Social history Narrative'",
+            "Wrong Display Name 'Condition' for http://snomed.info/sct#64572001. Valid display is one of 7 choices: 'Disease', 'Clinical disease AND/OR syndrome', 'Disorder', 'Syndrome', 'Disorders', 'Diseases' or 'Disease (disorder)' (for the language(s) 'en')",
+            "URL value 'http://hl7.org/fhir/device-category' does not resolve",
+            "The property name must be an Object, not an Array (at Bundle.entry[10].resource.contact[0].name)",
+            "UUIDs must be valid and lowercase ()",
+            "The code '94310-0 ' is not valid (whitespace rules)",
+            "Best Practice Recommendation: In general, all observations should have a subject",
+            "Best Practice Recommendation: In general, all observations should have an effective[x] ()",
+            "value should not start or finish with whitespace 'All results of tests for                                                  detection of SARS-CoV-2 nucleic acid in a clinical                                                  specimen by any method '",
+            "Best Practice Recommendation: In general, all observations should have a performer"
+        ],
+        "required": [
+            "Relative Reference appears inside Bundle whose entry is missing a fullUrl",
+            "Bundle entry missing fullUrl",
+            "Entry 10 matches the reference Patient/ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 by type and id but it's fullUrl urn:uuid:ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 does not match the full target URL urn:ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 by Bundle resolution rules",
+            "Entry 5 matches the reference PractitionerRole/c7fa2361-52dd-2f0d-0b28-63578455ea0a by type and id but it does not match the full target URL urn:uuid:c7fa2361-52dd-2f0d-0b28-63578455ea0a by Bundle resolution rules"
+        ],
+        "structure": [
+            "Composition.identifier: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)",
+            "Slice 'Composition.section:sliceChiefComplaintSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Composition.section:sliceProblemSection.entry: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)",
+            "Slice 'Composition.section:sliceProblemSection.entry:sliceEICRCondition': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Narrative.div: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Narrative|4.0.1)",
+            "Slice 'Composition.section:sliceResultsSection.entry:sliceUSCoreObservationResults': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Composition.section:slicePlanOfTreatmentSection.entry: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition|2.1.1)",
+            "The extension http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition is not allowed to be used at this point (allowed = ; this element is [BackboneElement, Bundle.entry.resource/*Composition/10c13861-86a8-4a9a-aec6-b615921178df*/.section, Composition.section])",
+            "Composition.author: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Composition.custodian: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Composition.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Composition.encounter: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Composition.extension: minimum required = 2, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Composition.identifier: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Composition.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Composition.subject: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Composition.title: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Composition.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1)",
+            "Slice 'Composition.extension:sliceExtensionInformationRecipient': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Composition.extension:sliceExtensionVersionNumber': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Composition.section:sliceEICRSection': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "The Extension 'http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition' definition allows for the types [] but found type Identifier",
+            "Extension.value[x]: max allowed = 0, but found 1 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-extension|2.1.1)",
+            "Slice 'Extension.extension:eICRProcessingStatus': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-extension|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "The Extension 'http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-extension' definition allows for the types [] but found type CodeableConcept",
+            "Unable to find a match for profile Patient/ea5bde5d-7b26-47c9-84f5-6aef4a3b16a7 among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient",
+            "Unable to find a match for profile Encounter/74349de7-8460-0535-1a63-32a884da7953 among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-encounter",
+            "Unable to find a match for profile Organization/daf02ea4-2048-a2c3-e24f-7313a37bd19b among choices: http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization",
+            "The extension http://build.fhir.org/ig/HL7/case-reporting/StructureDefinition-us-ph-location-definitions.html#Location.type could not be found so is not allowed here",
+            "The extension http://hl7.org/fhir/StructureDefinition/_datatype is not allowed to be used at this point (allowed = e:Base; this element is [Bundle.entry.resource/*Practitioner/4581f291-448a-04ad-0508-e348f799a4b0*/, Practitioner])",
+            "Organization.telecom: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization|2.1.1)",
+            "Observation.component: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation|2.1.1)",
+            "Slice 'Observation.extension:determinationOfReportability': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Observation.performer:routingEntity': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Slice 'Observation.performer:rulesAuthoringAgency': a matching slice is required, but not found (from http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation|2.1.1). Note that other slices are allowed in addition to this required slice",
+            "Observation.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)",
+            "Observation.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Observation|4.0.1)",
+            "Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults' has not been checked because it could not be found, and fetching it resulted in the error org.hl7.fhir.r4.utils.client.EFhirClientException: Error from http://hl7.org/fhir/us/core: Unparseable HTML"
+        ],
+        "invariant": [
+            "Constraint failed: bdl-3: 'entry.request mandatory for batch/transaction/history, otherwise prohibited'",
+            "Constraint failed: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)'",
+            "Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes'",
+            "Constraint failed: txt-2: 'The narrative SHALL have some non-whitespace content'",
+            "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        ],
+        "not-found": [
+            "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.274' could not be found, so the code cannot be validated",
+            "A definition for CodeSystem 'urn:oid:2.16.840.1.113883.5.111' could not be found, so the code cannot be validated",
+            "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.5.232' could not be found, so the code cannot be validated",
+            "A definition for CodeSystem 'http://hl7.org/fhir/device-category' could not be found, so the code cannot be validated",
+            "A definition for CodeSystem 'urn:oid:2.16.840.1.113883.5.1' could not be found, so the code cannot be validated"
+        ]
+    }
+}

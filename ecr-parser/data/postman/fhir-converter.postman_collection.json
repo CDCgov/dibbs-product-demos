@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "09a9fbd1-edd5-490f-8d77-7a56957830fd",
+		"name": "fhir-converter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22121893"
+	},
+	"item": [
+		{
+			"name": "Convert to fhir",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"input_type\": \"ecr\",\n    \"root_template\": \"EICR\",\n    \"input_data\": \"{{eData}}\",\n    \"rr_data\": \"{{rrData}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/convert-to-fhir"
+			},
+			"response": []
+		},
+		{
+			"name": "Merge",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"input_type\":\"ecr\",\n    \"root_template\":\"EICR\",\n    \"input_data\": \"{{ecrData}}\",\n    \"rr_data\": \"{{rrData}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/merge-rr-eicr"
+			},
+			"response": []
+		}
+	]
+}

@@ -33,7 +33,7 @@ download_validator_cli() {
   fi
 
   echo "Downloading the latest validator_cli.jar (version $LATEST_VERSION)..."
-  gh release download --repo "$REPO" --pattern "$FILE_PATTERN" --clobber
+  gh release download --repo "$REPO" --pattern "$FILE_PATTERN"
 
   if [ $? -eq 0 ]; then
     echo "Download successful."
